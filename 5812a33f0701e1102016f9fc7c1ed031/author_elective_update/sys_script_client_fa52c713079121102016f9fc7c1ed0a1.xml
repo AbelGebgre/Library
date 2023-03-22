@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Create new copy when  catalog created</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+    //Type appropriate comment here, and begin script below
+    var newRecord = new GlideRecord('copy');
+
+    // Set field values for the new record
+    newRecord.initialize(); // This sets default values for all fields
+    newRecord.setValue('copy', 1);
+    newRecord.setValue('catalog', 'e1d9809807d125102016f9fc7c1ed032');
+
+    // Insert the new record into the table
+    newRecord.insert();
+
+    // Check if the record was successfully created
+    if (newRecord.isValidRecord()) {
+		alert(newRecord.sys_id);
+    }
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-06 08:04:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fa52c713079121102016f9fc7c1ed0a1</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Create new copy when  catalog created</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sys_script_client_fa52c713079121102016f9fc7c1ed0a1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-06 08:30:41</sys_updated_on>
+        <table>x_976190_library_catalog</table>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>sys_script_client_fa52c713079121102016f9fc7c1ed0a1</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Create new copy when  catalog created&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onSubmit() {
+    //Type appropriate comment here, and begin script below
+    var newRecord = new GlideRecord('copy');
+
+    // Set field values for the new record
+    newRecord.initialize(); // This sets default values for all fields
+    newRecord.setValue('copy', 1);
+    newRecord.setValue('catalog', 'e1d9809807d125102016f9fc7c1ed032');
+
+    // Insert the new record into the table
+    newRecord.insert();
+
+    // Check if the record was successfully created
+    if (newRecord.isValidRecord()) {
+		alert(newRecord.sys_id);
+    }
+
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-06 08:04:32&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;fa52c713079121102016f9fc7c1ed0a1&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;Create new copy when  catalog created&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Library" source="x_976190_library"&gt;5812a33f0701e1102016f9fc7c1ed031&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Library"&gt;5812a33f0701e1102016f9fc7c1ed031&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_fa52c713079121102016f9fc7c1ed0a1&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-06 08:30:41&lt;/sys_updated_on&gt;&lt;table&gt;x_976190_library_catalog&lt;/table&gt;&lt;type&gt;onSubmit&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>227075178</payload_hash>
+        <record_name>Create new copy when  catalog created</record_name>
+        <reverted_from/>
+        <source>f1cde3d1075561102016f9fc7c1ed0e4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-06 08:30:41</sys_created_on>
+        <sys_id>43ea47db079121102016f9fc7c1ed04d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186b60b56f00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-06 08:30:41</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>c7ea47dbdc9121105ef558a447c9304c</update_guid>
+        <update_guid_history>c7ea47dbdc9121105ef558a447c9304c:227075178,3fe84b1b5591211009c3337966c3b9da:-1759832228,67d8cf1bd891211042ea7c6f5854b993:-135508174,1ea84b1bf99121104497b0ccfeabe3ed:87027822,dc57879744912110521313a9b4385ad2:1087567730,35364f57b7912110731d1175d6156c3e:155443038,88f40b53359121106a0a42bc489bb47f:791408163</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-06 08:31:35</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>59fcb488b30440e8a1172f331ee2be40</sys_id>
+        <sys_metadata>fa52c713079121102016f9fc7c1ed0a1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create new copy when  catalog created</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent display_value="Catalog">9954c4d007d125102016f9fc7c1ed0e4</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>sys_script_client_fa52c713079121102016f9fc7c1ed0a1</sys_update_name>
+        <sys_update_version display_value="sys_script_client_fa52c713079121102016f9fc7c1ed0a1">43ea47db079121102016f9fc7c1ed04d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-06 08:31:35</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

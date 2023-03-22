@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_template">
+    <sys_template action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <global>false</global>
+        <group/>
+        <groups>c0f018e0071565102016f9fc7c1ed0c1,aa9310a4071565102016f9fc7c1ed068</groups>
+        <link_element/>
+        <name>Catalog: Demo Text</name>
+        <next/>
+        <next_child/>
+        <roles/>
+        <short_description>Demo Text</short_description>
+        <show_on_template_bar>true</show_on_template_bar>
+        <stand_alone>false</stand_alone>
+        <sys_class_name>sys_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-06 08:19:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>25b74fd7079121102016f9fc7c1ed036</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Catalog: Demo Text</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sys_template_25b74fd7079121102016f9fc7c1ed036</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-14 06:17:36</sys_updated_on>
+        <table>x_976190_library_catalog</table>
+        <template>active=true^price=javascript:global.getTemplateCurrency('x_976190_library_catalog','price', 'USD;600')^title=Demo Title^category=5d1c5b84071125102016f9fc7c1ed0dc^type=7be1ba0d071121102016f9fc7c1ed0be^author=4987eb04075125102016f9fc7c1ed097^publisher=8e0da3c8075125102016f9fc7c1ed036^EQ</template>
+        <user display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</user>
+        <view/>
+    </sys_template>
+</record_update>

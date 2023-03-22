@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard">
+    <par_dashboard action="DELETE">
+        <active>true</active>
+        <certified>false</certified>
+        <description/>
+        <experience/>
+        <grid>48</grid>
+        <name>Library-all</name>
+        <sys_class_name>par_dashboard</sys_class_name>
+        <sys_created_by>abel.tuter</sys_created_by>
+        <sys_created_on>2023-02-28 07:03:20</sys_created_on>
+        <sys_id>416d3b95079561102016f9fc7c1ed0a3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Library-all</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>par_dashboard_416d3b95079561102016f9fc7c1ed0a3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-03 12:09:49</sys_updated_on>
+        <sys_ux_app_config/>
+        <sys_ux_app_route/>
+        <sys_ux_macroponent/>
+        <sys_ux_screen/>
+        <sys_ux_screen_type/>
+    </par_dashboard>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>par_dashboard_416d3b95079561102016f9fc7c1ed0a3</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard"><par_dashboard action="INSERT_OR_UPDATE"><active>true</active><certified>false</certified><description/><experience/><grid>48</grid><name>Library-all</name><sys_class_name>par_dashboard</sys_class_name><sys_created_by>abel.tuter</sys_created_by><sys_created_on>2023-02-28 07:03:20</sys_created_on><sys_id>416d3b95079561102016f9fc7c1ed0a3</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Library-all</sys_name><sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package><sys_policy/><sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope><sys_update_name>par_dashboard_416d3b95079561102016f9fc7c1ed0a3</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-03-03 12:09:49</sys_updated_on><sys_ux_app_config/><sys_ux_app_route/><sys_ux_macroponent/><sys_ux_screen/><sys_ux_screen_type/></par_dashboard></record_update>]]></payload>
+        <payload_hash>860817695</payload_hash>
+        <record_name>Library-all</record_name>
+        <reverted_from/>
+        <source>69cbe020079565102016f9fc7c1ed06d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-03 12:09:49</sys_created_on>
+        <sys_id>2b4024a2079521102016f9fc7c1ed078</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186a760e0ab0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-03 12:09:49</sys_updated_on>
+        <type>PAR Dashboard</type>
+        <update_guid>6f4028622f95211027a1fbe9cdc15277</update_guid>
+        <update_guid_history>6f4028622f95211027a1fbe9cdc15277:860817695,816d3b95089561103cd0ee0cda78f0a4:-658087415</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Library-all">cd7e28a207d521102016f9fc7c1ed0d4</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-03 13:11:38</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard">par_dashboard</sys_db_object>
+        <sys_id>2a962e0de9664000ab22f39e84000000</sys_id>
+        <sys_metadata>416d3b95079561102016f9fc7c1ed0a3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Library-all</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>par_dashboard_416d3b95079561102016f9fc7c1ed0a3</sys_update_name>
+        <sys_update_version display_value="par_dashboard_416d3b95079561102016f9fc7c1ed0a3">2b4024a2079521102016f9fc7c1ed078</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-03 13:11:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

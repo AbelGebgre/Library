@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_widget">
+    <par_dashboard_widget action="INSERT_OR_UPDATE">
+        <canvas display_value="">e16eafd1285561105f3fa927e61642b5</canvas>
+        <component display_value="now-heading">3a64f550256090d9578ede76158e899c</component>
+        <component_props>{"variant":"header-primary","label":"Dashboard","wontWrap":false,"hasNoMargin":false,"level":"1","filterConfigurations":[{"filterId":"1gqjmtkphtmll37vojgg","start":"2023-03-01T00:00:00","apply_to":["x_976190_library_catalog.sys_created_on","x_976190_library_catalog.sys_created_on","x_976190_library_circulation.sys_updated_on"],"end":"2023-03-09T23:59:59","label":"Date","type":"date","order":0}]}</component_props>
+        <h>3</h>
+        <name/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-28 05:57:53</sys_created_on>
+        <sys_id>a96eafd1f15561108ded35ba2f9348b9</sys_id>
+        <sys_mod_count>37</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>par_dashboard_widget_a96eafd1f15561108ded35ba2f9348b9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-13 08:45:41</sys_updated_on>
+        <visualization/>
+        <w>48</w>
+        <x>0</x>
+        <y>0</y>
+    </par_dashboard_widget>
+</record_update>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="DELETE">
+        <app_config display_value="Advanced Dashboards">02dc36706f01011089060168e25b3691</app_config>
+        <description/>
+        <extension_point/>
+        <fields/>
+        <icon/>
+        <name>Library-visual</name>
+        <optional_parameters/>
+        <order>0</order>
+        <parent_macroponent display_value="UXR Base Experience Shell - Advanced">47bcb58553030110aab9ddeeff7b12c2</parent_macroponent>
+        <parent_macroponent_composition_element_id/>
+        <route_type>library-visual42696445</route_type>
+        <screen_type display_value="Library-visual">f5cde86207d521102016f9fc7c1ed01a</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-03 13:08:42</sys_created_on>
+        <sys_id>42cde86207d521102016f9fc7c1ed046</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Library-visual</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sys_ux_app_route_42cde86207d521102016f9fc7c1ed046</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-03 13:08:42</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="DELETE" query="documentkey=42cde86207d521102016f9fc7c1ed046"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>sys_ux_app_route_42cde86207d521102016f9fc7c1ed046</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route"><sys_ux_app_route action="INSERT_OR_UPDATE"><app_config display_value="Advanced Dashboards">02dc36706f01011089060168e25b3691</app_config><description/><extension_point/><fields/><icon/><name>Library-visual</name><optional_parameters/><order>0</order><parent_macroponent display_value="UXR Base Experience Shell - Advanced">47bcb58553030110aab9ddeeff7b12c2</parent_macroponent><parent_macroponent_composition_element_id/><route_type>library-visual42696445</route_type><screen_type display_value="Library-visual">f5cde86207d521102016f9fc7c1ed01a</screen_type><sys_class_name>sys_ux_app_route</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-03-03 13:08:42</sys_created_on><sys_id>42cde86207d521102016f9fc7c1ed046</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Library-visual</sys_name><sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package><sys_policy/><sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope><sys_update_name>sys_ux_app_route_42cde86207d521102016f9fc7c1ed046</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-03-03 13:08:42</sys_updated_on></sys_ux_app_route><sys_translated_text action="delete_multiple" query="documentkey=42cde86207d521102016f9fc7c1ed046"/></record_update>]]></payload>
+        <payload_hash>-2076197912</payload_hash>
+        <record_name>Library-visual</record_name>
+        <reverted_from/>
+        <source>f1cde3d1075561102016f9fc7c1ed0e4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-03 13:08:42</sys_created_on>
+        <sys_id>cacde86207d521102016f9fc7c1ed048</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186a796c8e80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-03 13:08:42</sys_updated_on>
+        <type>UX App Route</type>
+        <update_guid>cecde862c7d5211037818739415a7747</update_guid>
+        <update_guid_history>cecde862c7d5211037818739415a7747:-2076197912</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-03 13:09:45</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_app_route">sys_ux_app_route</sys_db_object>
+        <sys_id>1682d653f7d042e68b8928d6f64f2744</sys_id>
+        <sys_metadata>42cde86207d521102016f9fc7c1ed046</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Library-visual</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>sys_ux_app_route_42cde86207d521102016f9fc7c1ed046</sys_update_name>
+        <sys_update_version display_value="sys_ux_app_route_42cde86207d521102016f9fc7c1ed046">cacde86207d521102016f9fc7c1ed048</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-03 13:09:45</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

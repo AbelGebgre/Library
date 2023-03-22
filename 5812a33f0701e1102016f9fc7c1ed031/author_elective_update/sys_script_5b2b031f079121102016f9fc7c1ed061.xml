@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>true</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>true</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_976190_library_catalog</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_976190_library_catalog">titleVALCHANGES^EQ<item endquery="false" field="title" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message><![CDATA[<p>please input value.</p>]]></message>
+        <name>Create recored when catalog is created</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+    var parentSysId = current.sys_id;
+    alert('kjhjkh');
+	//var newRecord = new GlideRecord('copy');
+	//newRecord.initialize();
+    //newRecord.setValue('copy', 1);
+    //newRecord.setValue('catalog', parentSysId);
+    //newRecord.insert();
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-06 08:33:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5b2b031f079121102016f9fc7c1ed061</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>Create recored when catalog is created</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sys_script_5b2b031f079121102016f9fc7c1ed061</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-06 12:33:37</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=5b2b031f079121102016f9fc7c1ed061"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>sys_script_5b2b031f079121102016f9fc7c1ed061</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;true&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;true&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_976190_library_catalog&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="x_976190_library_catalog"&gt;titleVALCHANGES^EQ&lt;item endquery="false" field="title" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message&gt;&lt;![CDATA[&lt;p&gt;please input value.&lt;/p&gt;]]&gt;&lt;/message&gt;&lt;name&gt;Create recored when catalog is created&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+    var parentSysId = current.sys_id;
+    alert('kjhjkh');
+	//var newRecord = new GlideRecord('copy');
+	//newRecord.initialize();
+    //newRecord.setValue('copy', 1);
+    //newRecord.setValue('catalog', parentSysId);
+    //newRecord.insert();
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-06 08:33:14&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;5b2b031f079121102016f9fc7c1ed061&lt;/sys_id&gt;&lt;sys_mod_count&gt;19&lt;/sys_mod_count&gt;&lt;sys_name&gt;Create recored when catalog is created&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Library" source="x_976190_library"&gt;5812a33f0701e1102016f9fc7c1ed031&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Library"&gt;5812a33f0701e1102016f9fc7c1ed031&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_5b2b031f079121102016f9fc7c1ed061&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-06 12:33:37&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=5b2b031f079121102016f9fc7c1ed061"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-463055626</payload_hash>
+        <record_name>Create recored when catalog is created</record_name>
+        <reverted_from/>
+        <source>e9c9131f07d121102016f9fc7c1ed07b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-06 12:33:37</sys_created_on>
+        <sys_id>e9828ca7079521102016f9fc7c1ed0ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186b6e9bf4b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-06 12:33:37</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>ed828ca7f6952110aa259fa210bb81ab</update_guid>
+        <update_guid_history>ed828ca7f6952110aa259fa210bb81ab:-463055626,5a52c4e7be95211017e9f103448f0fd9:1050439736,39b140a74395211060f7ee59b0935bf9:-2063365651,1bc04067a89521101c9945692f480842:1460849134,2a100067249521107921cee8eb2a58fb:724463986,014d33936c9521104b51236b8f37e44e:-1886236704,211db353c19521109b8012d5549d902f:-192174772,cbccf753e5952110694b4eaf0f275c9b:1507616034,987cbf138d95211088c939ad77f304a3:-1760305081,486c7bdf745521104316aebd382095c0:2124673895,b70b7bdfd75521104e24c6cf2a6069b8:-1626132284,96ba73df6c552110545061f38d7d2be7:2124673895,8355b71b0a552110b99ff2d13db7f02b:-1760305081,7055bb1b6a552110f40d91730b2ac072:1337121478,8b46d31bb6d12110034706c7b110a910:-1760305081,2da3d75726d12110c2eeda306d7122c6:1507616034,063d479f84912110ac4240e3c2e5d24c:1308676420,addc8f5f899121107698c47474fcbb59:-45259569,62eb4f1fa5912110f296140e1b8de9cc:1190798423,1c8b8f9b42912110322761473b69400a:-1411231615</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-06 12:39:02</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>396d6245fd8e46fe82d92e4618eb7304</sys_id>
+        <sys_metadata>5b2b031f079121102016f9fc7c1ed061</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create recored when catalog is created</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent display_value="Catalog">9954c4d007d125102016f9fc7c1ed0e4</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>sys_script_5b2b031f079121102016f9fc7c1ed061</sys_update_name>
+        <sys_update_version display_value="sys_script_5b2b031f079121102016f9fc7c1ed061">e9828ca7079521102016f9fc7c1ed0ac</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-06 12:39:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="INSERT_OR_UPDATE">
+        <order>900</order>
+        <sc_cat_item display_value="Create Circulation">6872e5d6076121102016f9fc7c1ed01a</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-15 12:43:35</sys_created_on>
+        <sys_id>cb1b1616076521102016f9fc7c1ed052</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Selected Catalog.Create Circulation</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>io_set_item_cb1b1616076521102016f9fc7c1ed052</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-17 13:49:01</sys_updated_on>
+        <variable_set display_value="Selected Catalog">890b1616076521102016f9fc7c1ed021</variable_set>
+    </io_set_item>
+</record_update>

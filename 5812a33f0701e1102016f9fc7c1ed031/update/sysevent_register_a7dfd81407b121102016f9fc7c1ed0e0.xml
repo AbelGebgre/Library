@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <caller_access/>
+        <description>Scheduled Script Execution Check Circulation Overdue</description>
+        <event_name>x_976190_library.duedate</event_name>
+        <fired_by>Scheduled Script Execution: Check Circulation Overdue</fired_by>
+        <queue/>
+        <suffix>duedate</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-21 08:54:14</sys_created_on>
+        <sys_id>a7dfd81407b121102016f9fc7c1ed0e0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_976190_library.duedate</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sysevent_register_a7dfd81407b121102016f9fc7c1ed0e0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-21 08:54:32</sys_updated_on>
+        <table>x_976190_library_circulation</table>
+    </sysevent_register>
+</record_update>

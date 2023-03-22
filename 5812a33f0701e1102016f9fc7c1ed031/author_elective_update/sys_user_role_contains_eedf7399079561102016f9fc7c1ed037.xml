@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="DELETE">
+        <contains display_value="canvas_user" name="canvas_user">8536f54bc713330072b211d4d8c26080</contains>
+        <role display_value="x_976190_library.fulfiller" name="x_976190_library.fulfiller">e884f898079525102016f9fc7c1ed00e</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-28 07:14:06</sys_created_on>
+        <sys_id>eedf7399079561102016f9fc7c1ed037</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>canvas_user.x_976190_library.fulfiller</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sys_user_role_contains_eedf7399079561102016f9fc7c1ed037</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-28 07:14:06</sys_updated_on>
+    </sys_user_role_contains>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>sys_user_role_contains_eedf7399079561102016f9fc7c1ed037</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains"><sys_user_role_contains action="INSERT_OR_UPDATE"><contains display_value="canvas_user" name="canvas_user">8536f54bc713330072b211d4d8c26080</contains><role display_value="x_976190_library.fulfiller" name="x_976190_library.fulfiller">e884f898079525102016f9fc7c1ed00e</role><sys_class_name>sys_user_role_contains</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-02-28 07:14:06</sys_created_on><sys_id>eedf7399079561102016f9fc7c1ed037</sys_id><sys_mod_count>0</sys_mod_count><sys_name>canvas_user.x_976190_library.fulfiller</sys_name><sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package><sys_policy/><sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope><sys_update_name>sys_user_role_contains_eedf7399079561102016f9fc7c1ed037</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-02-28 07:14:06</sys_updated_on></sys_user_role_contains></record_update>]]></payload>
+        <payload_hash>-1317373855</payload_hash>
+        <record_name>canvas_user.x_976190_library.fulfiller</record_name>
+        <reverted_from/>
+        <source>f1cde3d1075561102016f9fc7c1ed0e4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-28 07:14:06</sys_created_on>
+        <sys_id>aadf7399079561102016f9fc7c1ed03d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18696df0fa00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-28 07:14:06</sys_updated_on>
+        <type>Contained Role</type>
+        <update_guid>aedf73994d956110c7524778f8ca873c</update_guid>
+        <update_guid_history>aedf73994d956110c7524778f8ca873c:-1317373855</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-14 11:59:42</sys_created_on>
+        <sys_db_object display_value="" name="sys_user_role_contains">sys_user_role_contains</sys_db_object>
+        <sys_id>1d7a8c12f58d40beb8c72902936a9979</sys_id>
+        <sys_metadata>eedf7399079561102016f9fc7c1ed037</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>canvas_user.x_976190_library.fulfiller</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>sys_user_role_contains_eedf7399079561102016f9fc7c1ed037</sys_update_name>
+        <sys_update_version display_value="sys_user_role_contains_eedf7399079561102016f9fc7c1ed037">aadf7399079561102016f9fc7c1ed03d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-14 11:59:42</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

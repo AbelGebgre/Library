@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard">
+    <par_dashboard action="DELETE">
+        <active>true</active>
+        <certified>false</certified>
+        <description/>
+        <experience display_value="Advanced Dashboards">8adc36706f01011089060168e25b3693</experience>
+        <grid>48</grid>
+        <name>Library-visual</name>
+        <sys_class_name>par_dashboard</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-03 13:08:40</sys_created_on>
+        <sys_id>f9cdac2207d521102016f9fc7c1ed02f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Library-visual</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>par_dashboard_f9cdac2207d521102016f9fc7c1ed02f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-03 13:08:42</sys_updated_on>
+        <sys_ux_app_config display_value="Advanced Dashboards">02dc36706f01011089060168e25b3691</sys_ux_app_config>
+        <sys_ux_app_route display_value="Library-visual">42cde86207d521102016f9fc7c1ed046</sys_ux_app_route>
+        <sys_ux_macroponent display_value="Library-visual">f1cde86207d521102016f9fc7c1ed01d</sys_ux_macroponent>
+        <sys_ux_screen display_value="Library-visual default">3dcde86207d521102016f9fc7c1ed020</sys_ux_screen>
+        <sys_ux_screen_type display_value="Library-visual">f5cde86207d521102016f9fc7c1ed01a</sys_ux_screen_type>
+    </par_dashboard>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>par_dashboard_f9cdac2207d521102016f9fc7c1ed02f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard"><par_dashboard action="INSERT_OR_UPDATE"><active>true</active><certified>false</certified><description/><experience display_value="Advanced Dashboards">8adc36706f01011089060168e25b3693</experience><grid>48</grid><name>Library-visual</name><sys_class_name>par_dashboard</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-03-03 13:08:40</sys_created_on><sys_id>f9cdac2207d521102016f9fc7c1ed02f</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Library-visual</sys_name><sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package><sys_policy/><sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope><sys_update_name>par_dashboard_f9cdac2207d521102016f9fc7c1ed02f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-03-03 13:08:42</sys_updated_on><sys_ux_app_config display_value="Advanced Dashboards">02dc36706f01011089060168e25b3691</sys_ux_app_config><sys_ux_app_route display_value="Library-visual">42cde86207d521102016f9fc7c1ed046</sys_ux_app_route><sys_ux_macroponent display_value="Library-visual">f1cde86207d521102016f9fc7c1ed01d</sys_ux_macroponent><sys_ux_screen display_value="Library-visual default">3dcde86207d521102016f9fc7c1ed020</sys_ux_screen><sys_ux_screen_type display_value="Library-visual">f5cde86207d521102016f9fc7c1ed01a</sys_ux_screen_type></par_dashboard></record_update>]]></payload>
+        <payload_hash>1003046137</payload_hash>
+        <record_name>Library-visual</record_name>
+        <reverted_from/>
+        <source>f1cde3d1075561102016f9fc7c1ed0e4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-03 13:08:42</sys_created_on>
+        <sys_id>cecde86207d521102016f9fc7c1ed04e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186a796c9910000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-03 13:08:42</sys_updated_on>
+        <type>PAR Dashboard</type>
+        <update_guid>46cde8621ed52110caf1203524f4104e</update_guid>
+        <update_guid_history>46cde8621ed52110caf1203524f4104e:1003046137,fdcdac226dd52110265fd6eb4d281730:-1188405783</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Library-visual">290e20a207d521102016f9fc7c1ed0eb</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-03 13:09:45</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard">par_dashboard</sys_db_object>
+        <sys_id>26a97236ad6b46eb8a21c5ba55c8f6a9</sys_id>
+        <sys_metadata>f9cdac2207d521102016f9fc7c1ed02f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Library-visual</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>par_dashboard_f9cdac2207d521102016f9fc7c1ed02f</sys_update_name>
+        <sys_update_version display_value="par_dashboard_f9cdac2207d521102016f9fc7c1ed02f">cecde86207d521102016f9fc7c1ed04e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-03 13:09:45</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

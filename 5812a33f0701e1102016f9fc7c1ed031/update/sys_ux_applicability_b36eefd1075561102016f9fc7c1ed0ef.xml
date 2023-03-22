@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_applicability">
+    <sys_ux_applicability action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <api_name>x_976190_library.Audience for app library</api_name>
+        <description/>
+        <name>Audience for app library</name>
+        <roles>51c4a3330741e1102016f9fc7c1ed060,c144b498079525102016f9fc7c1ed0ea,e884f898079525102016f9fc7c1ed00e,42c470d8079525102016f9fc7c1ed053,09c4a3330741e1102016f9fc7c1ed0dd</roles>
+        <sys_class_name>sys_ux_applicability</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-28 05:58:00</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b36eefd1075561102016f9fc7c1ed0ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Audience for app library</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sys_ux_applicability_b36eefd1075561102016f9fc7c1ed0ef</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-28 05:58:00</sys_updated_on>
+    </sys_ux_applicability>
+</record_update>
