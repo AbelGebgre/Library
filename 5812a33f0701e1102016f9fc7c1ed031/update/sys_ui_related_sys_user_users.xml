@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="sys_user" version="2" view="users">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="User - Users" name="sys_user" related_list="NULL" sys_domain="global" view="23e1cbcd075121102016f9fc7c1ed058">21128341079121102016f9fc7c1ed01b</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>x_976190_library_circulation.requested_by</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-27 08:05:45</sys_created_on>
+            <sys_id>2d128341079121102016f9fc7c1ed01b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-27 08:05:45</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="User - Users" name="sys_user" related_list="NULL" sys_domain="global" view="23e1cbcd075121102016f9fc7c1ed058">21128341079121102016f9fc7c1ed01b</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>ua_user_role_ct.user</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-27 08:05:45</sys_created_on>
+            <sys_id>21128341079121102016f9fc7c1ed01c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-27 08:05:45</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="User - Users" name="sys_user" related_list="NULL" sys_domain="global" view="23e1cbcd075121102016f9fc7c1ed058">21128341079121102016f9fc7c1ed01b</list_id>
+            <order_by/>
+            <position>2</position>
+            <related_list>sys_user_has_role.user</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-27 08:05:45</sys_created_on>
+            <sys_id>25128341079121102016f9fc7c1ed01c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-27 08:05:45</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="User - Users" name="sys_user" related_list="NULL" sys_domain="global" view="23e1cbcd075121102016f9fc7c1ed058">21128341079121102016f9fc7c1ed01b</list_id>
+            <order_by/>
+            <position>3</position>
+            <related_list>sys_user_grmember.user</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-27 08:05:45</sys_created_on>
+            <sys_id>29128341079121102016f9fc7c1ed01c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-27 08:05:45</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="User - Users" name="sys_user" related_list="NULL" sys_domain="global" view="23e1cbcd075121102016f9fc7c1ed058">21128341079121102016f9fc7c1ed01b</list_id>
+            <order_by/>
+            <position>4</position>
+            <related_list>sys_user_delegate.user</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-27 08:05:45</sys_created_on>
+            <sys_id>2d128341079121102016f9fc7c1ed01c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-27 08:05:45</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="User - Users" name="sys_user" related_list="NULL" sys_domain="global" view="23e1cbcd075121102016f9fc7c1ed058">21128341079121102016f9fc7c1ed01b</list_id>
+            <order_by/>
+            <position>5</position>
+            <related_list>sys_user_has_license.user</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-27 08:05:45</sys_created_on>
+            <sys_id>21128341079121102016f9fc7c1ed01d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-27 08:05:45</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>User - Users</calculated_name>
+            <filter/>
+            <name>sys_user</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-27 08:05:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>21128341079121102016f9fc7c1ed01b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>User - Users</sys_name>
+            <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+            <sys_update_name>sys_ui_related_sys_user_users</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-27 08:05:45</sys_updated_on>
+            <sys_user/>
+            <view display_value="Users" name="users">23e1cbcd075121102016f9fc7c1ed058</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

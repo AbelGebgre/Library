@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="f86f6a49071121102016f9fc7c1ed0f3" label="Type" max_length="40" name="x_976190_library_type" text_index="true" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element display="true" label="Name" mandatory="true" max_length="40" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+    </element>
+</database>

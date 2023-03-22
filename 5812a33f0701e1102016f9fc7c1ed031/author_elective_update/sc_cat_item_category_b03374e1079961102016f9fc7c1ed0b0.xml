@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Circulation">35b23ca1079961102016f9fc7c1ed018</sc_cat_item>
+        <sc_category display_value="Can We Help You?">e15706fc0a0a0aa7007fc21e1ab70c2f</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-28 10:58:26</sys_created_on>
+        <sys_id>b03374e1079961102016f9fc7c1ed0b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Can We Help You?.Circulation</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sc_cat_item_category_b03374e1079961102016f9fc7c1ed0b0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-28 10:58:26</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>sc_cat_item_category_b03374e1079961102016f9fc7c1ed0b0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Circulation">35b23ca1079961102016f9fc7c1ed018</sc_cat_item><sc_category display_value="Can We Help You?">e15706fc0a0a0aa7007fc21e1ab70c2f</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-02-28 10:58:26</sys_created_on><sys_id>b03374e1079961102016f9fc7c1ed0b0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Can We Help You?.Circulation</sys_name><sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package><sys_policy/><sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope><sys_update_name>sc_cat_item_category_b03374e1079961102016f9fc7c1ed0b0</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-02-28 10:58:26</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>-338988136</payload_hash>
+        <record_name>Can We Help You?.Circulation</record_name>
+        <reverted_from/>
+        <source>e30f6014079525102016f9fc7c1ed0e5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-28 10:58:26</sys_created_on>
+        <sys_id>f83374e1079961102016f9fc7c1ed0b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18697ac72630000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-28 10:58:26</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>3c3374e19499611097489360157eb2b3</update_guid>
+        <update_guid_history>3c3374e19499611097489360157eb2b3:-338988136</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Can We Help You?.Circulation">62d33025079961102016f9fc7c1ed0ea</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-28 11:01:18</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>5911214644b147dd82f4a376ff8950e9</sys_id>
+        <sys_metadata>b03374e1079961102016f9fc7c1ed0b0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Can We Help You?.Circulation</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_b03374e1079961102016f9fc7c1ed0b0</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_b03374e1079961102016f9fc7c1ed0b0">f83374e1079961102016f9fc7c1ed0b4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-28 11:01:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

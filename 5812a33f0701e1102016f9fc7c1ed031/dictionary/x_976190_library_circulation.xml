@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="d51b5c5c071525102016f9fc7c1ed0ea" label="Circulation" max_length="40" name="x_976190_library_circulation" text_index="true" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Approved" max_length="40" name="approve" type="boolean"/>
+        <element label="Approved by" max_length="32" name="approved_by" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element attributes="copy_no=true,ref_ac_columns=catalog,ref_ac_columns_search=true,ref_auto_completer=AJAXTableCompleter" label="Copies" mandatory="true" max_length="32" name="copies" reference="x_976190_library_copy" reference_qual="active=true^circulation=true^booked=false^EQ" reference_qual_condition="active=true^circulation=true^booked=false^EQ" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" label="From" mandatory="true" max_length="40" name="from" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Issued at" max_length="40" name="issued_at" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Rejected at" max_length="40" name="rejected_at" type="glide_date_time"/>
+        <element label="Rejected by" max_length="32" name="rejected_by" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Remark" max_length="1000" name="remark" type="string"/>
+        <element attributes="ref_auto_completer=AJAXTableCompleter,ref_ac_columns=email,ref_ac_columns_search=true" default="javascript:gs.getUserID()" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Requested by" mandatory="true" max_length="32" name="requested_by" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference" use_dynamic_default="true"/>
+        <element attributes="edge_encryption_enabled=true" label="Returned at" max_length="40" name="returned_at" type="glide_date_time"/>
+        <element choice="3" default="new" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
+                <element inactive_on_update="false" label="Approved" sequence="1" value="approved"/>
+                <element inactive_on_update="false" label="Rejected" sequence="2" value="rejected"/>
+                <element inactive_on_update="false" label="Returned" sequence="3" value="returned"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="To" mandatory="true" max_length="40" name="to" type="glide_date"/>
+        <index name="index">
+            <element name="approved_by"/>
+        </index>
+        <index name="index2">
+            <element name="copies"/>
+        </index>
+        <index name="index3">
+            <element name="rejected_by"/>
+        </index>
+        <index name="index4">
+            <element name="requested_by"/>
+        </index>
+    </element>
+</database>

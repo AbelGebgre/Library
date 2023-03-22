@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_canvas">
+    <par_dashboard_canvas action="DELETE">
+        <dashboard display_value="Library-all">416d3b95079561102016f9fc7c1ed0a3</dashboard>
+        <dashboard_tab display_value="Tab">456d73d5079561102016f9fc7c1ed0c2</dashboard_tab>
+        <layout>[{"sys_id":"e74024a2079521102016f9fc7c1ed079","x":0,"y":0,"w":48,"h":3,"component_id":"b999eb8ac52f85df203e43cbf2352fde","component_props":"{\"filterId\":\"1gqjm0c7bdutq60st4s8\",\"filterName\":\"Date\",\"filterComponentType\":\"date\",\"datasource\":{},\"targets\":[{\"type\":\"table\",\"table\":{\"id\":\"x_976190_library_catalog\",\"label\":\"Catalog\"},\"field\":{\"id\":\"sys_created_on\",\"type\":\"glide_date_time\",\"label\":\"Created\",\"reference\":\"\"}},{\"type\":\"table\",\"table\":{\"id\":\"x_976190_library_circulation\",\"label\":\"Circulation\",\"hierarchy\":[\"x_976190_library_circulation\"]},\"field\":{\"id\":\"rejected_at\",\"type\":\"glide_date_time\",\"label\":\"Rejected at\",\"reference\":\"\"}},{\"type\":\"table\",\"table\":{\"id\":\"x_976190_library_circulation\",\"label\":\"Circulation\"},\"field\":{\"id\":\"returned_at\",\"type\":\"glide_date_time\",\"label\":\"Returned at\",\"reference\":\"\"}},{\"type\":\"table\",\"table\":{\"id\":\"x_976190_library_circulation\",\"label\":\"Circulation\",\"hierarchy\":[\"x_976190_library_circulation\"]},\"field\":{\"id\":\"issued_at\",\"type\":\"glide_date_time\",\"label\":\"Issued_at\",\"reference\":\"\"}}],\"defaultSelectedItems\":[],\"defaultSelectedDateRange\":{\"range\":\"SN_DYNAMIC_DATERANGE__LAST_7_DAYS\",\"label\":\"Last 7 days\"},\"dateFilterView\":\"calendar-reldates\",\"sort\":\"ASC\",\"enableResetToDefault\":true,\"enableClearFilter\":true,\"maxElements\":500,\"filterConfigurations\":[]}","can_edit":true}]</layout>
+        <sys_class_name>par_dashboard_canvas</sys_class_name>
+        <sys_created_by>abel.tuter</sys_created_by>
+        <sys_created_on>2023-02-28 07:03:20</sys_created_on>
+        <sys_id>4d6d73d5079561102016f9fc7c1ed0c4</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>par_dashboard_canvas_4d6d73d5079561102016f9fc7c1ed0c4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-03 12:17:39</sys_updated_on>
+    </par_dashboard_canvas>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>par_dashboard_canvas_4d6d73d5079561102016f9fc7c1ed0c4</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_canvas"><par_dashboard_canvas action="INSERT_OR_UPDATE"><dashboard display_value="Library-all">416d3b95079561102016f9fc7c1ed0a3</dashboard><dashboard_tab display_value="Tab">456d73d5079561102016f9fc7c1ed0c2</dashboard_tab><layout>[{"sys_id":"e74024a2079521102016f9fc7c1ed079","x":0,"y":0,"w":48,"h":3,"component_id":"b999eb8ac52f85df203e43cbf2352fde","component_props":"{\"filterId\":\"1gqjm0c7bdutq60st4s8\",\"filterName\":\"Date\",\"filterComponentType\":\"date\",\"datasource\":{},\"targets\":[{\"type\":\"table\",\"table\":{\"id\":\"x_976190_library_catalog\",\"label\":\"Catalog\"},\"field\":{\"id\":\"sys_created_on\",\"type\":\"glide_date_time\",\"label\":\"Created\",\"reference\":\"\"}},{\"type\":\"table\",\"table\":{\"id\":\"x_976190_library_circulation\",\"label\":\"Circulation\",\"hierarchy\":[\"x_976190_library_circulation\"]},\"field\":{\"id\":\"rejected_at\",\"type\":\"glide_date_time\",\"label\":\"Rejected at\",\"reference\":\"\"}},{\"type\":\"table\",\"table\":{\"id\":\"x_976190_library_circulation\",\"label\":\"Circulation\"},\"field\":{\"id\":\"returned_at\",\"type\":\"glide_date_time\",\"label\":\"Returned at\",\"reference\":\"\"}},{\"type\":\"table\",\"table\":{\"id\":\"x_976190_library_circulation\",\"label\":\"Circulation\",\"hierarchy\":[\"x_976190_library_circulation\"]},\"field\":{\"id\":\"issued_at\",\"type\":\"glide_date_time\",\"label\":\"Issued_at\",\"reference\":\"\"}}],\"defaultSelectedItems\":[],\"defaultSelectedDateRange\":{\"range\":\"SN_DYNAMIC_DATERANGE__LAST_7_DAYS\",\"label\":\"Last 7 days\"},\"dateFilterView\":\"calendar-reldates\",\"sort\":\"ASC\",\"enableResetToDefault\":true,\"enableClearFilter\":true,\"maxElements\":500,\"filterConfigurations\":[]}","can_edit":true}]</layout><sys_class_name>par_dashboard_canvas</sys_class_name><sys_created_by>abel.tuter</sys_created_by><sys_created_on>2023-02-28 07:03:20</sys_created_on><sys_id>4d6d73d5079561102016f9fc7c1ed0c4</sys_id><sys_mod_count>4</sys_mod_count><sys_name/><sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package><sys_policy/><sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope><sys_update_name>par_dashboard_canvas_4d6d73d5079561102016f9fc7c1ed0c4</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-03-03 12:17:39</sys_updated_on></par_dashboard_canvas></record_update>]]></payload>
+        <payload_hash>513944109</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>69cbe020079565102016f9fc7c1ed06d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-03 12:17:39</sys_created_on>
+        <sys_id>8a12a026079521102016f9fc7c1ed011</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186a7680b610000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-03 12:17:39</sys_updated_on>
+        <type>PAR Dashboard Page Canvas</type>
+        <update_guid>0212a026e095211090b195a0a4bd3911</update_guid>
+        <update_guid_history>0212a026e095211090b195a0a4bd3911:513944109,510224e254952110077caa97c2e3cea2:156159059,bbb1a4e2639521108fdd39abfca9d054:-1044025369,6f4024a2c695211044bc87a56274917d:434899397,496d73d5fc956110716acef7fafcc9c5:2061245350</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">b47e28a207d521102016f9fc7c1ed0ae</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-03 13:11:37</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_canvas">par_dashboard_canvas</sys_db_object>
+        <sys_id>6db7dac57c074d65b42c619721653c71</sys_id>
+        <sys_metadata>4d6d73d5079561102016f9fc7c1ed0c4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>par_dashboard_canvas_4d6d73d5079561102016f9fc7c1ed0c4</sys_update_name>
+        <sys_update_version display_value="par_dashboard_canvas_4d6d73d5079561102016f9fc7c1ed0c4">8a12a026079521102016f9fc7c1ed011</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-03 13:11:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

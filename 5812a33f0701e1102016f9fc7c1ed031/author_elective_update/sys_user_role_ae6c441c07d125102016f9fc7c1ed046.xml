@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="DELETE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_976190_library.type_user</name>
+        <requires_subscription>-1</requires_subscription>
+        <scoped_admin>false</scoped_admin>
+        <suffix>type_user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-24 10:56:35</sys_created_on>
+        <sys_id>ae6c441c07d125102016f9fc7c1ed046</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_976190_library.type_user</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sys_user_role_ae6c441c07d125102016f9fc7c1ed046</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-24 10:56:35</sys_updated_on>
+    </sys_user_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>sys_user_role_ae6c441c07d125102016f9fc7c1ed046</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><grantable>true</grantable><includes_roles/><name>x_976190_library.type_user</name><requires_subscription>-1</requires_subscription><scoped_admin>false</scoped_admin><suffix>type_user</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-02-24 10:56:35</sys_created_on><sys_id>ae6c441c07d125102016f9fc7c1ed046</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_976190_library.type_user</sys_name><sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package><sys_policy/><sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope><sys_update_name>sys_user_role_ae6c441c07d125102016f9fc7c1ed046</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-02-24 10:56:35</sys_updated_on></sys_user_role></record_update>]]></payload>
+        <payload_hash>-1021842145</payload_hash>
+        <record_name>x_976190_library.type_user</record_name>
+        <reverted_from/>
+        <source>b5dde30c075125102016f9fc7c1ed033</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-24 10:56:35</sys_created_on>
+        <sys_id>fa6c441c07d125102016f9fc7c1ed04a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186831150bc0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-24 10:56:35</sys_updated_on>
+        <type>Role</type>
+        <update_guid>fe6c441c08d125109a3d703d73b78749</update_guid>
+        <update_guid_history>fe6c441c08d125109a3d703d73b78749:-1021842145</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_976190_library.type_user">20313894079525102016f9fc7c1ed0d4</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-24 13:37:16</sys_created_on>
+        <sys_db_object display_value="" name="sys_user_role">sys_user_role</sys_db_object>
+        <sys_id>82a1df7e0de0498790d76f6e28b26ce1</sys_id>
+        <sys_metadata>ae6c441c07d125102016f9fc7c1ed046</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_976190_library.type_user</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>sys_user_role_ae6c441c07d125102016f9fc7c1ed046</sys_update_name>
+        <sys_update_version display_value="sys_user_role_ae6c441c07d125102016f9fc7c1ed046">fa6c441c07d125102016f9fc7c1ed04a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-24 13:37:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

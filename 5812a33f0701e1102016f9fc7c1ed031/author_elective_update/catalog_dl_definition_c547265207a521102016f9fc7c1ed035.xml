@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_dl_definition">
+    <catalog_dl_definition action="DELETE">
+        <active>true</active>
+        <applies_to>set</applies_to>
+        <catalog_item/>
+        <matcher_table>x_976190_library_copy</matcher_table>
+        <name>Copy Data Lookup</name>
+        <run_on_form_change>true</run_on_form_change>
+        <run_on_insert>true</run_on_insert>
+        <run_on_update>false</run_on_update>
+        <source_table/>
+        <sys_class_name>catalog_dl_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-15 13:37:34</sys_created_on>
+        <sys_id>c547265207a521102016f9fc7c1ed035</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Copy Data Lookup</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>catalog_dl_definition_c547265207a521102016f9fc7c1ed035</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-15 13:40:57</sys_updated_on>
+        <variable_set display_value="Selected Catalog">890b1616076521102016f9fc7c1ed021</variable_set>
+    </catalog_dl_definition>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>catalog_dl_definition_c547265207a521102016f9fc7c1ed035</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_dl_definition"><catalog_dl_definition action="INSERT_OR_UPDATE"><active>true</active><applies_to>set</applies_to><catalog_item/><matcher_table>x_976190_library_copy</matcher_table><name>Copy Data Lookup</name><run_on_form_change>true</run_on_form_change><run_on_insert>true</run_on_insert><run_on_update>false</run_on_update><source_table/><sys_class_name>catalog_dl_definition</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-03-15 13:37:34</sys_created_on><sys_id>c547265207a521102016f9fc7c1ed035</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Copy Data Lookup</sys_name><sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package><sys_policy/><sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope><sys_update_name>catalog_dl_definition_c547265207a521102016f9fc7c1ed035</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-03-15 13:40:57</sys_updated_on><variable_set display_value="Selected Catalog">890b1616076521102016f9fc7c1ed021</variable_set></catalog_dl_definition></record_update>]]></payload>
+        <payload_hash>-2075149044</payload_hash>
+        <record_name>Copy Data Lookup</record_name>
+        <reverted_from/>
+        <source>b8b9d956072121102016f9fc7c1ed016</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-15 13:40:57</sys_created_on>
+        <sys_id>6738269207a521102016f9fc7c1ed007</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186e5809f2d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-15 13:40:57</sys_updated_on>
+        <type>Catalog Data Lookup Definitions</type>
+        <update_guid>eb3826921ea52110adf3a00418817f06</update_guid>
+        <update_guid_history>eb3826921ea52110adf3a00418817f06:-2075149044,08f72a52a0a52110ac333c1bc49840df:-199627970,4a77e65218a52110c6f01e7479b90c81:-2075149044</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Copy Data Lookup">605d1cd307a9a1102016f9fc7c1ed0d3</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-18 06:07:55</sys_created_on>
+        <sys_db_object display_value="" name="catalog_dl_definition">catalog_dl_definition</sys_db_object>
+        <sys_id>48c7edea2b7b4e309c872ce237ce3640</sys_id>
+        <sys_metadata>c547265207a521102016f9fc7c1ed035</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Copy Data Lookup</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>catalog_dl_definition_c547265207a521102016f9fc7c1ed035</sys_update_name>
+        <sys_update_version display_value="catalog_dl_definition_c547265207a521102016f9fc7c1ed035">6738269207a521102016f9fc7c1ed007</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-18 06:07:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

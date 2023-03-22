@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="446f08f107e521102016f9fc7c1ed048" extends="sys_user" label="User" max_length="40" name="x_976190_library_user" type="collection">
+        <element label="Branch" max_length="32" name="branch" reference="x_976190_library_branch" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <index name="index">
+            <element name="branch"/>
+        </index>
+    </element>
+</database>

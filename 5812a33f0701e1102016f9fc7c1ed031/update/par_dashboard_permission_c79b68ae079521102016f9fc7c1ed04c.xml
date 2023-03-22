@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_permission">
+    <par_dashboard_permission action="INSERT_OR_UPDATE">
+        <can_read>true</can_read>
+        <can_share>true</can_share>
+        <can_write>true</can_write>
+        <dashboard display_value="Library">e56eafd11055611062cfa1de1a9202b2</dashboard>
+        <group display_value="Library: Admin" name="Library: Admin">c0f018e0071565102016f9fc7c1ed0c1</group>
+        <role/>
+        <sys_class_name>par_dashboard_permission</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-03 12:59:13</sys_created_on>
+        <sys_id>c79b68ae079521102016f9fc7c1ed04c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>e56eafd11055611062cfa1de1a9202b2</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>par_dashboard_permission_c79b68ae079521102016f9fc7c1ed04c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-03 12:59:13</sys_updated_on>
+        <user/>
+    </par_dashboard_permission>
+</record_update>

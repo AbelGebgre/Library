@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-24 13:44:53</sys_created_on>
+        <sys_id>04f2bc18079525102016f9fc7c1ed043</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_976190_library_copy.x_976190_library.Staff</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_security_acl display_value="x_976190_library_copy">4cf2bc18079525102016f9fc7c1ed040</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_04f2bc18079525102016f9fc7c1ed043</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-24 13:44:53</sys_updated_on>
+        <sys_user_role display_value="x_976190_library.Staff" name="x_976190_library.Staff">7be2bc18079525102016f9fc7c1ed028</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>sys_security_acl_role_04f2bc18079525102016f9fc7c1ed043</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-02-24 13:44:53</sys_created_on><sys_id>04f2bc18079525102016f9fc7c1ed043</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_976190_library_copy.x_976190_library.Staff</sys_name><sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package><sys_policy/><sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope><sys_security_acl display_value="x_976190_library_copy">4cf2bc18079525102016f9fc7c1ed040</sys_security_acl><sys_update_name>sys_security_acl_role_04f2bc18079525102016f9fc7c1ed043</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-02-24 13:44:53</sys_updated_on><sys_user_role display_value="x_976190_library.Staff" name="x_976190_library.Staff">7be2bc18079525102016f9fc7c1ed028</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>1624183054</payload_hash>
+        <record_name>x_976190_library_copy.x_976190_library.Staff</record_name>
+        <reverted_from/>
+        <source>e30f6014079525102016f9fc7c1ed0e5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-24 13:44:53</sys_created_on>
+        <sys_id>48f2bc18079525102016f9fc7c1ed045</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18683ab66a80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-24 13:44:53</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>4cf2bc18339525101706918d9bd81a44</update_guid>
+        <update_guid_history>4cf2bc18339525101706918d9bd81a44:1624183054</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_976190_library_copy.x_976190_library.Staff">3114f098079525102016f9fc7c1ed096</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-24 13:49:55</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>5336dd0e21b248428332c29c5240d9c4</sys_id>
+        <sys_metadata>04f2bc18079525102016f9fc7c1ed043</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_976190_library_copy.x_976190_library.Staff</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent display_value="x_976190_library_copy">4cf2bc18079525102016f9fc7c1ed040</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_04f2bc18079525102016f9fc7c1ed043</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_04f2bc18079525102016f9fc7c1ed043">48f2bc18079525102016f9fc7c1ed045</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-24 13:49:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

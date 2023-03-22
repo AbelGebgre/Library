@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="DELETE">
+        <active>true</active>
+        <answer>Type</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Type</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Application File" name="Application File">1ae2c062073021102016f9fc7c1ed046</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-24 10:56:36</sys_created_on>
+        <sys_id>836c485c07d125102016f9fc7c1ed062</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Type</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sys_wizard_answer_836c485c07d125102016f9fc7c1ed062</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-24 10:56:36</sys_updated_on>
+        <table/>
+        <target_url>x_976190_library_type.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>sys_wizard_answer_836c485c07d125102016f9fc7c1ed062</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer"><sys_wizard_answer action="INSERT_OR_UPDATE"><active>true</active><answer>Type</answer><button_label/><dependent_value/><element/><name>Type</name><next_question/><order>100</order><payload_name/><question display_value="Application File" name="Application File">1ae2c062073021102016f9fc7c1ed046</question><roles/><script/><sys_class_name>sys_wizard_answer</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-02-24 10:56:36</sys_created_on><sys_id>836c485c07d125102016f9fc7c1ed062</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Type</sys_name><sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package><sys_policy/><sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope><sys_update_name>sys_wizard_answer_836c485c07d125102016f9fc7c1ed062</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-02-24 10:56:36</sys_updated_on><table/><target_url>x_976190_library_type.do</target_url><type>1</type></sys_wizard_answer></record_update>]]></payload>
+        <payload_hash>709241283</payload_hash>
+        <record_name>Type</record_name>
+        <reverted_from/>
+        <source>f3b20822073021102016f9fc7c1ed060</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2023-02-06 13:29:17</sys_created_on>
+        <sys_id>959c4c5c07d125102016f9fc7c1ed0e5</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>18626eaa3c80000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Answer</type>
+        <update_guid>559c4c5c2dd12510104a8149da74f1e5</update_guid>
+        <update_guid_history>559c4c5c2dd12510104a8149da74f1e5:709241283</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-24 10:57:18</sys_created_on>
+        <sys_db_object display_value="" name="sys_wizard_answer">sys_wizard_answer</sys_db_object>
+        <sys_id>67252a2de02b48b89ba559c5fd194244</sys_id>
+        <sys_metadata>836c485c07d125102016f9fc7c1ed062</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Type</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent display_value="Application File">1ae2c062073021102016f9fc7c1ed046</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>sys_wizard_answer_836c485c07d125102016f9fc7c1ed062</sys_update_name>
+        <sys_update_version display_value="sys_wizard_answer_836c485c07d125102016f9fc7c1ed062">959c4c5c07d125102016f9fc7c1ed0e5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-24 10:57:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

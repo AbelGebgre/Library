@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_976190_library.CheckDate</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>CheckDate</name>
+        <script><![CDATA[var CheckDate = Class.create();
+CheckDate.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    isPastDate: function() {
+        var rightnow = new GlideDateTime().getLocalDate();
+        var testdate = new GlideDateTime(this.getParameter('sysparm_startDate')).getLocalDate();
+        return testdate.compareTo(rightnow);
+
+    },
+    isSameDay: function() {
+        var to = new GlideDateTime(this.getParameter('sysparm_to')).getLocalDate();
+        var from = new GlideDateTime(this.getParameter('sysparm_from')).getLocalDate();
+        return to.compareTo(from);
+		
+    },
+    type: 'CheckDate'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-08 08:25:14</sys_created_on>
+        <sys_id>9e0b91c407a121102016f9fc7c1ed084</sys_id>
+        <sys_mod_count>45</sys_mod_count>
+        <sys_name>CheckDate</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sys_script_include_9e0b91c407a121102016f9fc7c1ed084</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-17 13:58:43</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>sys_script_include_9e0b91c407a121102016f9fc7c1ed084</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_976190_library.CheckDate&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;CheckDate&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var CheckDate = Class.create();
+CheckDate.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    isPastDate: function() {
+        var rightnow = new GlideDateTime().getLocalDate();
+        var testdate = new GlideDateTime(this.getParameter('sysparm_startDate')).getLocalDate();
+        return testdate.compareTo(rightnow);
+
+    },
+    isSameDay: function() {
+        var to = new GlideDateTime(this.getParameter('sysparm_to')).getLocalDate();
+        var from = new GlideDateTime(this.getParameter('sysparm_from')).getLocalDate();
+        return to.compareTo(from);
+		
+    },
+    type: 'CheckDate'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-08 08:25:14&lt;/sys_created_on&gt;&lt;sys_id&gt;9e0b91c407a121102016f9fc7c1ed084&lt;/sys_id&gt;&lt;sys_mod_count&gt;45&lt;/sys_mod_count&gt;&lt;sys_name&gt;CheckDate&lt;/sys_name&gt;&lt;sys_package display_value="Library" source="x_976190_library"&gt;5812a33f0701e1102016f9fc7c1ed031&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Library"&gt;5812a33f0701e1102016f9fc7c1ed031&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_9e0b91c407a121102016f9fc7c1ed084&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-17 13:58:43&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>771629889</payload_hash>
+        <record_name>CheckDate</record_name>
+        <reverted_from/>
+        <source>b8b9d956072121102016f9fc7c1ed016</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-17 13:58:43</sys_created_on>
+        <sys_id>5f7ff40b072d61102016f9fc7c1ed0aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186efdd9b710000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-17 13:58:43</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>d37ff40b912d61100aff85b00e716baa</update_guid>
+        <update_guid_history>d37ff40b912d61100aff85b00e716baa:771629889,9d8ab625d9612110bca8e0a524ccf49e:-1605531472,9b76f2ed8a21211003412609760b6a23:164188772,12e23ee9652121106717251d9be79858:-613129441,a8b2722d3e212110535f0a780b365d2b:-392434130,fef1f6a9d721211091f9f8938e49d3da:790917847,c5c132e92321211014f289f09f8e24db:-179979193,5731f6a99d212110aefdec4c129172d0:1158844016,e130fe29ce212110db65048177f9ee06:537436111,decf6e29c52121107ad92165f0c41da3:334810703,0cbfeee53a212110604d7de1c14d2579:-1635580969,3f81550d54e16110c66356076d0123b3:-1317545699,1421910dfde1611057263d1cb862e37b:-1974468387,b3f0d5c987e1611070871a6f036c5453:-632909341,02a091c9d8e16110a6e140ac0add165e:-960917588,e37099c94ee16110847b587f363ffc8d:-1601987700,1740d5c91de16110c8f9e5209636374c:-552278354,4f0055492fe16110a493f6695b285f6c:-1474992664,6fefc949bde16110095bdc1f8cf6eece:218066568,bd31d28011a5211016e76da4e245f786:501780264,a6111240f8a52110a8b3687f16144dbc:-26521497,f8b09280c4a52110471e4cd5c22d44f7:2017127772,a7af0e00c9a5211063d18bd2003dabb1:681129736,a22f4ecc96652110bf0af249ef3c3d29:594760274,47dece8c3d6521104df43cebd3df2ba8:-1974549422,ec7ecacc97652110df2c913dc3f8afc6:229509407,04dd4a4c20652110bff49778ca45e857:1256420553,49ad8a4cb465211015aaf4484dfda908:-870103675,787c8e0c52652110feb329e0a0c094e2:-589085549,0a2c424cc565211037a23dd1ece96e8b:1192295255,bdfb8e0cda6521108ef90f5ede5b0f3c:1068624749,89d9c288c76521100b664e35e88be404:1466228966,c2698288286521106880f7833cc1ed90:1122105765,2709024872652110c6a3ef7010a3d808:1300451512,68e8ca087e65211021b57077f6858cca:-1038292917,2b388e08286521102b03e3ca23d07371:-2070459029,25264684c6652110fb446d40bdb9ebb7:-114088134,ebb5c284e16521103531ee8943eda5fd:-1000666409,d6c2ce402365211026430d95412f6422:-436208932,19a1ce4031652110539b76a97b4d5916:1456757755,d2e1e54c32a121108d9e5721ff75cf2b:-949135394,dc61254c6ea1211097264a5b1a5c2b8e:1745249042,6a31e90c36a121103867c7bb00450a3f:1231984721,6e70610c18a12110b8c982d8a6f1246a:-1531153400,cafd9548f4a121101e002d1f06a66b1f:501084248,a2dc158478a1211024128b8c66d8317e:-1855634856</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-20 12:52:15</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>65b5bf70234e438093aa97e040ebd100</sys_id>
+        <sys_metadata>9e0b91c407a121102016f9fc7c1ed084</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CheckDate</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>sys_script_include_9e0b91c407a121102016f9fc7c1ed084</sys_update_name>
+        <sys_update_version display_value="sys_script_include_9e0b91c407a121102016f9fc7c1ed084">5f7ff40b072d61102016f9fc7c1ed0aa</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-20 12:52:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_list_control">
+    <sys_ui_list_control action="DELETE">
+        <columns_condition/>
+        <disable_nlq>false</disable_nlq>
+        <edit_condition/>
+        <edit_default_filter/>
+        <edit_roles/>
+        <empty_condition/>
+        <filter_condition/>
+        <filter_roles/>
+        <hierarchical_lists>false</hierarchical_lists>
+        <label/>
+        <link_condition/>
+        <link_roles>x_976190_library.fulfiller,x_976190_library.admin</link_roles>
+        <list_edit_insert_row>true</list_edit_insert_row>
+        <list_edit_ref_qual_tag/>
+        <list_edit_type/>
+        <name>x_976190_library_author</name>
+        <new_condition/>
+        <new_roles/>
+        <omit_columns_if_empty>false</omit_columns_if_empty>
+        <omit_count>false</omit_count>
+        <omit_count_views>false</omit_count_views>
+        <omit_count_views_list/>
+        <omit_drilldown_link>false</omit_drilldown_link>
+        <omit_edit_button>true</omit_edit_button>
+        <omit_filters>true</omit_filters>
+        <omit_if_empty>false</omit_if_empty>
+        <omit_links>false</omit_links>
+        <omit_new_button>true</omit_new_button>
+        <related_list/>
+        <sys_class_name>sys_ui_list_control</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-28 08:27:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2060102d07d561102016f9fc7c1ed09c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_976190_library_author</sys_name>
+        <sys_overrides display_value="">global</sys_overrides>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sys_ui_list_control_2060102d07d561102016f9fc7c1ed09c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-28 08:27:38</sys_updated_on>
+    </sys_ui_list_control>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>sys_ui_list_control_2060102d07d561102016f9fc7c1ed09c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_list_control"><sys_ui_list_control action="INSERT_OR_UPDATE"><columns_condition/><disable_nlq>false</disable_nlq><edit_condition/><edit_default_filter/><edit_roles/><empty_condition/><filter_condition/><filter_roles/><hierarchical_lists>false</hierarchical_lists><label/><link_condition/><link_roles>x_976190_library.fulfiller,x_976190_library.admin</link_roles><list_edit_insert_row>true</list_edit_insert_row><list_edit_ref_qual_tag/><list_edit_type/><name>x_976190_library_author</name><new_condition/><new_roles/><omit_columns_if_empty>false</omit_columns_if_empty><omit_count>false</omit_count><omit_count_views>false</omit_count_views><omit_count_views_list/><omit_drilldown_link>false</omit_drilldown_link><omit_edit_button>true</omit_edit_button><omit_filters>true</omit_filters><omit_if_empty>false</omit_if_empty><omit_links>false</omit_links><omit_new_button>true</omit_new_button><related_list/><sys_class_name>sys_ui_list_control</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-02-28 08:27:38</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>2060102d07d561102016f9fc7c1ed09c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_976190_library_author</sys_name><sys_overrides display_value="">global</sys_overrides><sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package><sys_policy/><sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope><sys_update_name>sys_ui_list_control_2060102d07d561102016f9fc7c1ed09c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-02-28 08:27:38</sys_updated_on></sys_ui_list_control></record_update>]]></payload>
+        <payload_hash>1063487231</payload_hash>
+        <record_name>x_976190_library_author</record_name>
+        <reverted_from/>
+        <source>f1cde3d1075561102016f9fc7c1ed0e4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-28 08:27:39</sys_created_on>
+        <sys_id>ffa0542d07d561102016f9fc7c1ed0b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186972264890000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-28 08:27:39</sys_updated_on>
+        <type>List Control</type>
+        <update_guid>b3a0542da4d561101a018a051605b5b0</update_guid>
+        <update_guid_history>b3a0542da4d561101a018a051605b5b0:1063487231</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-28 08:31:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_list_control">sys_ui_list_control</sys_db_object>
+        <sys_id>813f0f8062164480a6b134defb068100</sys_id>
+        <sys_metadata>2060102d07d561102016f9fc7c1ed09c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_976190_library_author</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent display_value="Author">be456380075125102016f9fc7c1ed08b</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>sys_ui_list_control_2060102d07d561102016f9fc7c1ed09c</sys_update_name>
+        <sys_update_version display_value="sys_ui_list_control_2060102d07d561102016f9fc7c1ed09c">ffa0542d07d561102016f9fc7c1ed0b0</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-28 08:31:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_stream_segment">
+    <sys_sg_item_stream_segment action="INSERT_OR_UPDATE">
+        <empty_state/>
+        <interleave_order_direction>desc</interleave_order_direction>
+        <max_offline_rows>500</max_offline_rows>
+        <name>List Item Stream Segment</name>
+        <order>0</order>
+        <screen display_value="List">0a3180b107a521102016f9fc7c1ed046</screen>
+        <sys_class_name>sys_sg_item_stream_segment</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-13 12:14:14</sys_created_on>
+        <sys_id>423180b107a521102016f9fc7c1ed049</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>List Item Stream Segment</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sys_sg_item_stream_segment_423180b107a521102016f9fc7c1ed049</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-13 12:26:19</sys_updated_on>
+    </sys_sg_item_stream_segment>
+</record_update>

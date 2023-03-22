@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="247f8c10071525102016f9fc7c1ed00d" label="Copy" max_length="40" name="x_976190_library_copy" text_index="true" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Booked" max_length="40" name="booked" type="boolean"/>
+        <element attributes="encode_utf8=false" label="Branch" mandatory="true" max_length="32" name="branch" reference="x_976190_library_branch" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element attributes="encode_utf8=false" label="Catalog" mandatory="true" max_length="32" name="catalog" reference="x_976190_library_catalog" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element default="true" label="Circulation" max_length="40" name="circulation" type="boolean"/>
+        <element label="Copy no" mandatory="true" max_length="40" name="copy_no" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Remark" max_length="1000" name="remark" type="string"/>
+        <index name="index">
+            <element name="branch"/>
+        </index>
+        <index name="index2">
+            <element name="catalog"/>
+        </index>
+    </element>
+</database>

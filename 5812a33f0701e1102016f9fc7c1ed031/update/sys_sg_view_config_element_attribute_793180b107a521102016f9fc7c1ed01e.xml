@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_config_element_attribute">
+    <sys_sg_view_config_element_attribute action="INSERT_OR_UPDATE">
+        <description/>
+        <name display_value="FieldLabel">c90fd1c2b7321010df65f6efce11a9d2</name>
+        <sys_class_name>sys_sg_view_config_element_attribute</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-13 12:14:14</sys_created_on>
+        <sys_id>793180b107a521102016f9fc7c1ed01e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>c90fd1c2b7321010df65f6efce11a9d2</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sys_sg_view_config_element_attribute_793180b107a521102016f9fc7c1ed01e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-13 12:14:14</sys_updated_on>
+        <translated_value/>
+        <value>issued_at</value>
+        <view_config_element display_value="issued_at-FieldLabel">b93180b107a521102016f9fc7c1ed01c</view_config_element>
+    </sys_sg_view_config_element_attribute>
+    <sys_translated_text action="delete_multiple" query="documentkey=793180b107a521102016f9fc7c1ed01e"/>
+</record_update>

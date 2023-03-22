@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="9954c4d007d125102016f9fc7c1ed0e4" label="Catalog" max_length="40" name="x_976190_library_catalog" text_index="true" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element attributes="encode_utf8=false" label="Author" max_length="32" name="author" reference="x_976190_library_author" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" label="Call no" max_length="1000" name="call_no" type="string"/>
+        <element attributes="encode_utf8=false" label="Category" mandatory="true" max_length="32" name="category" reference="x_976190_library_category" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="1000" name="description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Edition" max_length="40" name="edition" type="string"/>
+        <element label="Image" max_length="40" name="image" type="user_image"/>
+        <element attributes="edge_encryption_enabled=true" label="Isbn10" max_length="40" name="isbn10" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Isbn13" max_length="40" name="isbn13" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Pages" max_length="40" name="pages" type="integer"/>
+        <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="Price" max_length="20" name="price" type="price"/>
+        <element attributes="encode_utf8=false" label="Publisher" max_length="32" name="publisher" reference="x_976190_library_publisher" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="glide_list"/>
+        <element label="Rate" max_length="40" name="rate" type="float"/>
+        <element attributes="edge_encryption_enabled=true" label="Series" max_length="40" name="series" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Title" mandatory="true" max_length="40" name="title" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Type" mandatory="true" max_length="40" name="type" reference="x_976190_library_type" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="glide_list"/>
+        <element label="View" max_length="40" name="view" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Volume" max_length="40" name="volume" type="string"/>
+        <element label="Year" max_length="40" name="year" type="string"/>
+        <index name="index">
+            <element name="author"/>
+        </index>
+        <index name="index2">
+            <element name="category"/>
+        </index>
+        <index name="index3">
+            <element name="number"/>
+        </index>
+        <index name="index4">
+            <element name="publisher"/>
+        </index>
+    </element>
+</database>

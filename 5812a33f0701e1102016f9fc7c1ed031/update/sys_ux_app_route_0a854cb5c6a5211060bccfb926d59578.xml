@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="INSERT_OR_UPDATE">
+        <app_config display_value="Library Config">99854cb507a521102016f9fc7c1ed009</app_config>
+        <description/>
+        <extension_point/>
+        <fields/>
+        <icon/>
+        <name>Preferences</name>
+        <optional_parameters/>
+        <order>0</order>
+        <parent_macroponent display_value="Settings Page">4e854cb5c6a52110e876550089a31c76</parent_macroponent>
+        <parent_macroponent_composition_element_id>tab_set_1</parent_macroponent_composition_element_id>
+        <route_type>cketv4fts00003g8yxah9e3hs</route_type>
+        <screen_type display_value="Preferences">82854cb534a521107b00fce9c4710978</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-03-13 12:33:07</sys_created_on>
+        <sys_id>0a854cb5c6a5211060bccfb926d59578</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Preferences</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sys_ux_app_route_0a854cb5c6a5211060bccfb926d59578</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-03-13 12:33:07</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="delete_multiple" query="documentkey=0a854cb5c6a5211060bccfb926d59578"/>
+</record_update>

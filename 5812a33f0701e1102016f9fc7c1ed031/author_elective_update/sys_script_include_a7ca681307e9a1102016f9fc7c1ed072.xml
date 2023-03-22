@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_976190_library.Copy</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>Copy</name>
+        <script><![CDATA[var Copy = Class.create();
+Copy.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    getCopies: function() {
+		var arr = [];
+        var query = new GlideRecord('x_976190_library.copy');
+        query.addEncodedQuery(this.getParameter('sysparm_query'));
+        query.addJoinQuery('x_976190_library.catalog','sys_id','catalog');
+        return this.getParameter('sysparm_query');
+        //while (query.next()) {
+          //  var obj = {
+            //    copy: query.getValue('number'),
+              //  copy_no: query.getValue('copy_no'),
+               // catalog: query.getValue('catalog'),
+            //};
+            //arr.push(obj);
+        //}
+        //return arr;
+    },
+    type: 'Copy'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-18 07:06:50</sys_created_on>
+        <sys_id>a7ca681307e9a1102016f9fc7c1ed072</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>Copy</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sys_script_include_a7ca681307e9a1102016f9fc7c1ed072</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-18 08:33:27</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>sys_script_include_a7ca681307e9a1102016f9fc7c1ed072</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_976190_library.Copy&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;Copy&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var Copy = Class.create();
+Copy.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    getCopies: function() {
+		var arr = [];
+        var query = new GlideRecord('x_976190_library.copy');
+        query.addEncodedQuery(this.getParameter('sysparm_query'));
+        query.addJoinQuery('x_976190_library.catalog','sys_id','catalog');
+        return this.getParameter('sysparm_query');
+        //while (query.next()) {
+          //  var obj = {
+            //    copy: query.getValue('number'),
+              //  copy_no: query.getValue('copy_no'),
+               // catalog: query.getValue('catalog'),
+            //};
+            //arr.push(obj);
+        //}
+        //return arr;
+    },
+    type: 'Copy'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-18 07:06:50&lt;/sys_created_on&gt;&lt;sys_id&gt;a7ca681307e9a1102016f9fc7c1ed072&lt;/sys_id&gt;&lt;sys_mod_count&gt;15&lt;/sys_mod_count&gt;&lt;sys_name&gt;Copy&lt;/sys_name&gt;&lt;sys_package display_value="Library" source="x_976190_library"&gt;5812a33f0701e1102016f9fc7c1ed031&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Library"&gt;5812a33f0701e1102016f9fc7c1ed031&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_a7ca681307e9a1102016f9fc7c1ed072&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-18 08:33:27&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1233846795</payload_hash>
+        <record_name>Copy</record_name>
+        <reverted_from/>
+        <source>b8b9d956072121102016f9fc7c1ed016</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-18 08:33:27</sys_created_on>
+        <sys_id>d4ae701b072da1102016f9fc7c1ed015</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186f3da2c620000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-18 08:33:27</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>5cae701b222da1108c86ff3db231c914</update_guid>
+        <update_guid_history>5cae701b222da1108c86ff3db231c914:1233846795,247bbcd3f32da110899528475ce00014:2072436051,236830df23e9a1104ec537fbe9df9f70:520946805,cfc5385f15e9a110b287709fdae4ff32:117775701,5f45385f29e9a11085d4172d68ce0e70:310556854,43c4b01f23e9a110224096e113a052bc:1440553887,cc82389b5fe9a110b19460432d28fbce:-1793619393,b6427c5b8ae9a110ad77efb3b02b48ec:742339743,71e0f4973ce9a110489573126fda5724:-773460481,e9a0f49794e9a1104b2240ab27d4ad00:1440553887,4850b81b08e9a1109eb61194d04c346e:1617030760,af7fec57aae9a110949f999f2ccbed42:501982312,cafd2c13d6e9a110a507ffe25ab36fc7:146597652,902dec9317e9a110771204b83428fa92:234288085,acea6013eae9a1105e2c4d63e7e3275b:-2050006479,77ca681336e9a11074bade1aed044574:771629889</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-20 11:47:37</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>cdc5edebdd264ac19a6abafc2e7702d1</sys_id>
+        <sys_metadata>a7ca681307e9a1102016f9fc7c1ed072</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Copy</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>sys_script_include_a7ca681307e9a1102016f9fc7c1ed072</sys_update_name>
+        <sys_update_version display_value="sys_script_include_a7ca681307e9a1102016f9fc7c1ed072">d4ae701b072da1102016f9fc7c1ed015</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-20 11:47:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

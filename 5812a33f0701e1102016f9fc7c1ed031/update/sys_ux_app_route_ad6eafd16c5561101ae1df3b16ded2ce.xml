@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="INSERT_OR_UPDATE">
+        <app_config display_value="Library Config">e96eafd1ee556110ffcb91e168364bd3</app_config>
+        <description/>
+        <extension_point/>
+        <fields/>
+        <icon/>
+        <name>Dashboards</name>
+        <optional_parameters>sysId,openInEditMode</optional_parameters>
+        <order>0</order>
+        <parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent>
+        <parent_macroponent_composition_element_id/>
+        <route_type>dashboards</route_type>
+        <screen_type display_value="Dashboards">ad6eafd128556110105f1f615e92b2b6</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-28 05:57:55</sys_created_on>
+        <sys_id>ad6eafd16c5561101ae1df3b16ded2ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Dashboards</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sys_ux_app_route_ad6eafd16c5561101ae1df3b16ded2ce</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-28 05:57:55</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="delete_multiple" query="documentkey=ad6eafd16c5561101ae1df3b16ded2ce"/>
+</record_update>

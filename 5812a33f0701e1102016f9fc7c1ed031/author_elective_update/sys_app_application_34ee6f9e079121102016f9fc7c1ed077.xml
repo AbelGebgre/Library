@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="DELETE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name/>
+        <order>100</order>
+        <roles>x_976190_library.admin,x_976190_library.approver,x_976190_library.fulfiller,x_976190_library.requester,x_976190_library.user</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-03 08:34:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>34ee6f9e079121102016f9fc7c1ed077</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Library</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sys_app_application_34ee6f9e079121102016f9fc7c1ed077</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-03 08:34:20</sys_updated_on>
+        <title>Library</title>
+        <view_name/>
+    </sys_app_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>sys_app_application_34ee6f9e079121102016f9fc7c1ed077</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name/><order>100</order><roles>x_976190_library.admin,x_976190_library.approver,x_976190_library.fulfiller,x_976190_library.requester,x_976190_library.user</roles><sys_class_name>sys_app_application</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-03-03 08:34:20</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>34ee6f9e079121102016f9fc7c1ed077</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Library</sys_name><sys_overrides/><sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package><sys_policy/><sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope><sys_update_name>sys_app_application_34ee6f9e079121102016f9fc7c1ed077</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-03-03 08:34:20</sys_updated_on><title>Library</title><view_name/></sys_app_application></record_update>]]></payload>
+        <payload_hash>740799347</payload_hash>
+        <record_name>Library</record_name>
+        <reverted_from/>
+        <source>69cbe020079565102016f9fc7c1ed06d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-03 08:34:20</sys_created_on>
+        <sys_id>0bfe2f5e079121102016f9fc7c1ed09f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186a69b97880000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-03 08:34:20</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>0ffe2f5ef19121106c231b2bbe7fa19e</update_guid>
+        <update_guid_history>0ffe2f5ef19121106c231b2bbe7fa19e:740799347</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Library">3b60bb5e079121102016f9fc7c1ed0a6</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-03 08:40:40</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_application">sys_app_application</sys_db_object>
+        <sys_id>8f671b8997f5404f95d2581f3aa79229</sys_id>
+        <sys_metadata>34ee6f9e079121102016f9fc7c1ed077</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Library</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>sys_app_application_34ee6f9e079121102016f9fc7c1ed077</sys_update_name>
+        <sys_update_version display_value="sys_app_application_34ee6f9e079121102016f9fc7c1ed077">0bfe2f5e079121102016f9fc7c1ed09f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-03 08:40:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

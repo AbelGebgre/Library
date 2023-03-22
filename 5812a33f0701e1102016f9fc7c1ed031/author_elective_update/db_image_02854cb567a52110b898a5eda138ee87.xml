@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image">
+    <db_image action="DELETE">
+        <active>true</active>
+        <category/>
+        <format/>
+        <height/>
+        <image>ca854cb5e3a52110ef5f95eaf1415286</image>
+        <name>x_976190_library.custom_portal_login.svg</name>
+        <size_bytes>12910</size_bytes>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-03-13 12:33:07</sys_created_on>
+        <sys_id>02854cb567a52110b898a5eda138ee87</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_976190_library.custom_portal_login.svg</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>db_image_02854cb567a52110b898a5eda138ee87</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-03-13 12:33:07</sys_updated_on>
+        <thumbnail/>
+        <width/>
+    </db_image>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>db_image_02854cb567a52110b898a5eda138ee87</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image"><db_image action="INSERT_OR_UPDATE"><active>true</active><category/><format/><height/><image>ca854cb5e3a52110ef5f95eaf1415286</image><name>x_976190_library.custom_portal_login.svg</name><size_bytes>12910</size_bytes><sys_class_name>db_image</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2023-03-13 12:33:07</sys_created_on><sys_id>02854cb567a52110b898a5eda138ee87</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_976190_library.custom_portal_login.svg</sys_name><sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package><sys_policy/><sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope><sys_update_name>db_image_02854cb567a52110b898a5eda138ee87</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2023-03-13 12:33:07</sys_updated_on><thumbnail/><width/></db_image></record_update>]]></payload>
+        <payload_hash>-339101449</payload_hash>
+        <record_name>x_976190_library.custom_portal_login.svg</record_name>
+        <reverted_from/>
+        <source>f3b20822073021102016f9fc7c1ed060</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2023-02-06 13:29:17</sys_created_on>
+        <sys_id>1d3d007107e521102016f9fc7c1ed08d</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>18626eaa3c80000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Images</type>
+        <update_guid>d93d0071f4e521106373f83a3e97a58d</update_guid>
+        <update_guid_history>d93d0071f4e521106373f83a3e97a58d:-339101449</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_976190_library.custom_portal_login.svg">593d007107e521102016f9fc7c1ed091</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-13 13:06:38</sys_created_on>
+        <sys_db_object display_value="" name="db_image">db_image</sys_db_object>
+        <sys_id>26c70687ca43421893e23b388afde240</sys_id>
+        <sys_metadata>02854cb567a52110b898a5eda138ee87</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_976190_library.custom_portal_login.svg</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>db_image_02854cb567a52110b898a5eda138ee87</sys_update_name>
+        <sys_update_version display_value="db_image_02854cb567a52110b898a5eda138ee87">1d3d007107e521102016f9fc7c1ed08d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-13 13:06:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

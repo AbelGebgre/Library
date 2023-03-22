@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_etl_entity">
+    <sys_rte_eb_etl_entity action="INSERT_OR_UPDATE">
+        <child_id_field/>
+        <name>Target_x_976190_library_catalog</name>
+        <parent_entity/>
+        <parent_id_field/>
+        <path>x_976190_library_catalog</path>
+        <run_business_rules>true</run_business_rules>
+        <synchronize_inserts>true</synchronize_inserts>
+        <sys_class_name>sys_rte_eb_etl_entity</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-13 08:54:53</sys_created_on>
+        <sys_id>b9935b2107e121102016f9fc7c1ed0f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Target_x_976190_library_catalog</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Importing Catalog_etl_ihub">69935fed07a121102016f9fc7c1ed086</sys_rte_eb_definition>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sys_rte_eb_etl_entity_b9935b2107e121102016f9fc7c1ed0f6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-13 08:54:53</sys_updated_on>
+        <table>x_976190_library_catalog</table>
+    </sys_rte_eb_etl_entity>
+</record_update>

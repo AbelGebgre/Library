@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_dl_definition">
+    <catalog_dl_definition action="DELETE">
+        <active>true</active>
+        <applies_to>set</applies_to>
+        <catalog_item/>
+        <matcher_table>x_976190_library_user</matcher_table>
+        <name>Check User</name>
+        <run_on_form_change>true</run_on_form_change>
+        <run_on_insert>true</run_on_insert>
+        <run_on_update>false</run_on_update>
+        <source_table/>
+        <sys_class_name>catalog_dl_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-15 08:44:20</sys_created_on>
+        <sys_id>2a34695a076121102016f9fc7c1ed006</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Check User</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>catalog_dl_definition_2a34695a076121102016f9fc7c1ed006</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-15 08:44:20</sys_updated_on>
+        <variable_set display_value="Requested By">46d2211a076121102016f9fc7c1ed0c7</variable_set>
+    </catalog_dl_definition>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>catalog_dl_definition_2a34695a076121102016f9fc7c1ed006</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_dl_definition"><catalog_dl_definition action="INSERT_OR_UPDATE"><active>true</active><applies_to>set</applies_to><catalog_item/><matcher_table>x_976190_library_user</matcher_table><name>Check User</name><run_on_form_change>true</run_on_form_change><run_on_insert>true</run_on_insert><run_on_update>false</run_on_update><source_table/><sys_class_name>catalog_dl_definition</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-03-15 08:44:20</sys_created_on><sys_id>2a34695a076121102016f9fc7c1ed006</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Check User</sys_name><sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package><sys_policy/><sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope><sys_update_name>catalog_dl_definition_2a34695a076121102016f9fc7c1ed006</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-03-15 08:44:20</sys_updated_on><variable_set display_value="Requested By">46d2211a076121102016f9fc7c1ed0c7</variable_set></catalog_dl_definition></record_update>]]></payload>
+        <payload_hash>-1881141454</payload_hash>
+        <record_name>Check User</record_name>
+        <reverted_from/>
+        <source>b8b9d956072121102016f9fc7c1ed016</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-15 08:44:20</sys_created_on>
+        <sys_id>a254695a076121102016f9fc7c1ed018</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186e47112320000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-15 08:44:20</sys_updated_on>
+        <type>Catalog Data Lookup Definitions</type>
+        <update_guid>a654695a4b612110c39cb6c83658f517</update_guid>
+        <update_guid_history>a654695a4b612110c39cb6c83658f517:-1881141454</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Check User">d874e95a076121102016f9fc7c1ed000</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-15 08:44:43</sys_created_on>
+        <sys_db_object display_value="" name="catalog_dl_definition">catalog_dl_definition</sys_db_object>
+        <sys_id>0e84013faf634fc489244e224d8cc410</sys_id>
+        <sys_metadata>2a34695a076121102016f9fc7c1ed006</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Check User</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>catalog_dl_definition_2a34695a076121102016f9fc7c1ed006</sys_update_name>
+        <sys_update_version display_value="catalog_dl_definition_2a34695a076121102016f9fc7c1ed006">a254695a076121102016f9fc7c1ed018</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-15 08:44:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

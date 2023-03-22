@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>item</applies_to>
+        <cat_item display_value="Create Circulation">6872e5d6076121102016f9fc7c1ed01a</cat_item>
+        <cat_variable>IO:c79aed1207a121102016f9fc7c1ed028</cat_variable>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>onChange: To Validation</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading || newValue == '') {
+        return;
+    }
+    g_form.clearMessages();
+    var checkPast = new GlideAjax('CheckDate');
+    checkPast.addParam('sysparm_name', 'isPastDate');
+    checkPast.addParam('sysparm_startDate', newValue);
+    checkPast.getXML(returnedDatePast);
+
+    function returnedDatePast(response) {
+        var result = response.responseXML.documentElement.getAttribute("answer");
+        if (result === '-1') {
+            g_form.addErrorMessage("The date of 'To' cannot be in the past.");
+        } else {
+            var checkSameDate = new GlideAjax('CheckDate');
+            checkSameDate.addParam('sysparm_name', 'isSameDay');
+            checkSameDate.addParam('sysparm_to', newValue);
+            checkSameDate.addParam('sysparm_from', g_form.getValue('from'));
+            checkSameDate.getXML(returnedData);
+        }
+    }
+
+    function returnedData(response) {
+        var result = response.responseXML.documentElement.getAttribute("answer");
+        if (result === '-1') {
+            g_form.addErrorMessage("The date of 'To' cannot be before 'From' date.");
+        }
+    }
+
+    //Type appropriate comment here, and begin script below
+
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-15 11:42:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>06cc8e16072521102016f9fc7c1ed050</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>onChange: To Validation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>catalog_script_client_06cc8e16072521102016f9fc7c1ed050</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-17 14:02:27</sys_updated_on>
+        <table/>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <variable_set/>
+        <view/>
+    </catalog_script_client>
+</record_update>

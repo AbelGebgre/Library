@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>onLoad: Hidden fields </name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+    //Type appropriate comment here, and begin script below
+    var view = getView();
+    if (!g_form.isNewRecord() && view === 'CheckIn' ) {
+        var newValue = g_form.getValue('state');
+        setToDefault();
+        if (newValue === 'new') {
+            g_form.setReadOnly('state', true);
+			g_form.setDisplay('approve', false);
+            g_form.setDisplay('issued_at', false);
+            g_form.setDisplay('approved_by', false);
+            g_form.setDisplay('returned_at', false);
+            g_form.setDisplay('rejected_at', false);
+            g_form.setDisplay('rejected_by', false);
+        } else if (newValue === 'approved') {
+            var statefield = g_form.getElement("state");
+            statefield.options[0].setAttribute("disabled", "true");
+            statefield.options[0].setAttribute("disabled", "true");
+            statefield.options[2].setAttribute("disabled", "true");
+			g_form.setReadOnly('approve', true);
+            g_form.setDisplay('rejected_at', false);
+			g_form.setDisplay('rejected_by', false);
+            g_form.setDisplay('returned_at', false);
+			g_form.setReadOnly('remark', false);
+        } else if (newValue === 'returned') {
+			g_form.setReadOnly('approve', true);
+            g_form.setReadOnly('state', true);
+            g_form.setReadOnly('remark', true);
+            g_form.setDisplay('rejected_at', false);
+            g_form.setDisplay('rejected_by', false);
+        } else if (newValue === 'rejected') {
+			g_form.setDisplay('approve', false);
+            g_form.setReadOnly('state', true);
+            g_form.setReadOnly('remark', true);
+            g_form.setDisplay('returned_at', false);
+            g_form.setDisplay('approved_by', false);
+            g_form.setDisplay('issued_at', false);
+        }
+    }
+
+    function setToDefault() {
+		g_form.setDisplay('approve', true);
+        g_form.setDisplay('issued_at', true);
+        g_form.setDisplay('approved_by', true);
+        g_form.setDisplay('returned_at', true);
+        g_form.setDisplay('rejected_at', true);
+        g_form.setDisplay('rejected_by', true);
+    }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-11 07:44:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>eaef2c85076161102016f9fc7c1ed05a</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>onLoad: Hidden fields </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sys_script_client_eaef2c85076161102016f9fc7c1ed05a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-11 09:21:17</sys_updated_on>
+        <table>x_976190_library_circulation</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>sys_script_client_eaef2c85076161102016f9fc7c1ed05a</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;onLoad: Hidden fields &lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+    //Type appropriate comment here, and begin script below
+    var view = getView();
+    if (!g_form.isNewRecord() &amp;&amp; view === 'CheckIn' ) {
+        var newValue = g_form.getValue('state');
+        setToDefault();
+        if (newValue === 'new') {
+            g_form.setReadOnly('state', true);
+			g_form.setDisplay('approve', false);
+            g_form.setDisplay('issued_at', false);
+            g_form.setDisplay('approved_by', false);
+            g_form.setDisplay('returned_at', false);
+            g_form.setDisplay('rejected_at', false);
+            g_form.setDisplay('rejected_by', false);
+        } else if (newValue === 'approved') {
+            var statefield = g_form.getElement("state");
+            statefield.options[0].setAttribute("disabled", "true");
+            statefield.options[0].setAttribute("disabled", "true");
+            statefield.options[2].setAttribute("disabled", "true");
+			g_form.setReadOnly('approve', true);
+            g_form.setDisplay('rejected_at', false);
+			g_form.setDisplay('rejected_by', false);
+            g_form.setDisplay('returned_at', false);
+			g_form.setReadOnly('remark', false);
+        } else if (newValue === 'returned') {
+			g_form.setReadOnly('approve', true);
+            g_form.setReadOnly('state', true);
+            g_form.setReadOnly('remark', true);
+            g_form.setDisplay('rejected_at', false);
+            g_form.setDisplay('rejected_by', false);
+        } else if (newValue === 'rejected') {
+			g_form.setDisplay('approve', false);
+            g_form.setReadOnly('state', true);
+            g_form.setReadOnly('remark', true);
+            g_form.setDisplay('returned_at', false);
+            g_form.setDisplay('approved_by', false);
+            g_form.setDisplay('issued_at', false);
+        }
+    }
+
+    function setToDefault() {
+		g_form.setDisplay('approve', true);
+        g_form.setDisplay('issued_at', true);
+        g_form.setDisplay('approved_by', true);
+        g_form.setDisplay('returned_at', true);
+        g_form.setDisplay('rejected_at', true);
+        g_form.setDisplay('rejected_by', true);
+    }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-11 07:44:52&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;eaef2c85076161102016f9fc7c1ed05a&lt;/sys_id&gt;&lt;sys_mod_count&gt;15&lt;/sys_mod_count&gt;&lt;sys_name&gt;onLoad: Hidden fields &lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Library" source="x_976190_library"&gt;5812a33f0701e1102016f9fc7c1ed031&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Library"&gt;5812a33f0701e1102016f9fc7c1ed031&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_eaef2c85076161102016f9fc7c1ed05a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-11 09:21:17&lt;/sys_updated_on&gt;&lt;table&gt;x_976190_library_circulation&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1069218060</payload_hash>
+        <record_name>onLoad: Hidden fields </record_name>
+        <reverted_from/>
+        <source>5012277f0701e1102016f9fc7c1ed021</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-11 09:21:17</sys_created_on>
+        <sys_id>8576810107e161102016f9fc7c1ed0e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186cff9769d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-11 09:21:17</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>0d768101f9e1611028ed798130eb85e0</update_guid>
+        <update_guid_history>0d768101f9e1611028ed798130eb85e0:-1069218060,811609cd98a16110058566410f174710:-1477906118,eab5850136e16110b69d69b4c47608d7:1592123765,3a358dcdb3a16110596aed60c540e70d:-1982999560,59d48d8dbca161109936c1f2eb0def1f:-770222182,5d74490d82a1611038115cfb54a2cfa7:-34349764,b914814da1a1611080cd388b4e89a26d:931234940,ac77308d8c616110240f242a639ebbad:-1490804153,ae4778cd86616110061119ddf397a4c7:954742376,19c630cd79616110e614beb8de7ba0c0:2124044638,fd23b0090d616110355c68b4f53b42c9:968687966,8262740926616110b7da0e3d4ca6e1e5:1038555967,8611b0097f6161103647afa880012b49:-944215768,55e078c533616110ddf41ea6d7369195:1280855140,16b0f8456f6161101b47ad9ca5aa3b53:730294051,2860f805d66161102bac2ecec9ec6735:-2094400486</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-11 09:36:36</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>09afb4c529f44dc08071f6d939b30440</sys_id>
+        <sys_metadata>eaef2c85076161102016f9fc7c1ed05a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>onLoad: Hidden fields </sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent display_value="Circulation">d51b5c5c071525102016f9fc7c1ed0ea</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>sys_script_client_eaef2c85076161102016f9fc7c1ed05a</sys_update_name>
+        <sys_update_version display_value="sys_script_client_eaef2c85076161102016f9fc7c1ed05a">8576810107e161102016f9fc7c1ed0e1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-11 09:36:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

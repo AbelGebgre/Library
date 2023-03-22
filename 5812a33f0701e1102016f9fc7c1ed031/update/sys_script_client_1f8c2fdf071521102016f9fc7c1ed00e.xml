@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>from</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>onChange From: Validation Circulation</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+
+    if (isLoading || newValue === '') {
+        return;
+    }
+    if (g_form.isNewRecord()) {
+        var checkPast = new GlideAjax('CheckDate');
+        checkPast.addParam('sysparm_name', 'isPastDate');
+        checkPast.addParam('sysparm_startDate', newValue);
+        checkPast.getXML(returnedData);
+    }
+    function returnedData(response) {
+        var result = response.responseXML.documentElement.getAttribute("answer");
+        if (result === '-1') {
+            g_form.addErrorMessage("The date of 'From' cannot be in the past.");
+        } else {
+            g_form.clearMessages();
+        }
+    }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-06 11:04:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1f8c2fdf071521102016f9fc7c1ed00e</sys_id>
+        <sys_mod_count>54</sys_mod_count>
+        <sys_name>onChange From: Validation Circulation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sys_script_client_1f8c2fdf071521102016f9fc7c1ed00e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-13 07:06:39</sys_updated_on>
+        <table>x_976190_library_circulation</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

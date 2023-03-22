@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_etl_field">
+    <sys_rte_eb_etl_field action="INSERT_OR_UPDATE">
+        <coalesce>false</coalesce>
+        <coercion_action>create</coercion_action>
+        <field>u_call_no</field>
+        <name>Call no</name>
+        <sys_class_name>sys_rte_eb_etl_field</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-13 08:54:53</sys_created_on>
+        <sys_id>65935b2107e121102016f9fc7c1ed0cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Call no</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Importing Catalog_etl_ihub">69935fed07a121102016f9fc7c1ed086</sys_rte_eb_definition>
+        <sys_rte_eb_entity display_value="Source_x_976190_library_ihub_import_ecde03e907a121102016f9fc7c1ed01e">65935b2107e121102016f9fc7c1ed0bf</sys_rte_eb_entity>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sys_rte_eb_etl_field_65935b2107e121102016f9fc7c1ed0cf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-13 08:54:53</sys_updated_on>
+    </sys_rte_eb_etl_field>
+</record_update>

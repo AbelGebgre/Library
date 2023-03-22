@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Organization">8c6f830807dde1102016f9fc7c1ed0bb</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>All</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_976190_library_organization</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-24 06:30:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9e7f070807dde1102016f9fc7c1ed081</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>All</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sys_app_module_9e7f070807dde1102016f9fc7c1ed081</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-24 06:31:08</sys_updated_on>
+        <timeline_page/>
+        <title>All</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>sys_app_module_9e7f070807dde1102016f9fc7c1ed081</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Organization">8c6f830807dde1102016f9fc7c1ed0bb</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>All</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_976190_library_organization</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-02-24 06:30:50</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>9e7f070807dde1102016f9fc7c1ed081</sys_id><sys_mod_count>1</sys_mod_count><sys_name>All</sys_name><sys_overrides/><sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package><sys_policy/><sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope><sys_update_name>sys_app_module_9e7f070807dde1102016f9fc7c1ed081</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-02-24 06:31:08</sys_updated_on><timeline_page/><title>All</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>699506211</payload_hash>
+        <record_name>All</record_name>
+        <reverted_from/>
+        <source>05a8cb0007dde1102016f9fc7c1ed07a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-24 06:31:08</sys_created_on>
+        <sys_id>d6afc70807dde1102016f9fc7c1ed0e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186821e49de0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-24 06:31:08</sys_updated_on>
+        <type>Module</type>
+        <update_guid>5eafc70878dde110b7f46baf344d62e3</update_guid>
+        <update_guid_history>5eafc70878dde110b7f46baf344d62e3:699506211,f99fcf849fdde110edb96757ad2c0084:1663866716</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="All">ad009f8407dde1102016f9fc7c1ed050</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-24 06:32:43</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>4722db11e623469b994b535e48ae6621</sys_id>
+        <sys_metadata>9e7f070807dde1102016f9fc7c1ed081</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>All</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>sys_app_module_9e7f070807dde1102016f9fc7c1ed081</sys_update_name>
+        <sys_update_version display_value="sys_app_module_9e7f070807dde1102016f9fc7c1ed081">d6afc70807dde1102016f9fc7c1ed0e4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-24 06:32:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_dl_definition_rel_set">
+    <catalog_dl_definition_rel_set action="DELETE">
+        <always_replace>false</always_replace>
+        <applies_to>set</applies_to>
+        <catalog_item/>
+        <dl_definition display_value="Copy Data Lookup">c547265207a521102016f9fc7c1ed035</dl_definition>
+        <matcher_table>x_976190_library_copy</matcher_table>
+        <matcher_table_field>number</matcher_table_field>
+        <source_catalog_variable>IO:9c062e9e076521102016f9fc7c1ed07d</source_catalog_variable>
+        <source_table/>
+        <source_table_field/>
+        <source_variable>copy</source_variable>
+        <sys_class_name>catalog_dl_definition_rel_set</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-18 06:07:41</sys_created_on>
+        <sys_id>aa1d18d307a9a1102016f9fc7c1ed0f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>catalog_dl_definition_rel_set_aa1d18d307a9a1102016f9fc7c1ed0f5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-18 06:07:41</sys_updated_on>
+        <variable_set display_value="Selected Catalog">890b1616076521102016f9fc7c1ed021</variable_set>
+    </catalog_dl_definition_rel_set>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>catalog_dl_definition_rel_set_aa1d18d307a9a1102016f9fc7c1ed0f5</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_dl_definition_rel_set"><catalog_dl_definition_rel_set action="INSERT_OR_UPDATE"><always_replace>false</always_replace><applies_to>set</applies_to><catalog_item/><dl_definition display_value="Copy Data Lookup">c547265207a521102016f9fc7c1ed035</dl_definition><matcher_table>x_976190_library_copy</matcher_table><matcher_table_field>number</matcher_table_field><source_catalog_variable>IO:9c062e9e076521102016f9fc7c1ed07d</source_catalog_variable><source_table/><source_table_field/><source_variable>copy</source_variable><sys_class_name>catalog_dl_definition_rel_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-03-18 06:07:41</sys_created_on><sys_id>aa1d18d307a9a1102016f9fc7c1ed0f5</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package><sys_policy/><sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope><sys_update_name>catalog_dl_definition_rel_set_aa1d18d307a9a1102016f9fc7c1ed0f5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-03-18 06:07:41</sys_updated_on><variable_set display_value="Selected Catalog">890b1616076521102016f9fc7c1ed021</variable_set></catalog_dl_definition_rel_set></record_update>]]></payload>
+        <payload_hash>600583016</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>b8b9d956072121102016f9fc7c1ed016</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-18 06:07:41</sys_created_on>
+        <sys_id>514d549307a9a1102016f9fc7c1ed090</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186f354ba9a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-18 06:07:41</sys_updated_on>
+        <type>Catalog Setter Variable Definitions</type>
+        <update_guid>554d5493d1a9a110d2f36b543459ab8f</update_guid>
+        <update_guid_history>554d5493d1a9a110d2f36b543459ab8f:600583016</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">e85d1cd307a9a1102016f9fc7c1ed0cf</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-18 06:07:55</sys_created_on>
+        <sys_db_object display_value="" name="catalog_dl_definition_rel_set">catalog_dl_definition_rel_set</sys_db_object>
+        <sys_id>b5bf27a3329a408aa2120c592a6caee1</sys_id>
+        <sys_metadata>aa1d18d307a9a1102016f9fc7c1ed0f5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>catalog_dl_definition_rel_set_aa1d18d307a9a1102016f9fc7c1ed0f5</sys_update_name>
+        <sys_update_version display_value="catalog_dl_definition_rel_set_aa1d18d307a9a1102016f9fc7c1ed0f5">514d549307a9a1102016f9fc7c1ed090</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-18 06:07:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
