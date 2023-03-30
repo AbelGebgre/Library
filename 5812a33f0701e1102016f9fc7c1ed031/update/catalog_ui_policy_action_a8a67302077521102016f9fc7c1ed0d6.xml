@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Create Catalog">55fc562007b521102016f9fc7c1ed092</catalog_item>
+        <catalog_variable>IO:4ada226007f521102016f9fc7c1ed074</catalog_variable>
+        <cleared>true</cleared>
+        <disabled>false</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-27 11:00:39</sys_created_on>
+        <sys_id>a8a67302077521102016f9fc7c1ed0d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>pages</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_a8a67302077521102016f9fc7c1ed0d6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-27 11:00:39</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Make 'pages' editable depending on 'auto_fill', 'pages' &amp; 'undefined'">fa76f38e073521102016f9fc7c1ed046</ui_policy>
+        <variable>pages</variable>
+        <variable_set/>
+        <visible>ignore</visible>
+    </catalog_ui_policy_action>
+</record_update>

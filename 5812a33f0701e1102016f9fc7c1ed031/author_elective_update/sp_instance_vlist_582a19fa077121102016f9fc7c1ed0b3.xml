@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_vlist">
+    <sp_instance_vlist action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <display_field/>
+        <field_list/>
+        <filter/>
+        <glyph/>
+        <id/>
+        <maximum_entries>5</maximum_entries>
+        <order>1</order>
+        <order_by/>
+        <order_direction>asc</order_direction>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="2">ed1a19fa077121102016f9fc7c1ed03b</sp_column>
+        <sp_page/>
+        <sp_widget display_value="HRI Task Panel">e62d8fb19f2712009205f7f8677fcf81</sp_widget>
+        <sys_class_name>sp_instance_vlist</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-29 07:32:19</sys_created_on>
+        <sys_id>582a19fa077121102016f9fc7c1ed0b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sp_instance_vlist_582a19fa077121102016f9fc7c1ed0b3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-29 07:32:19</sys_updated_on>
+        <table/>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance_vlist>
+    <sys_translated_text action="DELETE" query="documentkey=582a19fa077121102016f9fc7c1ed0b3"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>sp_instance_vlist_582a19fa077121102016f9fc7c1ed0b3</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_vlist"><sp_instance_vlist action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><display_field/><field_list/><filter/><glyph/><id/><maximum_entries>5</maximum_entries><order>1</order><order_by/><order_direction>asc</order_direction><roles/><short_description/><size>md</size><sp_column display_value="2">ed1a19fa077121102016f9fc7c1ed03b</sp_column><sp_page/><sp_widget display_value="HRI Task Panel">e62d8fb19f2712009205f7f8677fcf81</sp_widget><sys_class_name>sp_instance_vlist</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-03-29 07:32:19</sys_created_on><sys_id>582a19fa077121102016f9fc7c1ed0b3</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package><sys_policy/><sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope><sys_update_name>sp_instance_vlist_582a19fa077121102016f9fc7c1ed0b3</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-03-29 07:32:19</sys_updated_on><table/><title/><url/><widget_parameters/></sp_instance_vlist><sys_translated_text action="delete_multiple" query="documentkey=582a19fa077121102016f9fc7c1ed0b3"/></record_update>]]></payload>
+        <payload_hash>1282347434</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>b8b9d956072121102016f9fc7c1ed016</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-29 07:32:20</sys_created_on>
+        <sys_id>1c2a59fa077121102016f9fc7c1ed019</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1872c482ba00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-29 07:32:20</sys_updated_on>
+        <type>Instance of Simple List</type>
+        <update_guid>102a59fa4d712110ca8e83ccd7463319</update_guid>
+        <update_guid_history>102a59fa4d712110ca8e83ccd7463319:1282347434</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">6e2a95fa077121102016f9fc7c1ed0bd</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-29 07:32:29</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance_vlist">sp_instance_vlist</sys_db_object>
+        <sys_id>d14806be191a4c568881275a1539f5a4</sys_id>
+        <sys_metadata>582a19fa077121102016f9fc7c1ed0b3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>sp_instance_vlist_582a19fa077121102016f9fc7c1ed0b3</sys_update_name>
+        <sys_update_version display_value="sp_instance_vlist_582a19fa077121102016f9fc7c1ed0b3">1c2a59fa077121102016f9fc7c1ed019</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-29 07:32:29</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

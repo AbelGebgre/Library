@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_portal_search_source">
+    <m2m_sp_portal_search_source action="DELETE">
+        <order>100</order>
+        <sp_portal display_value="Library">a4de3b16073121102016f9fc7c1ed05c</sp_portal>
+        <sp_search_source display_value="Pages">76a86f01b3902300e64be12b86a8dc93</sp_search_source>
+        <sys_class_name>m2m_sp_portal_search_source</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-29 06:54:42</sys_created_on>
+        <sys_id>158159b2077121102016f9fc7c1ed070</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Library.Pages</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>m2m_sp_portal_search_source_158159b2077121102016f9fc7c1ed070</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-29 06:54:42</sys_updated_on>
+    </m2m_sp_portal_search_source>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>m2m_sp_portal_search_source_158159b2077121102016f9fc7c1ed070</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_portal_search_source"><m2m_sp_portal_search_source action="INSERT_OR_UPDATE"><order>100</order><sp_portal display_value="Library">a4de3b16073121102016f9fc7c1ed05c</sp_portal><sp_search_source display_value="Pages">76a86f01b3902300e64be12b86a8dc93</sp_search_source><sys_class_name>m2m_sp_portal_search_source</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-03-29 06:54:42</sys_created_on><sys_id>158159b2077121102016f9fc7c1ed070</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Library.Pages</sys_name><sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package><sys_policy/><sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope><sys_update_name>m2m_sp_portal_search_source_158159b2077121102016f9fc7c1ed070</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-03-29 06:54:42</sys_updated_on></m2m_sp_portal_search_source></record_update>]]></payload>
+        <payload_hash>1938976846</payload_hash>
+        <record_name>Library.Pages</record_name>
+        <reverted_from/>
+        <source>b8b9d956072121102016f9fc7c1ed016</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-29 06:54:43</sys_created_on>
+        <sys_id>918159b2077121102016f9fc7c1ed072</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1872c25bb3c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-29 06:54:43</sys_updated_on>
+        <type>Search Source</type>
+        <update_guid>958159b2f07121100876480c68f0f171</update_guid>
+        <update_guid_history>958159b2f07121100876480c68f0f171:1938976846</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Library.Pages">470291f2077121102016f9fc7c1ed031</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-29 06:57:02</sys_created_on>
+        <sys_db_object display_value="" name="m2m_sp_portal_search_source">m2m_sp_portal_search_source</sys_db_object>
+        <sys_id>3ff275bb97a3448e9b0abacb93d6c8a9</sys_id>
+        <sys_metadata>158159b2077121102016f9fc7c1ed070</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Library.Pages</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>m2m_sp_portal_search_source_158159b2077121102016f9fc7c1ed070</sys_update_name>
+        <sys_update_version display_value="m2m_sp_portal_search_source_158159b2077121102016f9fc7c1ed070">918159b2077121102016f9fc7c1ed072</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-29 06:57:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

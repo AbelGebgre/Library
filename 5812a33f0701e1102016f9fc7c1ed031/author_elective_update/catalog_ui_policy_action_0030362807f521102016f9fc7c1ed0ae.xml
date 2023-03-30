@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="Create Catalog">55fc562007b521102016f9fc7c1ed092</catalog_item>
+        <catalog_variable>IO:1119a2ec07b521102016f9fc7c1ed0cd</catalog_variable>
+        <cleared>true</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>false</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-22 14:02:00</sys_created_on>
+        <sys_id>0030362807f521102016f9fc7c1ed0ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>type</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_0030362807f521102016f9fc7c1ed0ae</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-22 14:02:00</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Create Catalog UI policy">511036e407f521102016f9fc7c1ed09c</ui_policy>
+        <variable>type</variable>
+        <variable_set/>
+        <visible>ignore</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>catalog_ui_policy_action_0030362807f521102016f9fc7c1ed0ae</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="Create Catalog">55fc562007b521102016f9fc7c1ed092</catalog_item><catalog_variable>IO:1119a2ec07b521102016f9fc7c1ed0cd</catalog_variable><cleared>true</cleared><disabled>ignore</disabled><field/><mandatory>false</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-03-22 14:02:00</sys_created_on><sys_id>0030362807f521102016f9fc7c1ed0ae</sys_id><sys_mod_count>0</sys_mod_count><sys_name>type</sys_name><sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package><sys_policy/><sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope><sys_update_name>catalog_ui_policy_action_0030362807f521102016f9fc7c1ed0ae</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-03-22 14:02:00</sys_updated_on><table/><ui_policy display_value="Create Catalog UI policy">511036e407f521102016f9fc7c1ed09c</ui_policy><variable>type</variable><variable_set/><visible>ignore</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>-118617981</payload_hash>
+        <record_name>type</record_name>
+        <reverted_from/>
+        <source>b8b9d956072121102016f9fc7c1ed016</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-22 14:02:00</sys_created_on>
+        <sys_id>0830362807f521102016f9fc7c1ed0b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18709a068160000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-22 14:02:00</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>483036289ef52110a5f271c115589ab0</update_guid>
+        <update_guid_history>483036289ef52110a5f271c115589ab0:-118617981</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="type">7291726807f521102016f9fc7c1ed045</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-22 14:08:11</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>1e4540ef6cbe4c5babc606e1b4a61691</sys_id>
+        <sys_metadata>0030362807f521102016f9fc7c1ed0ae</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>type</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_0030362807f521102016f9fc7c1ed0ae</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_0030362807f521102016f9fc7c1ed0ae">0830362807f521102016f9fc7c1ed0b1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-22 14:08:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

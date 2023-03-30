@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="DELETE">
+        <inactive>false</inactive>
+        <order>100</order>
+        <published_ref/>
+        <question display_value="Search">daf1f26807f521102016f9fc7c1ed04f</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 06:49:51</sys_created_on>
+        <sys_id>2ac6d674073121102016f9fc7c1ed031</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sad</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>question_choice_2ac6d674073121102016f9fc7c1ed031</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 06:49:51</sys_updated_on>
+        <text>sad</text>
+        <value>asd</value>
+    </question_choice>
+    <fx_price action="DELETE" query="id=2ac6d674073121102016f9fc7c1ed031"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>question_choice_2ac6d674073121102016f9fc7c1ed031</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice"><question_choice action="INSERT_OR_UPDATE"><inactive>false</inactive><order>100</order><published_ref/><question display_value="Search">daf1f26807f521102016f9fc7c1ed04f</question><sys_class_name>question_choice</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-03-23 06:49:51</sys_created_on><sys_id>2ac6d674073121102016f9fc7c1ed031</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sad</sys_name><sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package><sys_policy/><sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope><sys_update_name>question_choice_2ac6d674073121102016f9fc7c1ed031</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-03-23 06:49:51</sys_updated_on><text>sad</text><value>asd</value></question_choice><fx_price action="delete_multiple" query="id=2ac6d674073121102016f9fc7c1ed031"/></record_update>]]></payload>
+        <payload_hash>251616227</payload_hash>
+        <record_name>sad</record_name>
+        <reverted_from/>
+        <source>b8b9d956072121102016f9fc7c1ed016</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 06:49:51</sys_created_on>
+        <sys_id>2fd65a74073121102016f9fc7c1ed01c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1870d3b21570000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 06:49:51</sys_updated_on>
+        <type>Question Choice</type>
+        <update_guid>23d65a740531211067f0d55b8901511c</update_guid>
+        <update_guid_history>23d65a740531211067f0d55b8901511c:251616227</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="sad">ae171a74073121102016f9fc7c1ed08b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 06:50:53</sys_created_on>
+        <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
+        <sys_id>3299cda6b1644b2b8ef28263efaccbc9</sys_id>
+        <sys_metadata>2ac6d674073121102016f9fc7c1ed031</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sad</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent display_value="Search">daf1f26807f521102016f9fc7c1ed04f</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>question_choice_2ac6d674073121102016f9fc7c1ed031</sys_update_name>
+        <sys_update_version display_value="question_choice_2ac6d674073121102016f9fc7c1ed031">2fd65a74073121102016f9fc7c1ed01c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 06:50:53</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="Create Catalog">55fc562007b521102016f9fc7c1ed092</catalog_item>
+        <catalog_variable>IO:fba8e6ac07b521102016f9fc7c1ed085</catalog_variable>
+        <cleared>true</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>false</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-22 14:01:27</sys_created_on>
+        <sys_id>0410b22807f521102016f9fc7c1ed053</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>category</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_0410b22807f521102016f9fc7c1ed053</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-22 14:02:41</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Make 'category' non-mandatory depending on 'auto_fill'">2c00f2e407f521102016f9fc7c1ed04d</ui_policy>
+        <variable>category</variable>
+        <variable_set/>
+        <visible>ignore</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>catalog_ui_policy_action_0410b22807f521102016f9fc7c1ed053</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="Create Catalog">55fc562007b521102016f9fc7c1ed092</catalog_item><catalog_variable>IO:fba8e6ac07b521102016f9fc7c1ed085</catalog_variable><cleared>true</cleared><disabled>ignore</disabled><field/><mandatory>false</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-03-22 14:01:27</sys_created_on><sys_id>0410b22807f521102016f9fc7c1ed053</sys_id><sys_mod_count>1</sys_mod_count><sys_name>category</sys_name><sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package><sys_policy/><sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope><sys_update_name>catalog_ui_policy_action_0410b22807f521102016f9fc7c1ed053</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-03-22 14:02:41</sys_updated_on><table/><ui_policy display_value="Make 'category' non-mandatory depending on 'auto_fill'">2c00f2e407f521102016f9fc7c1ed04d</ui_policy><variable>category</variable><variable_set/><visible>ignore</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>2102504801</payload_hash>
+        <record_name>category</record_name>
+        <reverted_from/>
+        <source>b8b9d956072121102016f9fc7c1ed016</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-22 14:02:41</sys_created_on>
+        <sys_id>ce50f62807f521102016f9fc7c1ed0ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18709a10a090000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-22 14:02:41</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>4250f6289cf52110895f4676cb21a5ed</update_guid>
+        <update_guid_history>4250f6289cf52110895f4676cb21a5ed:2102504801,4c10b22842f5211063deca111eb9e355:-1930631670</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="category">84c172a807f521102016f9fc7c1ed0c3</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-22 14:08:49</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>06df1dadac224d6e82ea9a6718aff881</sys_id>
+        <sys_metadata>0410b22807f521102016f9fc7c1ed053</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>category</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_0410b22807f521102016f9fc7c1ed053</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_0410b22807f521102016f9fc7c1ed053">ce50f62807f521102016f9fc7c1ed0ed</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-22 14:08:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Create Catalog">55fc562007b521102016f9fc7c1ed092</catalog_item>
+        <catalog_variable>IO:2d082e6c07b521102016f9fc7c1ed0d2</catalog_variable>
+        <cleared>true</cleared>
+        <disabled>false</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-24 13:43:33</sys_created_on>
+        <sys_id>e92f3c1d07f521102016f9fc7c1ed039</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>edition</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_e92f3c1d07f521102016f9fc7c1ed039</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-24 13:43:33</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Make 'edition' editable depending on 'results', 'auto_fill', 'edition', 'undefined' &amp; 'auto_fill'">8f0f3cd907f521102016f9fc7c1ed037</ui_policy>
+        <variable>edition</variable>
+        <variable_set/>
+        <visible>ignore</visible>
+    </catalog_ui_policy_action>
+</record_update>

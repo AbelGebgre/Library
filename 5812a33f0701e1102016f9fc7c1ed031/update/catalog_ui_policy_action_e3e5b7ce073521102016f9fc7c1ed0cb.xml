@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Create Catalog">55fc562007b521102016f9fc7c1ed092</catalog_item>
+        <catalog_variable>IO:d0ba666007f521102016f9fc7c1ed073</catalog_variable>
+        <cleared>true</cleared>
+        <disabled>false</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-27 10:57:36</sys_created_on>
+        <sys_id>e3e5b7ce073521102016f9fc7c1ed0cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>isbn_13</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_e3e5b7ce073521102016f9fc7c1ed0cb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-27 10:57:36</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Make 'isbn_13' editable depending on 'auto_fill', 'isbn_13', 'results' &amp; 'undefined'">33a5bb8e073521102016f9fc7c1ed0af</ui_policy>
+        <variable>isbn_13</variable>
+        <variable_set/>
+        <visible>ignore</visible>
+    </catalog_ui_policy_action>
+</record_update>
