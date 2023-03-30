@@ -23,11 +23,9 @@
         return true;
     }
     var actionName = g_form.getActionName();
-    var reg = /^\d+$/;
     var isbn13 = g_form.getValue('isbn_13');
     var isbn10 = g_form.getValue('isbn_10');
-    var queryISBN = (isbn13 !== '' && reg.test(isbn13) && isbn13.length === 13) && (isbn10 !== '' &&
-            reg.test(isbn10) && isbn10.length === 10) ? 'isbn10=' + isbn10 + '^ORisbn13=' + isbn13 :
+    var queryISBN = (isbn13 !== '' && isbn13.length === 13) && (isbn10 !== '' && isbn10.length === 10) ? 'isbn10=' + isbn10 + '^ORisbn13=' + isbn13 :
         (isbn13 !== '' && reg.test(isbn13) && isbn13.length === 13) ? 'isbn13=' + isbn13 :
         (isbn10 !== '' && reg.test(isbn10) && isbn13.length === 10) ? 'isbn10=' + isbn10 : '';
 
@@ -38,10 +36,11 @@
         catalogGR.addParam('sysparm_query', queryISBN);
         catalogGR.getXML(function(response) {
             var result = response.responseXML.documentElement.getAttribute("answer");
-            if (result !== '0') {
+            result = JSON.parse(result);
+            if (result.sys_id !== '') {
                 g_form.addErrorMessage('Catalog Item is already exist!!!');
             } else {
-                // authorAndPublisher();
+                authorAndPublisher();
             }
         });
 
@@ -50,65 +49,51 @@
     }
 
     function authorAndPublisher() {
-        var publisherGR = new GlideAjax('dataTable');
-        publisherGR.addParam('sysparm_name', 'getData');
-        publisherGR.addParam('sysparm_table', 'x_976190_library_publisher');
-        publisherGR.addParam('sysparm_query', 'name=' + g_form.getValue('p_publisher'));
-        publisherGR.getXML(function(response) {
-            var result = response.responseXML.documentElement.getAttribute("answer");
-            if (result !== 'null') {
-                alert(publisherGR.getValue('sys_id'));
-                // g_form.setValue('publisher', publisherGR.getValue('sys_id'));
-            } else {
-                publisherGR.addParam('sysparm_name', 'addData');
-                publisherGR.addParam('sysparm_table', 'x_976190_library_publisher');
-                publisherGR.addParam('sysparm_name', g_form.getValue('p_publisher'));
-                publisherGR.getXML(function(response) {
-					var result = response.responseXML.documentElement.getAttribute("answer");
-					alert(result);
-                // g_form.setValue('publisher', publisherGR.getValue('sys_id'));
-				});
-            }
-        });
-        // for (var i = 0; i <= copies.length; i++) {
-        //     var copy = copies[i];
-        //     if (copy) {
-        //         queryISBN += 'sys_id=' + copies[i];
-        //         if (i + 1 < copies.length) {
-        //             queryISBN += '^OR';
-        //         }
-        //     }
-        // }
-        // isloaded();
-        var authorRP = g_form.getValue('p_author').split(',');
-        var authorGR = new GlideRecord('x_976190_library_author');
-        for (var i = 0; i <= authorRP.length; i++) {
-            if (authorGR[i] !== '') {
-                authorGR.addQuery('name', authorGR[i]);
-                authorGR.query();
-                var authors = g_form.getValue('author') !== '' ? g_form.getValue('author') + ',' : '';
-                if (authorGR.next()) {
-                    authors += authorGR.getValue('sys_id');
-                    g_form.setValue('author', authors);
+        if (g_form.getValue('p_publisher') !== '') {
+            var publisher = 'name=' + g_form.getValue('p_publisher');
+            var publisherGR = new GlideAjax('dataTable');
+            publisherGR.addParam('sysparm_name', 'getData');
+            publisherGR.addParam('sysparm_table', 'x_976190_library_publisher');
+            publisherGR.addParam('sysparm_query', publisher);
+            publisherGR.getXML(function(response) {
+                var result = response.responseXML.documentElement.getAttribute("answer");
+                result = JSON.parse(result);
+                if (result.sys_id !== '') {
+                    g_form.setValue('publisher', result.sys_id);
+					author();
                 } else {
-                    authorGR.name = authorGR[i];
-                    authorGR.insert();
-                    authors += authorGR.getValue('sys_id');
-                    g_form.setValue('author', authors);
+                    publisherGR.addParam('sysparm_name', 'addData');
+                    publisherGR.addParam('sysparm_table', 'x_976190_library_publisher');
+                    publisherGR.addParam('sysparm_query', g_form.getValue('p_publisher'));
+                    publisherGR.getXML(function(response) {
+                        var result = response.responseXML.documentElement.getAttribute("answer");
+                        result = JSON.parse(result);
+                        g_form.setValue('publisher', result.sys_id);
+						author();
+                    });
                 }
-            }
-            if (i == authorRP.length) {
-                // isloaded();
-            }
-        }
+            });
+        }else{
+			author();
+		}
     }
-    // function isloaded() {
-    //     if (g_form.getValue('author') !== '' && g_form.getValue('publisher') !== '') {
-    //         alert('author: ' + g_form.getValue('author') + ' publisher: ' + g_form.getValue('publisher'));
-    //         // g_scratchpad.isFormValid = true;
-    //         // g_form.submit(actionName);
-    //     }
-    // }
+	function author(){
+		if (g_form.getValue('p_author') !== '') {
+            var authorGR = new GlideAjax('dataTable');
+            authorGR.addParam('sysparm_name', 'getData');
+            authorGR.addParam('sysparm_table', 'x_976190_library_author');
+            authorGR.addParam('sysparm_query', g_form.getValue('p_author'));
+            authorGR.getXML(function(response) {
+                var result = response.responseXML.documentElement.getAttribute("answer");
+                result = JSON.parse(result);
+                if (result.sys_id !== '') {
+                    g_form.setValue('author', result.sys_id);
+					g_scratchpad.isFormValid = true;
+                    g_form.submit(actionName);
+                }
+            });
+        }
+	}
     return false;
 }]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
@@ -117,7 +102,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>720c5f0e07b121102016f9fc7c1ed0f9</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>57</sys_mod_count>
         <sys_name>Create or Update Record</sys_name>
         <sys_overrides/>
         <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
@@ -125,7 +110,7 @@
         <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
         <sys_update_name>catalog_script_client_720c5f0e07b121102016f9fc7c1ed0f9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-03-29 13:31:25</sys_updated_on>
+        <sys_updated_on>2023-03-30 11:13:54</sys_updated_on>
         <table/>
         <type>onSubmit</type>
         <ui_type>10</ui_type>
