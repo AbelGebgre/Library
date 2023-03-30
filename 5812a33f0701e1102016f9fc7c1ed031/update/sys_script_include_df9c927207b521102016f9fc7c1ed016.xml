@@ -8,38 +8,69 @@
         <description/>
         <name>dataTable</name>
         <script><![CDATA[var dataTable = Class.create();
-dataTable.prototype =  Object.extendsObject(global.AbstractAjaxProcessor, {
-    initialize: function() {
+dataTable.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    getData: function() {
+        var table = this.getParameter('sysparm_table').split('_')[3];
+        if (table === 'author') {
+            var arr = [];
+            var authors = this.getParameter('sysparm_query').split(',');
+            for (var i = 0; i < authors.length; i++) {
+                if (authors[i] != '' || authors[i] != null) {
+                    var query = 'name=' + authors[i];
+                    var grA = new GlideRecord(this.getParameter('sysparm_table'));
+                    grA.addEncodedQuery(query);
+                    grA.query();
+                    if (grA.next()) {
+                        arr.push(grA.getValue('sys_id'));
+                    } else {
+                        var grA2 = new GlideRecord(this.getParameter('sysparm_table'));
+                        grA2.initialize();
+                        grA2.name = authors[i];
+                        grA2.insert();
+                        arr.push(grA2.getValue('sys_id'));
+                    }
+                }
+            }
+            return JSON.stringify({
+                sys_id: arr.join(',')
+            });
+        } else {
+            var gr = new GlideRecord(this.getParameter('sysparm_table'));
+            gr.addEncodedQuery(this.getParameter('sysparm_query'));
+            gr.query();
+            if (gr.next()) {
+                return JSON.stringify({
+                    sys_id: gr.getValue('sys_id')
+                });
+            } else {
+                return JSON.stringify({
+                    sys_id: ''
+                });
+            }
+        }
     },
-	getData:function(){
-		var gr = new GlideRecord(this.getParameter('sysparm_table'));
-		gr.addEncodedQuery(this.getParameter('sysparm_query'));
-		gr.query();
-		if(gr.hasNext()){
-			return JSON.stringify(gr);
-		}
-		return JSON.stringify('0');
-	},
-	addData: function(){
-		var gr = new GlideRecord(this.getParameter('sysparm_table'));
-		gr.initialize();
-		gr.name = this.getParameter('sysparm_name');
-		gr.insert();
-		return gr.getValue('sys_id');
-	},
+    addData: function() {
+        var gr = new GlideRecord(this.getParameter('sysparm_table'));
+        gr.initialize();
+        gr.name = this.getParameter('sysparm_query');
+        gr.insert();
+        return JSON.stringify({
+            sys_id: gr.getValue('sys_id')
+        });
+    },
     type: 'dataTable'
 });]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-03-29 12:27:17</sys_created_on>
         <sys_id>df9c927207b521102016f9fc7c1ed016</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>46</sys_mod_count>
         <sys_name>dataTable</sys_name>
         <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
         <sys_update_name>sys_script_include_df9c927207b521102016f9fc7c1ed016</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-03-29 13:29:13</sys_updated_on>
+        <sys_updated_on>2023-03-30 10:46:04</sys_updated_on>
     </sys_script_include>
 </record_update>
