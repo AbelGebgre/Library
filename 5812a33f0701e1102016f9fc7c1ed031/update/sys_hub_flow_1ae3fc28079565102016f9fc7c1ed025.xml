@@ -44,7 +44,7 @@
     <sys_variable_value action="delete_multiple" query="document_key=1ae3fc28079565102016f9fc7c1ed025"/>
     <sys_flow_record_trigger action="INSERT_OR_UPDATE">
         <active>true</active>
-        <condition table="x_976190_library_circulation">state=new<item display_value="new" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="new"/>
+        <condition table="x_976190_library_circulation">state=new<item display_value="New" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="new"/>
         </condition>
         <name/>
         <on_delete>false</on_delete>
