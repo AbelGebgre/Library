@@ -7,7 +7,7 @@
         <affected_field_on_event/>
         <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
         <collection>x_976190_library_circulation</collection>
-        <condition table="x_976190_library_circulation">state=new<item display_value="New" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="new"/>
+        <condition table="x_976190_library_circulation">state=new<item display_value="new" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="new"/>
         </condition>
         <content_type>text/html</content_type>
         <default_interval/>
