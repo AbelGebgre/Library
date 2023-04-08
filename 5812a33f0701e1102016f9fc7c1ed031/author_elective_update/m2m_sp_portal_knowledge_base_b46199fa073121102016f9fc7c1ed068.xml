@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_portal_knowledge_base">
+    <m2m_sp_portal_knowledge_base action="DELETE">
+        <active>true</active>
+        <kb_knowledge_base display_value="Knowledge">dfc19531bf2021003f07e2c1ac0739ab</kb_knowledge_base>
+        <order>100</order>
+        <sp_portal display_value="Library">a4de3b16073121102016f9fc7c1ed05c</sp_portal>
+        <sys_class_name>m2m_sp_portal_knowledge_base</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-29 06:54:08</sys_created_on>
+        <sys_id>b46199fa073121102016f9fc7c1ed068</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Knowledge.Library</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>m2m_sp_portal_knowledge_base_b46199fa073121102016f9fc7c1ed068</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-29 06:54:08</sys_updated_on>
+    </m2m_sp_portal_knowledge_base>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>m2m_sp_portal_knowledge_base_b46199fa073121102016f9fc7c1ed068</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_portal_knowledge_base"><m2m_sp_portal_knowledge_base action="INSERT_OR_UPDATE"><active>true</active><kb_knowledge_base display_value="Knowledge">dfc19531bf2021003f07e2c1ac0739ab</kb_knowledge_base><order>100</order><sp_portal display_value="Library">a4de3b16073121102016f9fc7c1ed05c</sp_portal><sys_class_name>m2m_sp_portal_knowledge_base</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-03-29 06:54:08</sys_created_on><sys_id>b46199fa073121102016f9fc7c1ed068</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Knowledge.Library</sys_name><sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package><sys_policy/><sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope><sys_update_name>m2m_sp_portal_knowledge_base_b46199fa073121102016f9fc7c1ed068</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-03-29 06:54:08</sys_updated_on></m2m_sp_portal_knowledge_base></record_update>]]></payload>
+        <payload_hash>1248007624</payload_hash>
+        <record_name>Knowledge.Library</record_name>
+        <reverted_from/>
+        <source>b8b9d956072121102016f9fc7c1ed016</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-29 06:54:08</sys_created_on>
+        <sys_id>346199fa073121102016f9fc7c1ed06a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1872c2534d00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-29 06:54:08</sys_updated_on>
+        <type>Portal Knowledge Base</type>
+        <update_guid>386199fa173121105e62d85813c8c869</update_guid>
+        <update_guid_history>386199fa173121105e62d85813c8c869:1248007624</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Knowledge.Library">904a3006070221102016f9fc7c1ed021</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-08 07:33:18</sys_created_on>
+        <sys_db_object display_value="" name="m2m_sp_portal_knowledge_base">m2m_sp_portal_knowledge_base</sys_db_object>
+        <sys_id>22c2ffc4cc0142d19d7e3b00d5f00561</sys_id>
+        <sys_metadata>b46199fa073121102016f9fc7c1ed068</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Knowledge.Library</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>m2m_sp_portal_knowledge_base_b46199fa073121102016f9fc7c1ed068</sys_update_name>
+        <sys_update_version display_value="m2m_sp_portal_knowledge_base_b46199fa073121102016f9fc7c1ed068">346199fa073121102016f9fc7c1ed06a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-08 07:33:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

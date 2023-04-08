@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_portal_taxonomy">
+    <m2m_sp_portal_taxonomy action="DELETE">
+        <active>true</active>
+        <order>100</order>
+        <sp_portal display_value="Library">a4de3b16073121102016f9fc7c1ed05c</sp_portal>
+        <sys_class_name>m2m_sp_portal_taxonomy</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-29 06:55:19</sys_created_on>
+        <sys_id>82a199b2077121102016f9fc7c1ed01e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Library.Employee</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>m2m_sp_portal_taxonomy_82a199b2077121102016f9fc7c1ed01e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-29 06:55:19</sys_updated_on>
+        <taxonomy display_value="Employee">1f5d5a40c3203010069aec4b7d40dd93</taxonomy>
+    </m2m_sp_portal_taxonomy>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>m2m_sp_portal_taxonomy_82a199b2077121102016f9fc7c1ed01e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_portal_taxonomy"><m2m_sp_portal_taxonomy action="INSERT_OR_UPDATE"><active>true</active><order>100</order><sp_portal display_value="Library">a4de3b16073121102016f9fc7c1ed05c</sp_portal><sys_class_name>m2m_sp_portal_taxonomy</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-03-29 06:55:19</sys_created_on><sys_id>82a199b2077121102016f9fc7c1ed01e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Library.Employee</sys_name><sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package><sys_policy/><sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope><sys_update_name>m2m_sp_portal_taxonomy_82a199b2077121102016f9fc7c1ed01e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-03-29 06:55:19</sys_updated_on><taxonomy display_value="Employee">1f5d5a40c3203010069aec4b7d40dd93</taxonomy></m2m_sp_portal_taxonomy></record_update>]]></payload>
+        <payload_hash>-895805475</payload_hash>
+        <record_name>Library.Employee</record_name>
+        <reverted_from/>
+        <source>b8b9d956072121102016f9fc7c1ed016</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-29 06:55:19</sys_created_on>
+        <sys_id>cea199b2077121102016f9fc7c1ed020</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1872c2648090000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-29 06:55:19</sys_updated_on>
+        <type>Portal Taxonomy</type>
+        <update_guid>c2a199b270712110ff01bc4d00002620</update_guid>
+        <update_guid_history>c2a199b270712110ff01bc4d00002620:-895805475</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Library.Employee">d04a3006070221102016f9fc7c1ed01b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-08 07:33:18</sys_created_on>
+        <sys_db_object display_value="" name="m2m_sp_portal_taxonomy">m2m_sp_portal_taxonomy</sys_db_object>
+        <sys_id>5b1b6650f5284970aeffdec002a86190</sys_id>
+        <sys_metadata>82a199b2077121102016f9fc7c1ed01e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Library.Employee</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>m2m_sp_portal_taxonomy_82a199b2077121102016f9fc7c1ed01e</sys_update_name>
+        <sys_update_version display_value="m2m_sp_portal_taxonomy_82a199b2077121102016f9fc7c1ed01e">cea199b2077121102016f9fc7c1ed020</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-08 07:33:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

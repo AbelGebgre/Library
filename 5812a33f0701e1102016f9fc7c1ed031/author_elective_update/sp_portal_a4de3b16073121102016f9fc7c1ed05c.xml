@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_portal">
+    <sp_portal action="DELETE">
+        <css_variables>$brand-primary: #165C53;
+$body-bg: #ffffff;
+$state-success-text: #1e4335;
+$sp-homepage-bg: #fff;
+$sp-navbar-divider-color: #5A7F71;
+$text-color: #2e2e2e;
+$sp-logo-margin-y: .5rem;
+$navbar-inverse-link-hover-color: #fff;
+$panel-bg: #fff;
+$brand-success: #48C891;
+$navbar-inverse-bg: #293e40;
+$brand-warning: #DFD139;
+$brand-danger: #C83C36;
+$sp-tagline-color: #ffffff;
+$navbar-inverse-link-color: #A7B0B2;
+$brand-info: #6ABECF;
+$link-color: #165C53;
+$sp-logo-margin-x: 4px;
+$btn-default-bg: #fff;
+$text-muted: #666666;
+</css_variables>
+        <dark_theme/>
+        <default>false</default>
+        <enable_ais>false</enable_ais>
+        <enable_favorites>false</enable_favorites>
+        <hide_portal_name>false</hide_portal_name>
+        <homepage display_value="index">46cc384147532100ba13a5554ee49009</homepage>
+        <icon/>
+        <kb_knowledge_base/>
+        <kb_knowledge_page display_value="kb_view2">26c2e030d7201200a9addd173e24d437</kb_knowledge_page>
+        <login_page display_value="login">6995a144cb11120000f8d856634c9c25</login_page>
+        <logo>22f72b69070221102016f9fc7c1ed099</logo>
+        <notfound_page display_value="404">3c2c9063cb11020000f8d856634c9c1f</notfound_page>
+        <quick_start_config/>
+        <sc_catalog/>
+        <sc_catalog_page display_value="sc_home">fe87a11147132100ba13a5554ee490b9</sc_catalog_page>
+        <sc_category_page display_value="sc_category">07261a2147132100ba13a5554ee49092</sc_category_page>
+        <search_application/>
+        <search_results_configuration/>
+        <sp_chat_queue/>
+        <sp_rectangle_menu/>
+        <sys_class_name>sp_portal</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-28 06:17:31</sys_created_on>
+        <sys_id>a4de3b16073121102016f9fc7c1ed05c</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>Library</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sp_portal_a4de3b16073121102016f9fc7c1ed05c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-07 07:01:44</sys_updated_on>
+        <theme display_value="Benchmarks - Theme">166e16f65b4132003d1c484c11f91a70</theme>
+        <title>Library</title>
+        <ts_index_group/>
+        <url_suffix>lb</url_suffix>
+    </sp_portal>
+    <sys_translated_text action="DELETE" query="documentkey=a4de3b16073121102016f9fc7c1ed05c"/>
+    <sys_attachment action="DELETE">
+        <average_image_color>#9999cc</average_image_color>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <file_name>logo</file_name>
+        <hash>2b9f161ccb5d1a8a108d3897a8efbe7316ba4d83aec7908b6e34b5170ce8b781</hash>
+        <image_height>124</image_height>
+        <image_width>130</image_width>
+        <size_bytes>1377</size_bytes>
+        <size_compressed>1400</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-07 06:55:22</sys_created_on>
+        <sys_id>22f72b69070221102016f9fc7c1ed099</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-07 06:55:22</sys_updated_on>
+        <table_name>ZZ_YYsp_portal</table_name>
+        <table_sys_id>a4de3b16073121102016f9fc7c1ed05c</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="DELETE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="logo" sys_id="22f72b69070221102016f9fc7c1ed099">22f72b69070221102016f9fc7c1ed099</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-07 06:55:22</sys_created_on>
+        <sys_id>62f72b69070221102016f9fc7c1ed099</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="DELETE">
+        <data>AWEFnvqJUE5HDQoaCgAAAA1JSERSAAAAggAAAHwIAwAAAJJFmKYAAACTUExURf///xYUFRESJAAAAJmZngAAA2hoaLCwsPPz82BfYObm5oKBghIPEAYABFhYWCgoKKKhogAAG5SUlIeHh6enp9bW1s/Pz25tbnh4eLu7u8fHx0JCQgYIHktLS9zc3Pn5+Ts7OyEgIDIyMh0eLAAAF3Z2fjg4Q1hYYAAADWZmbDIyOisrNyQkMImJkR4dIk9PWURES0kZymEAAASJSURBVGiB7ZoLe6I6EIaReLgJNATkDsp9qe3K//91J+Gebbt2Ndaes/nqBQeSeWcy+qQJgsDFxcXFxfV/VeokiZM+zL3iokgHWHpku8oD/AfeETvXN1g6Bjl6wZdSaI5Kgt+sRNKhOtqXuD+EdgaAMXoladD1kccAILPDw339a4GaTeHrEfSl5MkwnhLJh5E+JSNTg3sl46AhM1ul3zCxUVEQUkgRmMZqSDITacyTgdMf4fSvh79HEARZ7t8WBEKBhyRiOiSaI/1afQuC47xFmOpTYlKfyh7luLPNW11AIMINc7S/6cuqhf7xbfifRxiScfTDq5Oh5R/6/zTCQJFfy6A9fQzw23J8A/F0HwTcsYlkFyFXRualK++E0Bc96IvuN+N1X4RP67+N0OeYrrM++YNoN4ud5jb6S69FUOwdFv3Tm+8m+TSCP5/I6Z9xYrJvm0s463CBtOQoW7nSsyVOiWrg3OR80J7qES4nolV6jGixQ6rBngGC4C9d6vnK7q5cAXd1YjUSwGdBIDibpUtpZV99YeiSlxbkDYtxEFbVYJjUFECb0wCoij/MFcykEojkyRVQKbuyINAVr84NZI7AETgCR+AIHIEjcASOwBE4AkfgCByBI3AEjvCNEIK5R4k+sSDQ9nnlEQQs/O+P0bKIl0X5HJd0jJYVt+g408l5lM32PDrevvAIqX05Yx4LjbLrxrzopq5XrbEdftTzHyBs1jKmaDXavqz7SfS6OQMEh3YFvEsI3i8Nblp6VBwIIaLX9oFPjFhORG+bR5PdpxF0RIzXrsQP+xF0sJsPth1WGxXvNLh6P+I77MpwBAFlrAgIQ4auQbiw+fhnDOA6BHYE+HvBEa5HYKprEGRVYiiV1eSFi0sef+P7+5QC27b7CWGKD+zhTDrMjUJsQGRuEJJ5q8uyBNVxDpqQuyt3thvkxBB4aRqAfgPXy/pNa7RL93JvAXvhAFje6yaNCGaPEGKXJMoATSbFDPsJHdoS730akoPEZAb/LoKdeGY/jw4SCHcJOXKgkBDH0ITQH2aXtuS92xUThB1yXYkMc6CG9nA3QWQ7EZmmIi/0k+FSJWd7F6iUrhFwgl2ShsDGwZJYtWMYBhlBwEOjDpWpmGxvNzSRLJN6S0g2fD9w8pAg7AThsMFHPslJhA+QTf7T7HmViC1CKA8IIUnuHn/ovWjElIajOcV4e4Lo9qN2CJkScHFxcXH9ndo+XMI/D5cgPlwjQhxPhh9iGYv4D6sovgyhaMv2WTzVrViLLzbyUGxaz8nrz/M5vtj+gsbQYou8TLbSii0rjq3SKieEuOqqpm27Cj+aV+cM7QpB1dnenoWXuiO5LOs2LuLnIsYdFnHXNDV+dE3beMWIYDXtq9p2YtsCVJdxYEMQICDD8lYCsXitqnbXvrYVeVZmVW0rEi9+rbZdg5pTPNZCoYpt3ZzPXVu/ePDkdfhpY9CbEazz6Wyem7rGcdfnDvvoiq5u8afu+VSfupZcNJSjJeLhwQVoxWL5A48VfpaWdTMBqYW479ma3kihl4Mzcm5BeKi+AcK/q61zEyMIyaUAAAAASUVORK5CYILdQ9hOYQUAAA==</data>
+        <length>1856</length>
+        <position>1</position>
+        <sys_attachment display_value="logo" sys_id="22f72b69070221102016f9fc7c1ed099">22f72b69070221102016f9fc7c1ed099</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-07 06:55:22</sys_created_on>
+        <sys_id>e2f72b69070221102016f9fc7c1ed099</sys_id>
+    </sys_attachment_doc>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>sp_portal_a4de3b16073121102016f9fc7c1ed05c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_portal"><sp_portal action="INSERT_OR_UPDATE"><css_variables>$brand-primary: #165C53;
+$body-bg: #ffffff;
+$state-success-text: #1e4335;
+$sp-homepage-bg: #fff;
+$sp-navbar-divider-color: #5A7F71;
+$text-color: #2e2e2e;
+$sp-logo-margin-y: .5rem;
+$navbar-inverse-link-hover-color: #fff;
+$panel-bg: #fff;
+$brand-success: #48C891;
+$navbar-inverse-bg: #293e40;
+$brand-warning: #DFD139;
+$brand-danger: #C83C36;
+$sp-tagline-color: #ffffff;
+$navbar-inverse-link-color: #A7B0B2;
+$brand-info: #6ABECF;
+$link-color: #165C53;
+$sp-logo-margin-x: 4px;
+$btn-default-bg: #fff;
+$text-muted: #666666;
+</css_variables><dark_theme/><default>false</default><enable_ais>false</enable_ais><enable_favorites>false</enable_favorites><hide_portal_name>false</hide_portal_name><homepage display_value="index">46cc384147532100ba13a5554ee49009</homepage><icon/><kb_knowledge_base/><kb_knowledge_page display_value="kb_view2">26c2e030d7201200a9addd173e24d437</kb_knowledge_page><login_page display_value="login">6995a144cb11120000f8d856634c9c25</login_page><logo>22f72b69070221102016f9fc7c1ed099</logo><notfound_page display_value="404">3c2c9063cb11020000f8d856634c9c1f</notfound_page><quick_start_config/><sc_catalog/><sc_catalog_page display_value="sc_home">fe87a11147132100ba13a5554ee490b9</sc_catalog_page><sc_category_page display_value="sc_category">07261a2147132100ba13a5554ee49092</sc_category_page><search_application/><search_results_configuration/><sp_chat_queue/><sp_rectangle_menu/><sys_class_name>sp_portal</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-03-28 06:17:31</sys_created_on><sys_id>a4de3b16073121102016f9fc7c1ed05c</sys_id><sys_mod_count>16</sys_mod_count><sys_name>Library</sys_name><sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package><sys_policy/><sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope><sys_update_name>sp_portal_a4de3b16073121102016f9fc7c1ed05c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-04-07 07:01:44</sys_updated_on><theme display_value="Benchmarks - Theme">166e16f65b4132003d1c484c11f91a70</theme><title>Library</title><ts_index_group/><url_suffix>lb</url_suffix></sp_portal><sys_translated_text action="delete_multiple" query="documentkey=a4de3b16073121102016f9fc7c1ed05c"/><sys_attachment action="INSERT_OR_UPDATE"><average_image_color>#9999cc</average_image_color><chunk_size_bytes>700000</chunk_size_bytes><compressed>true</compressed><content_type>image/png</content_type><file_name>logo</file_name><hash>2b9f161ccb5d1a8a108d3897a8efbe7316ba4d83aec7908b6e34b5170ce8b781</hash><image_height>124</image_height><image_width>130</image_width><size_bytes>1377</size_bytes><size_compressed>1400</size_compressed><state>available</state><sys_created_by>admin</sys_created_by><sys_created_on>2023-04-07 06:55:22</sys_created_on><sys_id>22f72b69070221102016f9fc7c1ed099</sys_id><sys_mod_count>3</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-04-07 06:55:22</sys_updated_on><table_name>ZZ_YYsp_portal</table_name><table_sys_id>a4de3b16073121102016f9fc7c1ed05c</table_sys_id></sys_attachment><sys_attachment_doc action="INSERT_OR_UPDATE"><data>H4sIAAAAAAAAAA==</data><length>16</length><position>0</position><sys_attachment display_value="logo" sys_id="22f72b69070221102016f9fc7c1ed099">22f72b69070221102016f9fc7c1ed099</sys_attachment><sys_created_by>admin</sys_created_by><sys_created_on>2023-04-07 06:55:22</sys_created_on><sys_id>62f72b69070221102016f9fc7c1ed099</sys_id></sys_attachment_doc><sys_attachment_doc action="INSERT_OR_UPDATE"><data>AWEFnvqJUE5HDQoaCgAAAA1JSERSAAAAggAAAHwIAwAAAJJFmKYAAACTUExURf///xYUFRESJAAAAJmZngAAA2hoaLCwsPPz82BfYObm5oKBghIPEAYABFhYWCgoKKKhogAAG5SUlIeHh6enp9bW1s/Pz25tbnh4eLu7u8fHx0JCQgYIHktLS9zc3Pn5+Ts7OyEgIDIyMh0eLAAAF3Z2fjg4Q1hYYAAADWZmbDIyOisrNyQkMImJkR4dIk9PWURES0kZymEAAASJSURBVGiB7ZoLe6I6EIaReLgJNATkDsp9qe3K//91J+Gebbt2Ndaes/nqBQeSeWcy+qQJgsDFxcXFxfV/VeokiZM+zL3iokgHWHpku8oD/AfeETvXN1g6Bjl6wZdSaI5Kgt+sRNKhOtqXuD+EdgaAMXoladD1kccAILPDw339a4GaTeHrEfSl5MkwnhLJh5E+JSNTg3sl46AhM1ul3zCxUVEQUkgRmMZqSDITacyTgdMf4fSvh79HEARZ7t8WBEKBhyRiOiSaI/1afQuC47xFmOpTYlKfyh7luLPNW11AIMINc7S/6cuqhf7xbfifRxiScfTDq5Oh5R/6/zTCQJFfy6A9fQzw23J8A/F0HwTcsYlkFyFXRualK++E0Bc96IvuN+N1X4RP67+N0OeYrrM++YNoN4ud5jb6S69FUOwdFv3Tm+8m+TSCP5/I6Z9xYrJvm0s463CBtOQoW7nSsyVOiWrg3OR80J7qES4nolV6jGixQ6rBngGC4C9d6vnK7q5cAXd1YjUSwGdBIDibpUtpZV99YeiSlxbkDYtxEFbVYJjUFECb0wCoij/MFcykEojkyRVQKbuyINAVr84NZI7AETgCR+AIHIEjcASOwBE4AkfgCByBI3AEjvCNEIK5R4k+sSDQ9nnlEQQs/O+P0bKIl0X5HJd0jJYVt+g408l5lM32PDrevvAIqX05Yx4LjbLrxrzopq5XrbEdftTzHyBs1jKmaDXavqz7SfS6OQMEh3YFvEsI3i8Nblp6VBwIIaLX9oFPjFhORG+bR5PdpxF0RIzXrsQP+xF0sJsPth1WGxXvNLh6P+I77MpwBAFlrAgIQ4auQbiw+fhnDOA6BHYE+HvBEa5HYKprEGRVYiiV1eSFi0sef+P7+5QC27b7CWGKD+zhTDrMjUJsQGRuEJJ5q8uyBNVxDpqQuyt3thvkxBB4aRqAfgPXy/pNa7RL93JvAXvhAFje6yaNCGaPEGKXJMoATSbFDPsJHdoS730akoPEZAb/LoKdeGY/jw4SCHcJOXKgkBDH0ITQH2aXtuS92xUThB1yXYkMc6CG9nA3QWQ7EZmmIi/0k+FSJWd7F6iUrhFwgl2ShsDGwZJYtWMYBhlBwEOjDpWpmGxvNzSRLJN6S0g2fD9w8pAg7AThsMFHPslJhA+QTf7T7HmViC1CKA8IIUnuHn/ovWjElIajOcV4e4Lo9qN2CJkScHFxcXH9ndo+XMI/D5cgPlwjQhxPhh9iGYv4D6sovgyhaMv2WTzVrViLLzbyUGxaz8nrz/M5vtj+gsbQYou8TLbSii0rjq3SKieEuOqqpm27Cj+aV+cM7QpB1dnenoWXuiO5LOs2LuLnIsYdFnHXNDV+dE3beMWIYDXtq9p2YtsCVJdxYEMQICDD8lYCsXitqnbXvrYVeVZmVW0rEi9+rbZdg5pTPNZCoYpt3ZzPXVu/ePDkdfhpY9CbEazz6Wyem7rGcdfnDvvoiq5u8afu+VSfupZcNJSjJeLhwQVoxWL5A48VfpaWdTMBqYW479ma3kihl4Mzcm5BeKi+AcK/q61zEyMIyaUAAAAASUVORK5CYILdQ9hOYQUAAA==</data><length>1856</length><position>1</position><sys_attachment display_value="logo" sys_id="22f72b69070221102016f9fc7c1ed099">22f72b69070221102016f9fc7c1ed099</sys_attachment><sys_created_by>admin</sys_created_by><sys_created_on>2023-04-07 06:55:22</sys_created_on><sys_id>e2f72b69070221102016f9fc7c1ed099</sys_id></sys_attachment_doc></record_update>]]></payload>
+        <payload_hash>0</payload_hash>
+        <record_name>Library</record_name>
+        <reverted_from/>
+        <source>3666e7e5070221102016f9fc7c1ed098</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-07 07:01:44</sys_created_on>
+        <sys_id>bb69a7a9070221102016f9fc7c1ed0b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1875a85650c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-07 07:01:44</sys_updated_on>
+        <type>Service Portal</type>
+        <update_guid>bf69a7a9c1022110282eace28f1f5fb8</update_guid>
+        <update_guid_history>bf69a7a9c1022110282eace28f1f5fb8:-1456227025,d608eb69eb022110ccd5306e7ed50aef:857138824,3af7af6907022110093f8452f4c5e0a8:-1022833157,eef7af6936022110811635c8623f78a1:1202440610,4af7af696f022110f84de1404e6e6765:1160549731,ffc7eb692d0221102bee02eb4ef77d91:-274943585,3cc76b694b02211081d5b7d61a0f79fe:-273388999,34c76b69ac022110023f2ffdf7a77bf7:-1056694772,945c51be9e712110bff4bf27080e9491:1160549731,ef0cd93eb7712110bb2ca9a2e090b059:1742927294,85fb157e477121104a10c4b73a7ba971:-677394291,8595ddb254712110373fd8ab0cd2f2b0:1160549731,66c1ddb26a71211072a84b4e40456908:-2131262913,57f440eabd31211063e432f8a64a5326:2144205619,7794c0a63d31211037b01847d0be435a:1763715970,9e740ca692312110993e8a56ac4f0de8:1905954216,8960c4666f3121105e7a58f2f7dfb9f8:22941402,a330cc66df312110435bb7c6cd9c70d2:438726361,52eff356ad312110a0eac6efa9e7892a:-1943440432,be6fb356c1312110cb47fb9bd1dd761c:1681839080</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Library">184a3006070221102016f9fc7c1ed03f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-08 07:33:19</sys_created_on>
+        <sys_db_object display_value="" name="sp_portal">sp_portal</sys_db_object>
+        <sys_id>58fe2e973aaf49a0abc2a5bfa4149c01</sys_id>
+        <sys_metadata>a4de3b16073121102016f9fc7c1ed05c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Library</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>sp_portal_a4de3b16073121102016f9fc7c1ed05c</sys_update_name>
+        <sys_update_version display_value="sp_portal_a4de3b16073121102016f9fc7c1ed05c">bb69a7a9070221102016f9fc7c1ed0b9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-08 07:33:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
