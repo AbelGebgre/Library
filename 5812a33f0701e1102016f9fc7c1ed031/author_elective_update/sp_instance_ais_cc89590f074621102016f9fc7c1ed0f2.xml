@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_ais">
+    <sp_instance_ais action="DELETE">
+        <active>true</active>
+        <ai_search_source_filter/>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <disable_all_suggestions>false</disable_all_suggestions>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <placeholder/>
+        <roles/>
+        <search_application/>
+        <search_results_configuration/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="2">19c8150f074621102016f9fc7c1ed07b</sp_column>
+        <sp_widget display_value="Knowledge Breadcrumbs">851b8947db20320099f93691f0b8f5ea</sp_widget>
+        <spell_check_font_size>xl</spell_check_font_size>
+        <sys_class_name>sp_instance_ais</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-11 12:23:45</sys_created_on>
+        <sys_id>cc89590f074621102016f9fc7c1ed0f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sp_instance_ais_cc89590f074621102016f9fc7c1ed0f2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-11 12:23:45</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance_ais>
+    <sys_translated_text action="DELETE" query="documentkey=cc89590f074621102016f9fc7c1ed0f2"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>sp_instance_ais_cc89590f074621102016f9fc7c1ed0f2</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_ais"><sp_instance_ais action="INSERT_OR_UPDATE"><active>true</active><ai_search_source_filter/><class_name/><color>default</color><css/><disable_all_suggestions>false</disable_all_suggestions><glyph/><id/><order>1</order><placeholder/><roles/><search_application/><search_results_configuration/><short_description/><size>md</size><sp_column display_value="2">19c8150f074621102016f9fc7c1ed07b</sp_column><sp_widget display_value="Knowledge Breadcrumbs">851b8947db20320099f93691f0b8f5ea</sp_widget><spell_check_font_size>xl</spell_check_font_size><sys_class_name>sp_instance_ais</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-04-11 12:23:45</sys_created_on><sys_id>cc89590f074621102016f9fc7c1ed0f2</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package><sys_policy/><sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope><sys_update_name>sp_instance_ais_cc89590f074621102016f9fc7c1ed0f2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-04-11 12:23:45</sys_updated_on><title/><url/><widget_parameters/></sp_instance_ais><sys_translated_text action="delete_multiple" query="documentkey=cc89590f074621102016f9fc7c1ed0f2"/></record_update>]]></payload>
+        <payload_hash>-1880677395</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>3666e7e5070221102016f9fc7c1ed098</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-11 12:23:45</sys_created_on>
+        <sys_id>8089114f074621102016f9fc7c1ed0cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1877045a60f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-11 12:23:45</sys_updated_on>
+        <type>Instance with Search</type>
+        <update_guid>c889590f1d4621102b289d59fd0af9f4</update_guid>
+        <update_guid_history>c889590f1d4621102b289d59fd0af9f4:-1880677395</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">6d89dd0f074621102016f9fc7c1ed0dc</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-11 12:23:51</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance_ais">sp_instance_ais</sys_db_object>
+        <sys_id>2675192646924aba95d7fe87203997a4</sys_id>
+        <sys_metadata>cc89590f074621102016f9fc7c1ed0f2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>sp_instance_ais_cc89590f074621102016f9fc7c1ed0f2</sys_update_name>
+        <sys_update_version display_value="sp_instance_ais_cc89590f074621102016f9fc7c1ed0f2">8089114f074621102016f9fc7c1ed0cf</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-11 12:23:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function($scope,spModal, $rootScope) {
+    /* widget controller */
+    var c = this;
+		$scope.field = '';
+		$scope.value = '';
+		$scope.encode = $scope.data.encodedQuery;
+    $scope.open = function(id) {
+			spModal.open({
+				title:'Record Details',
+				widget:'widget-form',
+				widgetInput:{sys_id:id,table:'x_976190_library_catalog'}
+			}).then(function(){
+				
+			});
+    }
+		$rootScope.$on('fillter-selected', function(event,da){
+				da = JSON.stringify(da);
+				var parsedData = JSON.parse(da);
+				c.data.currentquery = $scope.encode + '^'+ parsedData.field+'='+parsedData.sys_id;
+				$scope.field = parsedData.field[0].toUpperCase()+parsedData.field.slice(1);
+				$scope.value = parsedData.name[0].toUpperCase()+parsedData.name.slice(1);
+				c.server.update().then(function(){
+					c.data.currentquery = '';
+				});
+		});
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance_table</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list>title,short_description,table,filter</field_list>
+        <has_preview>true</has_preview>
+        <id>catalog_library</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Catalog - Library</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	data.encodedQuery = 'sys_created_by='+gs.getUserName();
+	if(input && input.currentquery){
+		loadRecord(input.currentquery);
+	}
+	else{
+		loadRecord(data.encodedQuery);
+	}
+	
+	function loadRecord(encoded){
+		data.inc = [];
+		data.user = gs.getUserDisplayName();
+		var grCatalog = new GlideRecord('x_976190_library_catalog');
+		grCatalog.addEncodedQuery(encoded);
+		grCatalog.query();
+		while(grCatalog.next()){
+			var json = {};
+			json.number = grCatalog.number.toString();
+			json.title = grCatalog.title.toString();
+			json.category = grCatalog.getDisplayValue('category');
+			json.author = grCatalog.getDisplayValue('author');
+			json.publisher = grCatalog.getDisplayValue('publisher');
+			json.price = grCatalog.price.toString();
+			json.type = grCatalog.getDisplayValue('type');
+			json.isbn10 = grCatalog.isbn10.toString();
+			json.isbn13 = grCatalog.isbn13.toString();
+			json.copies = getCopyRecord(grCatalog.sys_id.toString());
+			json.published_date = grCatalog.published_date.toString();
+			json.active = grCatalog.active.toString();
+			json.sys_id = grCatalog.getValue('sys_id');
+			//json.canRead = $sp.canReadRecord(grCatalog,grCatalog.getValue('sys_id'));
+			data.inc.push(json);
+		}
+		data.count = grCatalog.getRowCount();
+	}
+	function getCopyRecord(catalog){
+		var grCopy = new GlideRecord('x_976190_library_copy');
+		grCopy.addEncodedQuery('catalog='+catalog);
+		grCopy.query();
+		return grCopy.getRowCount();
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-11 09:03:41</sys_created_on>
+        <sys_id>4c9b244f078221102016f9fc7c1ed0cf</sys_id>
+        <sys_mod_count>111</sys_mod_count>
+        <sys_name>Catalog - Library</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sp_widget_4c9b244f078221102016f9fc7c1ed0cf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 12:42:19</sys_updated_on>
+        <template><![CDATA[<div class="">
+  <h1>Catalogs <span style="font-size:24px;">({{data.count}})</span>
+    <h5 ng-if="field == ''">All > Created By {{data.user}}</h5>
+    <h5 ng-if="field != ''" style="transform:capitalize">All > Created By {{data.user}} > {{field}} = {{value}}</h5>
+  </h1>
+   <table class="table">
+     <tr>
+       <!--<th ng-repeat="col of data.inc[0]">{{col}}</th>-->
+       <th>Number</th>
+       <th>Title</th>
+       <th ng-if="field != 'Type'">Type</th>
+       <th ng-if="field != 'Category'">Category</th>
+       <th ng-if="field != 'Author'">Author</th>
+       <th ng-if="field != 'Publisher'">Publisher</th>
+       <th>Price</th>
+       <th>Copies</th>
+       <!--<th>Isbn10</th>
+       <th>Isbn13</th>-->
+       <th>Published Date</th>
+       <th>Active</th>
+     </tr>
+     <tr ng-repeat="key in data.inc">
+       <td><a role="button" href ng-click="open(key.sys_id)">{{key.number}}</a></td>
+       <td>{{key.title}}</td>
+       <td ng-if="field != 'Type'">{{key.type}}</td>
+       <td ng-if="field != 'Category'">{{key.category}}</td>
+       <td ng-if="field != 'Author'">{{key.author}}</td>
+       <td ng-if="field != 'Publisher'">{{key.publisher}}</td>
+       <td>{{key.price}}</td>
+       <td>{{key.copies}}</td>
+       <!--<td>{{key.isbn10}}</td>
+       <td>{{key.isbn13}}</td>-->
+       <td>{{key.published_date}}</td>
+       <td>{{key.active}}</td>
+     </tr>
+  </table>
+</div>]]></template>
+    </sp_widget>
+</record_update>
