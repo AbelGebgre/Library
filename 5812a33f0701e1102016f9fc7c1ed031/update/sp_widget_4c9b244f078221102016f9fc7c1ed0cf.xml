@@ -4,14 +4,30 @@
         <client_script><![CDATA[api.controller = function($scope,spModal, $rootScope) {
     /* widget controller */
     var c = this;
+		$scope.sortKey='';
+		$scope.reverse = false;
 		$scope.field = '';
 		$scope.value = '';
 		$scope.encode = $scope.data.encodedQuery;
+		$scope.columns = [
+			{lable:'Number', name:'number'},
+			{lable:'Title', name:'title'},
+			{lable:'Type', name:'type'},
+			{lable:'Category', name:'category'},
+			{lable:'Author', name:'author'},
+			{lable:'Publisher', name:'publisher'},
+			{lable:'Price', name:'price'},
+			{lable:'Copies', name:'copies'},
+			{lable:'Published Date', name:'published_date'},
+			{lable:'Active', name:'active'}
+			];
     $scope.open = function(id) {
+			var http = 'https://dev95818.service-now.com/x_976190_library_catalog_list.do?PDF&sys_id='+id;
+			window.open(http,'printer friendly version','resizable=yes,scrollbars=yes,status=yes,toolbar=no,menubar=yes,location=no');
 			spModal.open({
 				title:'Record Details',
 				widget:'widget-form',
-				widgetInput:{sys_id:id,table:'x_976190_library_catalog'}
+				widgetInput:{sys_id:id,table:data.table}
 			}).then(function(){
 				
 			});
@@ -26,6 +42,10 @@
 					c.data.currentquery = '';
 				});
 		});
+	$scope.sort = function(field){
+		$scope.sortKey = field;
+		$scope.reverse = !$scope.reverse;
+	}
 };]]></client_script>
         <controller_as>c</controller_as>
         <css/>
@@ -47,18 +67,25 @@
         <script><![CDATA[(function() {
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
-	data.encodedQuery = 'sys_created_by='+gs.getUserName();
+	data.table = $sp.getValue('table');
+	data.title = $sp.getValue('title');
+	data.query = '';
+	data.encodedQuery = $sp.getValue('filter');//'sys_created_by='+gs.getUserName();
 	if(input && input.currentquery){
+		data.query = input.currentquery;
 		loadRecord(input.currentquery);
 	}
 	else{
+		data.query = data.encodedQuery;
 		loadRecord(data.encodedQuery);
 	}
+	var param = {table:data.table,query:data.query};
+	data.filterWidget = $sp.getWidget('widget-filter-breadcrumbs',param);
 	
 	function loadRecord(encoded){
 		data.inc = [];
 		data.user = gs.getUserDisplayName();
-		var grCatalog = new GlideRecord('x_976190_library_catalog');
+		var grCatalog = new GlideRecord(data.table);
 		grCatalog.addEncodedQuery(encoded);
 		grCatalog.query();
 		while(grCatalog.next()){
@@ -93,48 +120,36 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-04-11 09:03:41</sys_created_on>
         <sys_id>4c9b244f078221102016f9fc7c1ed0cf</sys_id>
-        <sys_mod_count>111</sys_mod_count>
+        <sys_mod_count>148</sys_mod_count>
         <sys_name>Catalog - Library</sys_name>
         <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
         <sys_policy/>
         <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
         <sys_update_name>sp_widget_4c9b244f078221102016f9fc7c1ed0cf</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-13 12:42:19</sys_updated_on>
+        <sys_updated_on>2023-04-19 12:05:03</sys_updated_on>
         <template><![CDATA[<div class="">
-  <h1>Catalogs <span style="font-size:24px;">({{data.count}})</span>
-    <h5 ng-if="field == ''">All > Created By {{data.user}}</h5>
-    <h5 ng-if="field != ''" style="transform:capitalize">All > Created By {{data.user}} > {{field}} = {{value}}</h5>
+  <h1>{{data.title}} <span style="font-size:24px;">({{data.count}})</span>
+    <!--<h5 ng-if="field == ''">All > Created By {{data.user}}</h5>
+    <h5 ng-if="field != ''" style="transform:capitalize">All > Created By {{data.user}} > {{field}} = {{value}}</h5>-->
+    <h5>
+      <sp-widget widget="data.filterWidget"></sp-widget>
+    </h5>
   </h1>
    <table class="table">
      <tr>
-       <!--<th ng-repeat="col of data.inc[0]">{{col}}</th>-->
-       <th>Number</th>
-       <th>Title</th>
-       <th ng-if="field != 'Type'">Type</th>
-       <th ng-if="field != 'Category'">Category</th>
-       <th ng-if="field != 'Author'">Author</th>
-       <th ng-if="field != 'Publisher'">Publisher</th>
-       <th>Price</th>
-       <th>Copies</th>
-       <!--<th>Isbn10</th>
-       <th>Isbn13</th>-->
-       <th>Published Date</th>
-       <th>Active</th>
+       <th ng-repeat="col in columns" ng-click="sort(col.name)">
+         {{col.lable}}
+         <span class="glyphicon glyphicon-sort" ng-if="sortKey == ''"></span>
+         <span ng-if="col.name == sortKey && !reverse" class="glyphicon glyphicon-sort-by-attributes"></span>
+         <span ng-if="col.name == sortKey && reverse" class="glyphicon glyphicon-sort-by-attributes-alt"></span>
+       </th>
      </tr>
-     <tr ng-repeat="key in data.inc">
-       <td><a role="button" href ng-click="open(key.sys_id)">{{key.number}}</a></td>
-       <td>{{key.title}}</td>
-       <td ng-if="field != 'Type'">{{key.type}}</td>
-       <td ng-if="field != 'Category'">{{key.category}}</td>
-       <td ng-if="field != 'Author'">{{key.author}}</td>
-       <td ng-if="field != 'Publisher'">{{key.publisher}}</td>
-       <td>{{key.price}}</td>
-       <td>{{key.copies}}</td>
-       <!--<td>{{key.isbn10}}</td>
-       <td>{{key.isbn13}}</td>-->
-       <td>{{key.published_date}}</td>
-       <td>{{key.active}}</td>
+     <tr ng-repeat="key in data.inc | orderBy:sortKey:reverse">
+     	<td ng-repeat="field in columns">
+       		<a ng-if="$first" role="button" href ng-click="open(key.sys_id)">{{key[field.name]}}</a>
+         	<span ng-if="!$first">{{key[field.name]}}</span>
+       </td>
      </tr>
   </table>
 </div>]]></template>

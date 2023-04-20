@@ -6,7 +6,8 @@
         <css/>
         <display_field/>
         <field_list/>
-        <filter/>
+        <filter table="x_976190_library_catalog">sys_created_onONLast month@javascript:gs.beginningOfLastMonth()@javascript:gs.endOfLastMonth()<item endquery="false" field="sys_created_on" goto="false" newquery="false" operator="ON" or="false" value="Last month@javascript:gs.beginningOfLastMonth()@javascript:gs.endOfLastMonth()"/>
+        </filter>
         <glyph/>
         <id/>
         <maximum_entries>5</maximum_entries>
@@ -21,20 +22,20 @@
         <sp_widget display_value="Catalog - Library">4c9b244f078221102016f9fc7c1ed0cf</sp_widget>
         <sys_class_name>sp_instance_table</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-04-11 13:53:19</sys_created_on>
-        <sys_id>c80ea9c307c621102016f9fc7c1ed05f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name/>
+        <sys_created_on>2023-04-19 11:23:32</sys_created_on>
+        <sys_id>04785661075621102016f9fc7c1ed09e</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Catalogs</sys_name>
         <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
         <sys_policy/>
         <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
-        <sys_update_name>sp_instance_table_c80ea9c307c621102016f9fc7c1ed05f</sys_update_name>
+        <sys_update_name>sp_instance_table_04785661075621102016f9fc7c1ed09e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-12 08:49:09</sys_updated_on>
-        <table/>
-        <title/>
+        <sys_updated_on>2023-04-19 11:35:13</sys_updated_on>
+        <table>x_976190_library_catalog</table>
+        <title>Catalogs</title>
         <url/>
         <widget_parameters/>
     </sp_instance_table>
-    <sys_translated_text action="delete_multiple" query="documentkey=c80ea9c307c621102016f9fc7c1ed05f"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=04785661075621102016f9fc7c1ed09e"/>
 </record_update>
