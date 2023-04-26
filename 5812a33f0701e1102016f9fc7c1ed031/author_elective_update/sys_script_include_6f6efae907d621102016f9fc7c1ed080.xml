@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_976190_library.HtmlToPDF</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>HtmlToPDF</name>
+        <script><![CDATA[var HtmlToPDF = Class.create();
+HtmlToPDF.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    convertToPDF: function() {
+        var recordId = this.getParameter('sysparm_sys_id');
+        var docId = this.getParameter('sysparm_doc_id');
+        var pdfName = this.getParameter('sysparm_pdf');
+        this.deleteAttachment(recordId, pdfName);
+        var pdf = new sn_doc.GenerateDocumentAPI();
+        var result = pdf.generateDocumentForTask(recordId, docId, pdfName);
+        return JSON.stringify(result);
+    },
+    deleteAttachment: function(sys_id, name = '') {
+        var attach = new GlideRecord('sys_attachment');
+        attach.addEncodedQuery('table_sys_id=' + sys_id);
+        attach.query();
+        while (attach.next()) {
+			var fileName = attach.getValue('file_name').toString().split('.')[0];
+			if(name == fileName){
+				var attachment = new GlideSysAttachment();
+				attachment.deleteAttachment(attach.getValue('sys_id'));
+			}   
+        }
+    },
+    htmltoPDF: function() {
+        var record = new GlideRecord('x_976190_library_pdf_template');
+        record.addEncodedQuery(this.getParameter('sysparm_query'));
+        record.query();
+        if (record.next()) {
+            var html = record.getValue('html_template');
+            var table = this.getParameter('sysparm_table');
+            var sys_id = this.getParameter('sysparm_sys_id');
+            var pdfName = this.getParameter('sysparm_pdf');
+            var fieldMap = this.getData(); //this.getParameter('sysparm_obj');
+            var data = fieldMap?.data;
+            var hfInfo = fieldMap?.config;
+            var info = fieldMap?.info;
+            delete fieldMap.data;
+            delete fieldMap.config;
+            delete fieldMap.info;
+            var columns = [];
+            var currentdate = new GlideDate();
+            var date = currentdate.getByFormat("MMM d, yyyy, h:MM");
+            html = html.replace("${generated_by}", gs.getUserDisplayName());
+            html = html.replace("${generated_on}", date);
+            if (info && info.length > 0) {
+                html = html.replace('<span id="info"></span>', '* ' + info.join('<br/> * '));
+            }
+            var replaceID = '';
+            for (const [index, object] of Object.entries(fieldMap)) {
+                if (index != 'data') {
+                    if (!object['number']) {
+                        if (object['invoice_id']) {
+                            html = html.replace("${number}", object['invoice_id']);
+                        }
+                    }
+                    if (typeof object == 'object') {
+                        for (var [field, value] of Object.entries(object)) {
+                            replaceID = "${" + field + "}";
+                            html = html.replace(replaceID, value);
+                        }
+                    } else if (typeof object == 'string') {
+                        replaceID = "${" + index + "}";
+                        html = html.replace(replaceID, object);
+                    }
+                }
+            }
+            var htmlTable = '<table class="table table-striped" style="width: 100%;">';
+            var header = '<thead><tr>';
+            var list = '<tbody>';
+            var summery = '';
+            var haveList = false;
+            var haveSummery = false;
+            for (const [key, array] of Object.entries(data)) {
+                if (key == 'header') {
+                    columns = array;
+                } else if (key == 'list') {
+                    haveList = array.length > 0 ? true : false;
+                } else if (key == 'summery') {
+                    haveSummery = array.length > 0 ? true : false;
+                }
+                for (var i = 0; i <= array.length; i++) {
+                    var dataList = array[i];
+                    if (dataList) {
+                        if (key == 'header') {
+                            var text = dataList['text_position'];
+                            text = text != '' || text != undefined ? `class="text-${text}"` : '';
+                            header += '<td ' + text + '>';
+                            header += '<strong>' + dataList.lable + '</strong></td>';
+                        } else if (key == 'list') {
+                            list += (i + 1 == array.length) ? "<tr class='line'>" : "<tr>";
+                            if (haveList) {
+                                for (const [colKey, col] of Object.entries(columns)) {
+                                    var listtext = col.text_position;
+                                    listtext = listtext != '' || listtext != undefined ?
+                                        `class="text-${listtext}"` : '';
+                                    list += '<td ' + listtext + '>';
+                                    list += dataList[col.name] + '</td>';
+                                }
+                            }
+                            list += '</tr>';
+                        } else if (key == 'summery' && haveSummery) {
+                            var rowspan = dataList.rowspan;
+                            summery += (i + 1 == array.length) ? "<tr class='line'>" : "<tr>";
+                            summery += '<td colspan="' + rowspan + '">&nbsp;</td>';
+                            summery += '<td class="text-right" colspan="2"><strong>';
+                            summery += dataList.name + '</strong></td>';
+                            summery += '<td class="text-right"><strong>';
+                            summery += dataList.value + '</strong></td>';
+                            summery += '</tr>';
+                        }
+                    }
+                }
+                if (!haveList && key == 'list') {
+                    list += "<tr class='line'>";
+                    list += '<td class="text-center" colspan="' + columns.length + '"';
+                    list += 'style="font-size:20px;">';
+                    list += 'No records to display. </td>';
+                    list += '</tr>';
+                }
+            }
+            header += '</tr></thead>';
+            var body = list + summery + '</tbody>';
+            htmlTable += header + body + '</table>';
+            html = html.replace('<div id="table">', htmlTable);
+            this.deleteAttachment(sys_id, pdfName);
+            var pdf = new sn_pdfgeneratorutils.PDFGenerationAPI;
+            var result = pdf.convertToPDFWithHeaderFooter(html, table, sys_id, pdfName, hfInfo);
+            return JSON.stringify(result);
+        }
+        return 'null';
+    },
+    getData: function() {
+        var obj = {
+            title: 'Related Tasks',
+            from: {
+                from_company: 'Twitter, Inc.',
+                from_address: '795 Folsom Ave, Suite 600',
+                from_city_zip_code: 'San Francisco, CA 94107',
+                from_phone: '(123) 456-7890',
+                from_fax: '(123) 456-7890',
+                form_email: 'twitter@inc.com'
+            },
+            to: {
+                to_company: 'Elaine Hernandez',
+                to_address: 'Wallaby Way, Sidney',
+                to_city_zip_code: 'San Francisco, CA 94107',
+                to_phone: '(123) 456-7890',
+                to_fax: '(123) 456-7890',
+                to_email: 'h.elaine@gmail.com'
+            },
+            invoice: {
+                invoice_info: 'July period',
+                invoice_date: 'July 3, 2015',
+                invoice_id: '0000123DSS',
+                invoice_category: 'Services Product'
+            },
+            payment: {
+                payment_method: 'VISA',
+                payment_info: 'Visa **** 1234',
+                payment_email: 'h.elaine@gmail.com'
+            },
+            data: {
+                header: [{
+                        lable: '#',
+                        name: 'id',
+                        text_position: ''
+                    },
+                    {
+                        lable: 'ITEMS',
+                        name: 'items',
+                        text_position: 'left'
+                    },
+                    {
+                        lable: 'QTY',
+                        name: 'qty',
+                        text_position: 'center'
+                    },
+                    {
+                        lable: 'PRICE',
+                        name: 'unit_price',
+                        text_position: 'right'
+                    },
+                    {
+                        lable: 'Total',
+                        name: 'total_price',
+                        text_position: 'right'
+                    }
+                ],
+                list: [{
+                        id: '1',
+                        items: 'A website template is a pre-designed webpage',
+                        description: 'A website template is a pre-designed webpage',
+                        qty: '15',
+                        unit_price: '$75.00',
+                        total_price: '$1,125.00'
+                    },
+                    {
+                        id: '2',
+                        items: 'Web development is a broad term for the work involved, Web development is a broad term for the work involved ',
+                        description: 'Web development is a broad term for the work involved ',
+                        qty: '20',
+                        unit_price: '$75.00',
+                        total_price: '$1,500.00'
+                    },
+                    {
+                        id: '3',
+                        items: 'Web development is a broad term for the work involved',
+                        description: 'Web development is a broad term for the work involved ',
+                        qty: '15',
+                        unit_price: '$90.00',
+                        total_price: '$1,350.00'
+                    },
+                    {
+                        id: '4',
+                        items: 'Web development is a broad term for the work involved, Web development is a broad term for the work involved ',
+                        description: 'Web development is a broad term for the work involved ',
+                        qty: '20',
+                        unit_price: '$300.00',
+                        total_price: '$6,000.00'
+                    },
+                    {
+                        id: '5',
+                        items: 'Web development is a broad term for the work involved ',
+                        qty: '30',
+                        unit_price: '$75.00',
+                        total_price: '$2,250.00'
+                    },
+                ],
+                summery: [{
+                    rowspan: '2',
+                    name: 'Subtotal',
+                    value: '$12,225.00'
+                }, {
+                    rowspan: '2',
+                    name: 'VAT 15%',
+                    value: '$1,833.75'
+                }, {
+                    rowspan: '2',
+                    name: 'Service Fee 10%',
+                    value: '$1,222.50'
+                }, {
+                    rowspan: '2',
+                    name: 'Shipment 5%',
+                    value: '$611.25'
+                }, {
+                    rowspan: '2',
+                    name: 'Grand Total',
+                    value: '$15,891.75'
+                }]
+            },
+            company: {
+                company_name: 'Dengene Technology Solutions, Plc.',
+                company_website: 'matiasgallipoli.com',
+                company_phone: '016-18192302',
+                company_email: 'rtiemps@gmail.com',
+                company_box: '10023'
+            },
+            info: [
+                //                 'If you have any questions concerning this invoice, contact.',
+                //                 'If you have any questions concerning this invoice, contact.2',
+                //                 'If you have any questions concerning this invoice, contact.3',
+                //                 'If you have any questions concerning this invoice, contact.4'
+            ],
+            config: {
+                FooterText: `Website: matiasgallipoli.com 
+				Phone: 016-18192302 
+				Email: rtiemps@gmail.com`,
+                FooterTextAlignment: "BOTTOM_LEFT",
+                HeaderImageAlignment: "right",
+                HeaderImageAttachmentId: "43f1babe079ea1102016f9fc7c1ed025",
+                HeaderImageHeight: "40",
+                LeftOrRightMargin: "13",
+                TopOrBottomMargin: "60",
+                PageSize: "A4",
+                GeneratePageNumber: 'true'
+            }
+        };
+
+        return obj;
+    },
+    type: 'HtmlToPDF'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-19 14:14:27</sys_created_on>
+        <sys_id>6f6efae907d621102016f9fc7c1ed080</sys_id>
+        <sys_mod_count>209</sys_mod_count>
+        <sys_name>HtmlToPDF</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sys_script_include_6f6efae907d621102016f9fc7c1ed080</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-24 12:52:01</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>sys_script_include_6f6efae907d621102016f9fc7c1ed080</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_976190_library.HtmlToPDF&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;HtmlToPDF&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var HtmlToPDF = Class.create();
+HtmlToPDF.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    convertToPDF: function() {
+        var recordId = this.getParameter('sysparm_sys_id');
+        var docId = this.getParameter('sysparm_doc_id');
+        var pdfName = this.getParameter('sysparm_pdf');
+        this.deleteAttachment(recordId, pdfName);
+        var pdf = new sn_doc.GenerateDocumentAPI();
+        var result = pdf.generateDocumentForTask(recordId, docId, pdfName);
+        return JSON.stringify(result);
+    },
+    deleteAttachment: function(sys_id, name = '') {
+        var attach = new GlideRecord('sys_attachment');
+        attach.addEncodedQuery('table_sys_id=' + sys_id);
+        attach.query();
+        while (attach.next()) {
+			var fileName = attach.getValue('file_name').toString().split('.')[0];
+			if(name == fileName){
+				var attachment = new GlideSysAttachment();
+				attachment.deleteAttachment(attach.getValue('sys_id'));
+			}   
+        }
+    },
+    htmltoPDF: function() {
+        var record = new GlideRecord('x_976190_library_pdf_template');
+        record.addEncodedQuery(this.getParameter('sysparm_query'));
+        record.query();
+        if (record.next()) {
+            var html = record.getValue('html_template');
+            var table = this.getParameter('sysparm_table');
+            var sys_id = this.getParameter('sysparm_sys_id');
+            var pdfName = this.getParameter('sysparm_pdf');
+            var fieldMap = this.getData(); //this.getParameter('sysparm_obj');
+            var data = fieldMap?.data;
+            var hfInfo = fieldMap?.config;
+            var info = fieldMap?.info;
+            delete fieldMap.data;
+            delete fieldMap.config;
+            delete fieldMap.info;
+            var columns = [];
+            var currentdate = new GlideDate();
+            var date = currentdate.getByFormat("MMM d, yyyy, h:MM");
+            html = html.replace("${generated_by}", gs.getUserDisplayName());
+            html = html.replace("${generated_on}", date);
+            if (info &amp;&amp; info.length &gt; 0) {
+                html = html.replace('&lt;span id="info"&gt;&lt;/span&gt;', '* ' + info.join('&lt;br/&gt; * '));
+            }
+            var replaceID = '';
+            for (const [index, object] of Object.entries(fieldMap)) {
+                if (index != 'data') {
+                    if (!object['number']) {
+                        if (object['invoice_id']) {
+                            html = html.replace("${number}", object['invoice_id']);
+                        }
+                    }
+                    if (typeof object == 'object') {
+                        for (var [field, value] of Object.entries(object)) {
+                            replaceID = "${" + field + "}";
+                            html = html.replace(replaceID, value);
+                        }
+                    } else if (typeof object == 'string') {
+                        replaceID = "${" + index + "}";
+                        html = html.replace(replaceID, object);
+                    }
+                }
+            }
+            var htmlTable = '&lt;table class="table table-striped" style="width: 100%;"&gt;';
+            var header = '&lt;thead&gt;&lt;tr&gt;';
+            var list = '&lt;tbody&gt;';
+            var summery = '';
+            var haveList = false;
+            var haveSummery = false;
+            for (const [key, array] of Object.entries(data)) {
+                if (key == 'header') {
+                    columns = array;
+                } else if (key == 'list') {
+                    haveList = array.length &gt; 0 ? true : false;
+                } else if (key == 'summery') {
+                    haveSummery = array.length &gt; 0 ? true : false;
+                }
+                for (var i = 0; i &lt;= array.length; i++) {
+                    var dataList = array[i];
+                    if (dataList) {
+                        if (key == 'header') {
+                            var text = dataList['text_position'];
+                            text = text != '' || text != undefined ? `class="text-${text}"` : '';
+                            header += '&lt;td ' + text + '&gt;';
+                            header += '&lt;strong&gt;' + dataList.lable + '&lt;/strong&gt;&lt;/td&gt;';
+                        } else if (key == 'list') {
+                            list += (i + 1 == array.length) ? "&lt;tr class='line'&gt;" : "&lt;tr&gt;";
+                            if (haveList) {
+                                for (const [colKey, col] of Object.entries(columns)) {
+                                    var listtext = col.text_position;
+                                    listtext = listtext != '' || listtext != undefined ?
+                                        `class="text-${listtext}"` : '';
+                                    list += '&lt;td ' + listtext + '&gt;';
+                                    list += dataList[col.name] + '&lt;/td&gt;';
+                                }
+                            }
+                            list += '&lt;/tr&gt;';
+                        } else if (key == 'summery' &amp;&amp; haveSummery) {
+                            var rowspan = dataList.rowspan;
+                            summery += (i + 1 == array.length) ? "&lt;tr class='line'&gt;" : "&lt;tr&gt;";
+                            summery += '&lt;td colspan="' + rowspan + '"&gt;&amp;nbsp;&lt;/td&gt;';
+                            summery += '&lt;td class="text-right" colspan="2"&gt;&lt;strong&gt;';
+                            summery += dataList.name + '&lt;/strong&gt;&lt;/td&gt;';
+                            summery += '&lt;td class="text-right"&gt;&lt;strong&gt;';
+                            summery += dataList.value + '&lt;/strong&gt;&lt;/td&gt;';
+                            summery += '&lt;/tr&gt;';
+                        }
+                    }
+                }
+                if (!haveList &amp;&amp; key == 'list') {
+                    list += "&lt;tr class='line'&gt;";
+                    list += '&lt;td class="text-center" colspan="' + columns.length + '"';
+                    list += 'style="font-size:20px;"&gt;';
+                    list += 'No records to display. &lt;/td&gt;';
+                    list += '&lt;/tr&gt;';
+                }
+            }
+            header += '&lt;/tr&gt;&lt;/thead&gt;';
+            var body = list + summery + '&lt;/tbody&gt;';
+            htmlTable += header + body + '&lt;/table&gt;';
+            html = html.replace('&lt;div id="table"&gt;', htmlTable);
+            this.deleteAttachment(sys_id, pdfName);
+            var pdf = new sn_pdfgeneratorutils.PDFGenerationAPI;
+            var result = pdf.convertToPDFWithHeaderFooter(html, table, sys_id, pdfName, hfInfo);
+            return JSON.stringify(result);
+        }
+        return 'null';
+    },
+    getData: function() {
+        var obj = {
+            title: 'Related Tasks',
+            from: {
+                from_company: 'Twitter, Inc.',
+                from_address: '795 Folsom Ave, Suite 600',
+                from_city_zip_code: 'San Francisco, CA 94107',
+                from_phone: '(123) 456-7890',
+                from_fax: '(123) 456-7890',
+                form_email: 'twitter@inc.com'
+            },
+            to: {
+                to_company: 'Elaine Hernandez',
+                to_address: 'Wallaby Way, Sidney',
+                to_city_zip_code: 'San Francisco, CA 94107',
+                to_phone: '(123) 456-7890',
+                to_fax: '(123) 456-7890',
+                to_email: 'h.elaine@gmail.com'
+            },
+            invoice: {
+                invoice_info: 'July period',
+                invoice_date: 'July 3, 2015',
+                invoice_id: '0000123DSS',
+                invoice_category: 'Services Product'
+            },
+            payment: {
+                payment_method: 'VISA',
+                payment_info: 'Visa **** 1234',
+                payment_email: 'h.elaine@gmail.com'
+            },
+            data: {
+                header: [{
+                        lable: '#',
+                        name: 'id',
+                        text_position: ''
+                    },
+                    {
+                        lable: 'ITEMS',
+                        name: 'items',
+                        text_position: 'left'
+                    },
+                    {
+                        lable: 'QTY',
+                        name: 'qty',
+                        text_position: 'center'
+                    },
+                    {
+                        lable: 'PRICE',
+                        name: 'unit_price',
+                        text_position: 'right'
+                    },
+                    {
+                        lable: 'Total',
+                        name: 'total_price',
+                        text_position: 'right'
+                    }
+                ],
+                list: [{
+                        id: '1',
+                        items: 'A website template is a pre-designed webpage',
+                        description: 'A website template is a pre-designed webpage',
+                        qty: '15',
+                        unit_price: '$75.00',
+                        total_price: '$1,125.00'
+                    },
+                    {
+                        id: '2',
+                        items: 'Web development is a broad term for the work involved, Web development is a broad term for the work involved ',
+                        description: 'Web development is a broad term for the work involved ',
+                        qty: '20',
+                        unit_price: '$75.00',
+                        total_price: '$1,500.00'
+                    },
+                    {
+                        id: '3',
+                        items: 'Web development is a broad term for the work involved',
+                        description: 'Web development is a broad term for the work involved ',
+                        qty: '15',
+                        unit_price: '$90.00',
+                        total_price: '$1,350.00'
+                    },
+                    {
+                        id: '4',
+                        items: 'Web development is a broad term for the work involved, Web development is a broad term for the work involved ',
+                        description: 'Web development is a broad term for the work involved ',
+                        qty: '20',
+                        unit_price: '$300.00',
+                        total_price: '$6,000.00'
+                    },
+                    {
+                        id: '5',
+                        items: 'Web development is a broad term for the work involved ',
+                        qty: '30',
+                        unit_price: '$75.00',
+                        total_price: '$2,250.00'
+                    },
+                ],
+                summery: [{
+                    rowspan: '2',
+                    name: 'Subtotal',
+                    value: '$12,225.00'
+                }, {
+                    rowspan: '2',
+                    name: 'VAT 15%',
+                    value: '$1,833.75'
+                }, {
+                    rowspan: '2',
+                    name: 'Service Fee 10%',
+                    value: '$1,222.50'
+                }, {
+                    rowspan: '2',
+                    name: 'Shipment 5%',
+                    value: '$611.25'
+                }, {
+                    rowspan: '2',
+                    name: 'Grand Total',
+                    value: '$15,891.75'
+                }]
+            },
+            company: {
+                company_name: 'Dengene Technology Solutions, Plc.',
+                company_website: 'matiasgallipoli.com',
+                company_phone: '016-18192302',
+                company_email: 'rtiemps@gmail.com',
+                company_box: '10023'
+            },
+            info: [
+                //                 'If you have any questions concerning this invoice, contact.',
+                //                 'If you have any questions concerning this invoice, contact.2',
+                //                 'If you have any questions concerning this invoice, contact.3',
+                //                 'If you have any questions concerning this invoice, contact.4'
+            ],
+            config: {
+                FooterText: `Website: matiasgallipoli.com 
+				Phone: 016-18192302 
+				Email: rtiemps@gmail.com`,
+                FooterTextAlignment: "BOTTOM_LEFT",
+                HeaderImageAlignment: "right",
+                HeaderImageAttachmentId: "43f1babe079ea1102016f9fc7c1ed025",
+                HeaderImageHeight: "40",
+                LeftOrRightMargin: "13",
+                TopOrBottomMargin: "60",
+                PageSize: "A4",
+                GeneratePageNumber: 'true'
+            }
+        };
+
+        return obj;
+    },
+    type: 'HtmlToPDF'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-04-19 14:14:27&lt;/sys_created_on&gt;&lt;sys_id&gt;6f6efae907d621102016f9fc7c1ed080&lt;/sys_id&gt;&lt;sys_mod_count&gt;209&lt;/sys_mod_count&gt;&lt;sys_name&gt;HtmlToPDF&lt;/sys_name&gt;&lt;sys_package display_value="Library" source="x_976190_library"&gt;5812a33f0701e1102016f9fc7c1ed031&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Library"&gt;5812a33f0701e1102016f9fc7c1ed031&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_6f6efae907d621102016f9fc7c1ed080&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-04-24 12:52:01&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1743956519</payload_hash>
+        <record_name>HtmlToPDF</record_name>
+        <reverted_from/>
+        <source>3666e7e5070221102016f9fc7c1ed098</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-24 12:52:01</sys_created_on>
+        <sys_id>81ac1c93079621102016f9fc7c1ed052</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187b35234b40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-24 12:52:01</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>c5ac1c936d962110bf20c692dac7b851</update_guid>
+        <update_guid_history>c5ac1c936d962110bf20c692dac7b851:-1743956519,149c1c13849621102d2ad86ebb364143:873826933,f177501f9d562110eb37853a42099119:-1743956519,22ea43cb441221107cb19fcb5f8cc419:-2040749090,46da030b12122110a5b46f4ab2497ffb:-1142661636,bfba4b0b65122110e7c98e7ea5963322:-952926284,124f2ff253d2e110869d5a5d4eb1d73f:-1332292692,da5da7f2e5d2e11008cdd126f2018838:653423756,f54da7f28dd2e1102b6421b70fcc3534:1018831340,47dc2bb2add2e11032bd7eb8e8c17cd9:264681320,e988a3be8992e1101453fa9599fb755b:-1229945332,59f76f7e9892e110769dc7bcf7f4961e:-2021084959,9a07ab3e4992e11098318ef51ea1afcf:-75178645,e2b6273ef792e1105757f56cd7bacadd:-2021084959,55262fba2992e110435f839c91892d49:1788114782,4c25efba9592e1107291a97b63cbc3d0:1519574316,a8b4a3ba0c92e1108e3782b836e07091:103534246,fbd913bef952e110206c9e10ed443ad0:360545218,36b91ffaa952e110c2ab1c6fd1333bc5:-1162025811,2de6dbfa0152e110309a6ba434fd0544:-1735124492,16d5dbbaea52e11094d82cb269c787f9:451507647,c985dbbab952e110122ec84cc09c38e4:968108240,ca64db3a2652e11041ac26324a3dc3d4:1529246466,3d34dbf6e352e110baf125ac6b34f2a2:1372996784,ad435b764952e1106a1b0525e01e1c79:-1897780905,0b1317b6db52e11052a4b0db5ada6225:404803017,d2aa8f7e3612e1104dac2225859ae725:1576978421,1ac9c37e5012e1109c96bd85fec49760:1681202715,e7488ffa6d12e1109ecafafd7f2078e9:-93865773,24188bbafa12e110c8b50089ed9e5907:1981490852,fcc7877a6712e110760d2319067250bd:-1202692401,40b5033a0712e1101a9da6d596b5540f:837179872,3565873a3e12e1109631a9cdcf73d3d8:-364249430,1164c7f63f12e110eeb90596987075a3:-682668635,89d04f722612e1103b653586a976c756:1272754736,f4c087364d12e110190d6d418531ce75:94070398,abee3e728a12e1101070c073f6a06f12:-2030445526,8d7ef272ae12e110c44660b7f8f2b525:-680354208,b6ddf272a512e110d9ed70443294ae07:-351975011,ac2dfafe0cdea1106124c880321168de:-548276596,b0dc3232b412e11083f55f169d33f8fa:-1824888484,8d7c3efe08dea11046346c345238a6a5:966524139,8d2c7abebfdea11017a9c8c5ff5783d4:-222064366,6dea7e3e4adea11014b5207f91080d43:-1845568371,5a4afa7e89dea110a989c8edf41865c6:-1180213928,7f2afa7e96dea1103fcf5b2601b9bb60:-2145946620,bf89763e8edea110e9887333e46d360c:-869809398,bef8f63e5fdea11097db1d9616b9da9a:541610562,ad38b6fa36dea110dc8479be5328c583:-1058182448,59c7f2fab5dea1107a6d302879755802:2113665198,39a7f67a7bdea110e105ada306048693:-1539340496,06f5b27a9cdea110d20f3c413f41cb13:1822325846,f955bab6a8dea110c008363358d54a18:46590647,f46b26ba4c9ea1109446d440c94120b9:-131685332,ba4a227ec59ea110456c60f839d015a6:-625815371,a99726ba019ea11019901cf25ca7abae:2077840007,57f5e6b6099ea1107cee75d63519627c:1586701026,b1452ab6aa9ea11065d5ce0775df5921:1622224632,fb2526f6e09ea1101eb983f4b60eb35a:579216713,5ce362f20a9ea110d48a601444e99091:-937517182,01c3a236e19ea1103c3edb7663e6541a:1505778936,6c432a361f9ea110d50b99eb6248a832:767978575,b8d22ab2f09ea11083124c87ac539657:1096891994,25926236ec9ea11074107cb7e78c45d2:2041587115,2e52eeb2d39ea110dcda19ead01c2a88:2097793871,19f1eeb2ce9ea110b78b60480d262984:-2058907777,2f8162f26f9ea110090f86f4d0c39a59:733363181,8c716eb2659ea110300d15ef380fcf8b:-1945635,8251eefe805ea110f8b0ab3c3e883fab:726643033,4ba0ee32e99ea11021d8637cc1d7a499:-1727182660,ae7f9232b29ea1100001d93398996856:1631347619,f8ce5232609ea11003ec42bd3f62019a:-1898958962,0b6e52fe815ea110b6e68c3f21665b0b:-553604083,2a6d5a7e2a5ea11055237ce3b5ccb86c:1865297815,08ec9e36b85ea110f40767fd8a738241:-1787607105,686c16fa565ea110ffc0302559e62809:1411332099,aa1c563a745ea110b133a77acdd10414:394993542,810cd27e6e5ea110e42148bd9f28e957:-270939386,34549276975ea110d222bd4b47482ad0:242669735,3834def2bf5ea110f4c1668a913b6da1:-384480069,a3e39e363e5ea11012e67316ba3f1338:1568820502,98b3daf2035ea110b7bd7632178528ca:-384480069,ba53def2865ea1108291bc7b30d196b7:-1791977993,7603def2465ea110a607357df0587b99:-1200481909,14d21af2bb5ea11031bf4636aa8861a9:-561881950,0ca256f2475ea110db858251432e1e97:1545783530,0b81dafec21ea11068f4f92f202c1ed8:1036942123,c97156fe331ea1106d29e231402115bc:-1856201201,0d415afed71ea11065efe3e8236b0eb7:1036942123,b7705272ff5ea1100b9637ce029c96d4:-1684473704,4a20dafeca1ea1104d72dc2f6a2d5dec:507908492,918f8e3e951ea1104b74ee213f666d17:-80165777,975f0abef81ea110dcff2c089dad0276:990978922,044f82fec71ea110e35d196a50ac5591:-2064768776,9e1f42be481ea110b253a73300ebff81:-2136936559,fcde8ebed01ea110ba0c55cd34586b25:-576950177,be9e467e881ea110ef3586367b907ab5:1887075187,86397baae4d2a1100dd39c5c91e311df:-576950177,61f87baaffd2a110f93dfd2c68122e6d:-398661683,53e77b6ad1d2a110453032fd15002c01:378892726,9aa7bb2a7fd2a110c5bed5d29e18c9ff:1278382382,1c86bba6ffd2a110a7d51e843c96a5b0:-1898246398,627533e60cd2a110c6d719507cabc5ba:1075967616,4545fb2664d2a110e78511e0fb6773ae:1449585518,751533a6c4d2a11069ca4acd2a541843:-665454442,1394fb2626d2a1103e3e4590269a6366:1081939335,2d743f2652d2a110488ed6df16bfddc9:1032882074,1f143f26c9d2a110256d3d7bb40b17bf:-1122493651,6293f7269bd2a110ec81265e3e1e78e2:1893492763,0b633f26f4d2a110af9479c8bbeab0ba:1936052115,da53772610d2a110ea93ad4086fcf015:-724488845,d0433ba2f1d2a110f9f70751ac9eb48b:1206263975,0023bf2235d2a1104ff7562c0f381207:1268671092,def2f32687d2a110942c25410572164e:1453507339,d2d2bbe2fdd2a110c2e700fcc876bf52:-860517745,aa21bf22d2d2a11096cd0e149943fb15:-867360725,23f0f7625bd2a110ec1c298cb939bad3:1986882509,e150fb6234d2a11047d3f584055a621f:-271247313,51003fee3692a110ed55f3ec36b5fe49:-1273786407,c28faf22dfd2a1105e6b87f3b274910d:-1989423760,941f2baee792a110264096def842fcdd:639387194,038eebee0592a1103f65bb6223ef7cf0:414369052,296e6beeef92a11068dd541ddb45ca7d:684213758,df3e6beeb592a1106b056a7250c6da42:1705829550,e50e67eeea92a11000c961fbbbf498e6:2114137133,427d272e6392a110a5395febe954eb95:690824046,ae3d2f2e2a92a1107ab1a314927e56d3:2047199879,709c2b2e7792a110320502fa4d91d7d4:-29020209,3b3b6b2e0392a110aea850a0672e6b1b:-2088628749,37ea27aab092a110739b23302ff1dc13:-1585125200,a69aefeafa92a110b98562ac892e1802:2121838648,5e376b2acb92a1105b203cea908ab950:-1432128058,8b07672a3e92a110b6c860d25738c722:-1731244514,adf6abe6a892a110ed9a81d0426c6bb9:1955322946,fbc6abe65792a110d6717446ab1a6ab5:1256047942,99b6eba62d92a1104f1a7f2d995e83aa:-894117294,e196eba66e92a110d8eb5591ea864c39:-1603411344,e736a3a65892a1109fa0e6b305fcacf9:-1731244514,3206eba60292a11074c1d4ab8029afa5:-152323292,65856ba6cd92a11020fff29628dc52e5:1243366512,15699fe66552a11062ff9c0fd5e4dd0b:150034775,7249576a3152a11079f5ea8afd218ccf:2093001835,582913aa4252a110d8901958733ba5ab:-462993369,00099fe61852a110fe16c0ad64db2807:-1928909934,f5f81f6ad452a110bc2d92c6cdace67d:628981304,eab8576a4a52a1100129953da75d2cc8:-398106096,2c58d3e6ed52a110eaf79c3ff97f4673:77596199,893817e6bb52a11009e62b123f1dd853:-406613961,70a55f268252a110ddbcd464134d4613:-1339254715,aad4d7661352a11026fd7f885447e578:-571640739,0ec493269c52a1100a484ea39de98c31:598786195,b8b4db664252a110633cd53dbe612e8f:-571640739,bb949b662b52a1104b347f5583e45c4d:-1541855619,6d841b66be52a110e36731d145d2c173:598786195,c474df264552a11074acf186dd7368ca:713049123,7344db26ab52a1102c75df50ffe133f0:2057891873,79245f26ce52a11039246fb40ef0de0c:-460768902,a7f31f265452a110d19b424d5927a4f3:1390789439,f4c3db266f52a1104d6653e534c7fa93:-1481496065,fee2df625652a1104ab616f7646cab4e:-1711841730,82609362b652a11080f437d95fe9c30f:127261516,dc5013623152a1107ae779bb12a84a80:980680141,f39a072aaa12a1101ddae6a6fee6ed9a:127261516,b348c9e68f1a61107ca45359dfd8efc8:-491983607,004032de0f9e2110a3f78befd9c8cf61:81381241,f67a265aa09e2110abb2b2e17cd69030:1254326655,5eb9e61ae79e21100beb6b697164312b:-910133061,7359aed60e9e21103ae694a126fb6a08:1630012785,b5762256a09e21101b91c550b72d4b46:-1364763177,b7c5e616919e211084d9a80537b8aee3:1157275140,f275aad2859e2110afa9cc4da2472951:-370398834,88a4a6d28f9e211090ece0c3329ce6d9:1806871606,40dcd21ad95e2110cb05d0da96926c80:-1891725248,56e9d21a5b5e211012c87f7a04e4e301:-799240813,3279d2de5d1e2110d9da58db0c17324f:57419107,87de195e525a21104515c99b94011f4f:450598890,6fe1e4de85562110aaea7ea7f863f955:1529974121,9d269c92f8562110c9522ed8e60343a6:605129798,5ac5949e1a1621106ffde51bb9d5ee5e:-1857615684,b8b2949eb416211086c24964eebd9290:1118132179,b4dbc81a04162110f9ba6ee6a5e994c8:-201657658,4398c80ae05e6110b38bb5dc600a1f61:-1365998300,6c1188ce4b1e6110b7f3c3796048a1e6:367686546,3b6008ced61e6110d96486e2d66ba0c3:-1104234526,b53aff39f71e6110924920d2cd5415e6:1887370464,7fb3fbfd4eda611039e9f47338d962b4:-107679925,82b1b3fd3fda61101831693a4a9ca6a1:-259300190,16a1b37d2cda6110d2e8caf70f8623fe:1420746208,5c4ce7f595da61108be883729a49cf4b:1185881525,40dbe339d2da611080d9130669492fcf:-1095269012,10334f798d1a6110de2ae4d544e07a37:-2468659,c65e3ab1d51a611095f61d077d4d83a4:1071845665,dc763e35add661105f4a406157007b7e:513541309,7545ba3568d6611035b69b31e5708666:1180162380,5c14feb1f8d66110e8af02dc0c77b493:1745001208,c18ac8397f1e2110cad5825acafeccaa:616080340,73a988f5481e21106d6a29903c5c9786:1279142356,a57948f50b1e211061a0bf87d8441286:-1737201810,9c2940f5121e2110184d2eb511cfe7d1:-734788352,4fd844b5af1e211048afd72b747e637e:893274406,c7cdffa9e9da2110bdcecbd0c2b61a5f:-1683972106,d96a37e5e1da21106436fdb1b2d5967e:-1399398474,5c2ab3e56dda2110adb5e1f007da293c:86955751,cd80b32df89a2110ea7ba851e28bccaf:1969937148,6d10bbe5309a2110f25c1eeb1d0959f2:2029276433,38e08fe947d62110bc342ead79c2f6db:1216528985,25b00f6d45d6211096d9171512ae4050:175033387,ef8f7e2d33d62110ed974ca7af1961f9:723393912</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-25 06:17:54</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>7098313ac8f8436ab452e476087462e9</sys_id>
+        <sys_metadata>6f6efae907d621102016f9fc7c1ed080</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>HtmlToPDF</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>sys_script_include_6f6efae907d621102016f9fc7c1ed080</sys_update_name>
+        <sys_update_version display_value="sys_script_include_6f6efae907d621102016f9fc7c1ed080">81ac1c93079621102016f9fc7c1ed052</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-25 06:17:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

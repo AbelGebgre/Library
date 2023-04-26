@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_doc_html_template">
+    <sn_doc_html_template action="DELETE">
+        <acknowledgement_text/>
+        <active>true</active>
+        <category/>
+        <custom_font/>
+        <footer_image/>
+        <footer_image_height>50</footer_image_height>
+        <footer_image_position>CENTER</footer_image_position>
+        <footnote/>
+        <footnote_position>RIGHT</footnote_position>
+        <footnote_vertical_position>BELOW</footnote_vertical_position>
+        <header_image/>
+        <header_image_height>50</header_image_height>
+        <header_image_position>CENTER</header_image_position>
+        <html_script_body><![CDATA[<p>asdajsgd</p>]]></html_script_body>
+        <language>en</language>
+        <left_right_margin>36</left_right_margin>
+        <name>weqeqw</name>
+        <page_number_config/>
+        <page_size>LETTER</page_size>
+        <set_signing_order>true</set_signing_order>
+        <signing_type>servicenow_sign</signing_type>
+        <source_template/>
+        <state>draft</state>
+        <sys_class_name>sn_doc_html_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-24 08:47:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>dba42bc7079221102016f9fc7c1ed062</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>weqeqw</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sn_doc_html_template_dba42bc7079221102016f9fc7c1ed062</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-24 08:47:56</sys_updated_on>
+        <table>incident_task</table>
+        <toc_config/>
+        <top_bottom_margin>72</top_bottom_margin>
+        <user_criteria/>
+    </sn_doc_html_template>
+    <sys_translated_text action="DELETE" query="documentkey=dba42bc7079221102016f9fc7c1ed062"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>sn_doc_html_template_dba42bc7079221102016f9fc7c1ed062</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sn_doc_html_template"&gt;&lt;sn_doc_html_template action="INSERT_OR_UPDATE"&gt;&lt;acknowledgement_text/&gt;&lt;active&gt;true&lt;/active&gt;&lt;category/&gt;&lt;custom_font/&gt;&lt;footer_image/&gt;&lt;footer_image_height&gt;50&lt;/footer_image_height&gt;&lt;footer_image_position&gt;CENTER&lt;/footer_image_position&gt;&lt;footnote/&gt;&lt;footnote_position&gt;RIGHT&lt;/footnote_position&gt;&lt;footnote_vertical_position&gt;BELOW&lt;/footnote_vertical_position&gt;&lt;header_image/&gt;&lt;header_image_height&gt;50&lt;/header_image_height&gt;&lt;header_image_position&gt;CENTER&lt;/header_image_position&gt;&lt;html_script_body&gt;&lt;![CDATA[&lt;p&gt;asdajsgd&lt;/p&gt;]]&gt;&lt;/html_script_body&gt;&lt;language&gt;en&lt;/language&gt;&lt;left_right_margin&gt;36&lt;/left_right_margin&gt;&lt;name&gt;weqeqw&lt;/name&gt;&lt;page_number_config/&gt;&lt;page_size&gt;LETTER&lt;/page_size&gt;&lt;set_signing_order&gt;true&lt;/set_signing_order&gt;&lt;signing_type&gt;servicenow_sign&lt;/signing_type&gt;&lt;source_template/&gt;&lt;state&gt;draft&lt;/state&gt;&lt;sys_class_name&gt;sn_doc_html_template&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-04-24 08:47:56&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;dba42bc7079221102016f9fc7c1ed062&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;weqeqw&lt;/sys_name&gt;&lt;sys_package display_value="Library" source="x_976190_library"&gt;5812a33f0701e1102016f9fc7c1ed031&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Library"&gt;5812a33f0701e1102016f9fc7c1ed031&lt;/sys_scope&gt;&lt;sys_update_name&gt;sn_doc_html_template_dba42bc7079221102016f9fc7c1ed062&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-04-24 08:47:56&lt;/sys_updated_on&gt;&lt;table&gt;incident_task&lt;/table&gt;&lt;toc_config/&gt;&lt;top_bottom_margin&gt;72&lt;/top_bottom_margin&gt;&lt;user_criteria/&gt;&lt;/sn_doc_html_template&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=dba42bc7079221102016f9fc7c1ed062"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-794941387</payload_hash>
+        <record_name>weqeqw</record_name>
+        <reverted_from/>
+        <source>3666e7e5070221102016f9fc7c1ed098</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-24 08:47:56</sys_created_on>
+        <sys_id>95c42bc7079221102016f9fc7c1ed05a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187b272bc1a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-24 08:47:56</sys_updated_on>
+        <type>HTML Template</type>
+        <update_guid>99c42bc721922110623488413d409459</update_guid>
+        <update_guid_history>99c42bc721922110623488413d409459:-794941387</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="weqeqw">659fdc97079621102016f9fc7c1ed038</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-24 13:04:54</sys_created_on>
+        <sys_db_object display_value="" name="sn_doc_html_template">sn_doc_html_template</sys_db_object>
+        <sys_id>1f42f73c08134d18861a8832bd116a40</sys_id>
+        <sys_metadata>dba42bc7079221102016f9fc7c1ed062</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>weqeqw</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>sn_doc_html_template_dba42bc7079221102016f9fc7c1ed062</sys_update_name>
+        <sys_update_version display_value="sn_doc_html_template_dba42bc7079221102016f9fc7c1ed062">95c42bc7079221102016f9fc7c1ed05a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-24 13:04:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

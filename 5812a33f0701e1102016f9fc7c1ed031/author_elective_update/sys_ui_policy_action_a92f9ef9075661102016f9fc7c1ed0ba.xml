@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field>title</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-20 06:31:41</sys_created_on>
+        <sys_id>a92f9ef9075661102016f9fc7c1ed0ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>title</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sys_ui_policy_action_a92f9ef9075661102016f9fc7c1ed0ba</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-20 06:31:41</sys_updated_on>
+        <table>x_976190_library_catalog</table>
+        <ui_policy display_value="Show or hide UI Action when active changes">004d5e79075661102016f9fc7c1ed0d0</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>sys_ui_policy_action_a92f9ef9075661102016f9fc7c1ed0ba</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>true</disabled><field>title</field><mandatory>ignore</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-04-20 06:31:41</sys_created_on><sys_id>a92f9ef9075661102016f9fc7c1ed0ba</sys_id><sys_mod_count>0</sys_mod_count><sys_name>title</sys_name><sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package><sys_policy/><sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope><sys_update_name>sys_ui_policy_action_a92f9ef9075661102016f9fc7c1ed0ba</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-04-20 06:31:41</sys_updated_on><table>x_976190_library_catalog</table><ui_policy display_value="Show or hide UI Action when active changes">004d5e79075661102016f9fc7c1ed0d0</ui_policy><visible>ignore</visible></sys_ui_policy_action></record_update>]]></payload>
+        <payload_hash>-1314236129</payload_hash>
+        <record_name>title</record_name>
+        <reverted_from/>
+        <source>3666e7e5070221102016f9fc7c1ed098</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-20 06:31:41</sys_created_on>
+        <sys_id>f63fd6b9075661102016f9fc7c1ed082</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1879d5c90660000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-20 06:31:41</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>fa3fd6b9d1566110d452e03ec114c481</update_guid>
+        <update_guid_history>fa3fd6b9d1566110d452e03ec114c481:-1314236129</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-20 06:32:40</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>1017aea83e614a82bc9aeb4a3b980421</sys_id>
+        <sys_metadata>a92f9ef9075661102016f9fc7c1ed0ba</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>title</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent display_value="Show or hide UI Action when active changes">004d5e79075661102016f9fc7c1ed0d0</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_a92f9ef9075661102016f9fc7c1ed0ba</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_a92f9ef9075661102016f9fc7c1ed0ba">f63fd6b9075661102016f9fc7c1ed082</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-20 06:32:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

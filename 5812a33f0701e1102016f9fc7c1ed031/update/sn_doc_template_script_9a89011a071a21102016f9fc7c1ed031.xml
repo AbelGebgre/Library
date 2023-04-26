@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_doc_template_script">
+    <sn_doc_template_script action="INSERT_OR_UPDATE">
+        <name>incidentTaskTable</name>
+        <script><![CDATA[(function runTemplateScript(target /*GlideRecord for target task*/ ) {
+
+    //Add your code here to return the dynamic content for template
+    var getHeaderCell = function(obj) {
+        var text = obj.text_position;
+        text = text != '' || text != undefined ? 'class="text-'+text+'"' : '';
+        var header = '<td ' + text + '>';
+        header += '<strong>' + obj.lable + '</strong></td>';
+        return header;
+    };
+    var getDataCell = function(col, value) {
+        var listtext = col.text_position;
+        listtext = listtext != '' || listtext != undefined ?
+            'class="text-'+listtext+'"' : '';
+        var list = '<td ' + listtext + '>';
+        list += value + '</td>';
+        return list;
+    };
+
+    var htmlTable = '<table class="table table-striped" style="width: 100%;">';
+    var header = '<thead><tr>';
+    var list = '<tbody>';
+    var columns = [{
+            lable: '#',
+            name: 'id',
+            text_position: ''
+        },
+        {
+            lable: 'Number',
+            name: 'number',
+            text_position: 'left'
+        },
+        {
+            lable: 'Short Description',
+            name: 'short_description',
+            text_position: 'left'
+        },
+        {
+            lable: 'Priority',
+            name: 'priority',
+            text_position: 'center'
+        },
+        {
+            lable: 'Urgency',
+            name: 'urgency',
+            text_position: 'center'
+        },
+        {
+            lable: 'Impact',
+            name: 'impact',
+            text_position: 'center'
+        },
+        {
+            lable: 'State',
+            name: 'state',
+            text_position: 'center'
+        }
+    ];
+    for (var i=0;i<columns.length;i++) {
+        header += getHeaderCell(columns[i]);
+    }
+    var incidentTask = new GlideRecord('incident_task');
+    incidentTask.addQuery('incident', target.getValue('sys_id'));
+    incidentTask.query();
+    var row = incidentTask.getRowCount();
+    var count = 0;
+    if (row > 0) {
+        while (incidentTask.next()) {
+            count = count + 1;
+            list += (count == row) ? "<tr class='line'>" : "<tr>";
+            for (var j=0;j<columns.length;j++) {
+                const col = columns[j];
+                if (col.name == 'id') {
+                    list += getDataCell(col, count);
+                } else {
+                    list += getDataCell(col, incidentTask.getDisplayValue(col.name));
+                }
+            }
+            list += '</tr>';
+        }
+    } else {
+        list += "<tr class='line'>";
+        list += '<td class="text-center" colspan="' + columns.length + '"';
+        list += 'style="font-size:20px;">';
+        list += 'No records to display. </td>';
+        list += '</tr>';
+    }
+    header += '</tr></thead>';
+    list += '</tbody>';
+    var html = htmlTable + header + list + '</table>';
+    if (!gs.nil(html))
+        html = '<h3>Incident Task</h3>' + html;
+    return html;
+
+})(target);]]></script>
+        <sys_class_name>sn_doc_template_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-21 14:06:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>9a89011a071a21102016f9fc7c1ed031</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>incidentTaskTable</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sn_doc_template_script_9a89011a071a21102016f9fc7c1ed031</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-26 10:53:11</sys_updated_on>
+    </sn_doc_template_script>
+</record_update>

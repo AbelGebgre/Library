@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>generate_pdf</action_name>
+        <action_name>generated_pdf</action_name>
         <active>true</active>
         <client>true</client>
-        <client_script_v2><![CDATA[function onClick() {
+        <client_script_v2><![CDATA[function onClick(g_form) {
+    var docId = '22576bfd079a61102016f9fc7c1ed007';
     var htmlToPDF = new GlideAjax('x_976190_library.HtmlToPDF');
     htmlToPDF.addParam('sysparm_name', 'convertToPDF');
-    htmlToPDF.addParam('sysparm_query', 'name=nav');
-    htmlToPDF.addParam('sysparm_table', g_form.getTableName());
+    htmlToPDF.addParam('sysparm_doc_id', docId);
     htmlToPDF.addParam('sysparm_sys_id', g_form.getUniqueValue());
-    htmlToPDF.addParam('sysparm_number', 'Generated PDF'); //g_form.title);
-    htmlToPDF.getXML(function returnedData(response) {
-        var result = response.responseXML.documentElement.getAttribute("answer");
-        if (result !== 'null') {
-            g_form.addInfoMessage('PDF Generated Successfully!');
-			g_navigation.reloadWindow();
-        } else {
-            g_form.addErrorMessage('Generating PDF Faild!');
-        }
-    });
+    htmlToPDF.addParam('sysparm_pdf', g_form.getValue('number'));
+    htmlToPDF.getXML(responseXML);
+}
+
+function responseXML(response) {
+    var result = response.responseXML.documentElement.getAttribute("answer");
+    if (result !== 'null') {
+        g_form.addInfoMessage('PDF Generated Successfully!');
+        g_navigation.reloadWindow();
+    } else {
+        g_form.addErrorMessage('Generating PDF Faild!');
+    }
 }]]></client_script_v2>
         <comments/>
-        <condition>current.active==true</condition>
+        <condition>current.state==7</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>true</form_button_v2>
@@ -40,28 +42,28 @@
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
-        <messages>Generate PDF</messages>
+        <messages/>
         <name>Generate PDF</name>
-        <onclick>onClick()</onclick>
+        <onclick>generatePDF()</onclick>
         <order>100</order>
-        <script><![CDATA[function onClick() {
+        <script><![CDATA[function generatePDF() {
+    var docId = '22576bfd079a61102016f9fc7c1ed007';
     var htmlToPDF = new GlideAjax('HtmlToPDF');
     htmlToPDF.addParam('sysparm_name', 'convertToPDF');
-    htmlToPDF.addParam('sysparm_query', 'name=nav');
-    htmlToPDF.addParam('sysparm_table', g_form.getTableName());
+    htmlToPDF.addParam('sysparm_doc_id', docId);
     htmlToPDF.addParam('sysparm_sys_id', g_form.getUniqueValue());
-    htmlToPDF.addParam('sysparm_number', 'Generated PDF');//g_form.getValue('number'));
-    htmlToPDF.getXML(function returnedData(response) {
-        var result = response.responseXML.documentElement.getAttribute("answer");
-        if (result !== 'null') {
-			g_form.addInfoMessage('PDF Generated Successfully!');
-			g_navigation.reloadWindow();
-        }
-		else{
-			g_form.addErrorMessage('Generating PDF Faild!');
-		}
-		g_navigation.reloadWindow();
-    });
+    htmlToPDF.addParam('sysparm_pdf', g_form.getValue('number'));
+    htmlToPDF.getXML(responseXML);
+}
+
+function responseXML(response) {
+    var result = response.responseXML.documentElement.getAttribute("answer");
+    if (result !== 'null') {
+        g_form.addInfoMessage('PDF Generated Successfully!');
+        g_navigation.reloadWindow();
+    } else {
+        g_form.addErrorMessage('Generating PDF Faild!');
+    }
 }]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
@@ -69,20 +71,20 @@
         <show_update>true</show_update>
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-04-19 12:15:11</sys_created_on>
+        <sys_created_on>2023-04-20 06:12:52</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>f053626d075621102016f9fc7c1ed0ab</sys_id>
-        <sys_mod_count>61</sys_mod_count>
+        <sys_id>468a9eb5075661102016f9fc7c1ed066</sys_id>
+        <sys_mod_count>120</sys_mod_count>
         <sys_name>Generate PDF</sys_name>
         <sys_overrides/>
         <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
         <sys_policy/>
         <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
-        <sys_update_name>sys_ui_action_f053626d075621102016f9fc7c1ed0ab</sys_update_name>
+        <sys_update_name>sys_ui_action_468a9eb5075661102016f9fc7c1ed066</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-20 06:07:36</sys_updated_on>
-        <table>x_976190_library_catalog</table>
+        <sys_updated_on>2023-04-26 07:14:55</sys_updated_on>
+        <table>incident</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
     </sys_ui_action>

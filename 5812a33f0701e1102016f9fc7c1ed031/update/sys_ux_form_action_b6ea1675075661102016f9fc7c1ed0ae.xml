@@ -5,20 +5,20 @@
         <declarative_action/>
         <description/>
         <name>Generate PDF</name>
-        <specificity>10</specificity>
+        <specificity>0</specificity>
         <sys_class_name>sys_ux_form_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-04-19 12:15:11</sys_created_on>
-        <sys_id>ec442e2d075621102016f9fc7c1ed0ac</sys_id>
+        <sys_created_on>2023-04-20 06:12:52</sys_created_on>
+        <sys_id>b6ea1675075661102016f9fc7c1ed0ae</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Generate PDF</sys_name>
         <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
         <sys_policy/>
         <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
-        <sys_update_name>sys_ux_form_action_ec442e2d075621102016f9fc7c1ed0ac</sys_update_name>
+        <sys_update_name>sys_ux_form_action_b6ea1675075661102016f9fc7c1ed0ae</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-19 12:15:11</sys_updated_on>
-        <table>x_976190_library_catalog</table>
-        <ui_action/>
+        <sys_updated_on>2023-04-20 06:12:52</sys_updated_on>
+        <table>global</table>
+        <ui_action display_value="Generate PDF">468a9eb5075661102016f9fc7c1ed066</ui_action>
     </sys_ux_form_action>
 </record_update>

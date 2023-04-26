@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_976190_library.HtmlToPDF</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>HtmlToPDF</name>
+        <script><![CDATA[var HtmlToPDF = Class.create();
+HtmlToPDF.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    convertToPDF: function() {
+        var recordId = this.getParameter('sysparm_sys_id');
+        var docId = this.getParameter('sysparm_doc_id');
+        var pdfName = this.getParameter('sysparm_pdf');
+        this.deleteAttachment(recordId, pdfName);
+        var pdf = new sn_doc.GenerateDocumentAPI();
+        var result = pdf.generateDocumentForTask(recordId, docId, pdfName);
+        return JSON.stringify(result);
+    },
+    deleteAttachment: function(sys_id, name = '') {
+        var attach = new GlideRecord('sys_attachment');
+        attach.addEncodedQuery('table_sys_id=' + sys_id);
+        attach.query();
+        while (attach.next()) {
+            var fileName = attach.getValue('file_name').toString().split('.')[0];
+            if (name == fileName) {
+                var attachment = new GlideSysAttachment();
+                attachment.deleteAttachment(attach.getValue('sys_id'));
+            }
+        }
+    },
+    type: 'HtmlToPDF'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-25 06:19:58</sys_created_on>
+        <sys_id>232c806f071221102016f9fc7c1ed06b</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>HtmlToPDF</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sys_script_include_232c806f071221102016f9fc7c1ed06b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-25 18:10:41</sys_updated_on>
+    </sys_script_include>
+</record_update>

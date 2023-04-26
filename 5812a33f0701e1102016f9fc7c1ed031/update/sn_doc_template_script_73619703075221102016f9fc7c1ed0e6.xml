@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_doc_template_script">
+    <sn_doc_template_script action="INSERT_OR_UPDATE">
+        <name>dateFormat</name>
+        <script><![CDATA[(function runTemplateScript(target /*GlideRecord for target task*/ ) {
+
+    //Add your code here to return the dynamic content for template
+    var htmlTag = function(lable, value) {
+        return '<strong>' + lable + '</strong> <small>' + value + '</small>';
+    }
+    var format = function(lable, date) {
+        var currentdate = new GlideDate();
+        currentdate.setValue(date);
+        var formated = currentdate.getByFormat("MMM d, yyyy, H:mm");
+        return htmlTag(lable, formated);
+    };
+	var haveValue = function(input) {
+        return input?.length>0 && input != '' && input != 'null' && input != null && input != undefined ? true : false;
+    };
+    var arr = [];
+    if (haveValue(target.getValue('sys_created_on'))) {
+        arr.push(format('Created at:',target.getValue('sys_created_on')));
+    }
+    if (haveValue(target.getValue('sys_updated_on'))) {
+        arr.push(format('Updated at:',target.getValue('sys_updated_on')));
+    }
+    if (haveValue(target.getValue('opened_at'))) {
+        arr.push(format('Opened at:',target.getValue('opened_at')));
+    }
+    if (haveValue(target.getValue('due_date'))) {
+        arr.push(format('Due date:',target.getValue('due_date')));
+    }
+    return arr.join('<br />');
+
+})(target);]]></script>
+        <sys_class_name>sn_doc_template_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-24 07:34:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>73619703075221102016f9fc7c1ed0e6</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>dateFormat</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sn_doc_template_script_73619703075221102016f9fc7c1ed0e6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-26 11:06:39</sys_updated_on>
+    </sn_doc_template_script>
+</record_update>

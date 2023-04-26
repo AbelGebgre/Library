@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_doc_html_template">
+    <sn_doc_html_template action="INSERT_OR_UPDATE">
+        <acknowledgement_text/>
+        <active>true</active>
+        <category/>
+        <custom_font/>
+        <footer_image>12022bb60792e1102016f9fc7c1ed01f</footer_image>
+        <footer_image_height>40</footer_image_height>
+        <footer_image_position>RIGHT</footer_image_position>
+        <footnote>Email: admin@dengene.com Tel: 011233456 Mob: 0932423423</footnote>
+        <footnote_position>CENTER</footnote_position>
+        <footnote_vertical_position>ABOVE</footnote_vertical_position>
+        <header_image>43f1babe079ea1102016f9fc7c1ed025</header_image>
+        <header_image_height>40</header_image_height>
+        <header_image_position>RIGHT</header_image_position>
+        <html_script_body><![CDATA[<p><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" /><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" rel="stylesheet" /></p>
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="grid invoice">
+<div class="grid-body">
+<div class="invoice-title">
+<div class="row">
+<div class="col-xs-12"><span style="color: inherit; font-family: inherit; font-size: 30px;">Incident</span></div>
+</div>
+<div class="row">
+<div class="col-xs-6">
+<h2><span class="small">Number: #${number}<br /></span></h2>
+</div>
+<div class="col-xs-6 text-right" style="margin-top: -10px;">${template_script:assigned}</div>
+</div>
+</div>
+<hr />
+<div class="invoice-header row" style="margin-top: 2px;">
+<div class="col-xs-4"><small>Requester</small><br />${template_script:requester}</div>
+<div class="col-xs-4 text-left"><small>Resolver</small><br />${template_script:resolver}</div>
+<div class="col-xs-4 text-right">
+<div class="date text-inverse"><span style="font-size: 12pt;"><strong>Resolved</strong></span><br /><strong>at</strong> <small>${resolved_at} </small></div>
+<div class="date text-inverse"><small><strong>Code</strong><small> ${close_code}<br /></small></small></div>
+<hr />
+<div class="date text-inverse" style="margin-top: -10px;"><strong>Category</strong></div>
+<div class="invoice-detail"><strong>Main: </strong><small>${category}</small><span id="mce_7"></span></div>
+${template_script:subcategory}</div>
+</div>
+<hr />
+<div class="invoice-header row" style="margin-top: 2px;">
+<div class="col-xs-12"><small>Incident Detail</small><br /><strong>Short description:</strong> ${short_description}</div>
+<div class="col-xs-12"><strong>Description:</strong> ${description}</div>
+<div class="col-xs-12"><strong>Resolve notes:</strong> ${close_notes}</div>
+${template_script:details}
+<div class="col-xs-12">&nbsp;</div>
+<div class="row" style="margin: 0 -10px; padding: 10px;">
+<div class="col-xs-4"><strong>Created by:</strong> <small>${sys_created_by}</small><br /><strong>Updated by:</strong> <small>${sys_updated_by}</small><br /><strong>Opened by:</strong> <small>${opened_by}</small><br />${template_script:location}</div>
+<div class="col-xs-5">${template_script:dateFormat}</div>
+<div class="col-xs-3"><strong>Impact:</strong> <small>${impact}</small><br /><strong>Urgency:</strong> <small>${urgency}</small><br /><strong>Priority:</strong> <small>${priority}</small><br /><strong>Severity:</strong> <small>${severity}</small><br /><strong>State:</strong> <small>${state}</small></div>
+</div>
+</div>
+<hr />
+<div class="row card">
+<div class="col-md-12">${template_script:incidentTaskTable}</div>
+</div>
+<div class="row">
+<div class="invoice-footer col-md-12">
+<p class="text-center m-b-3 identity">THANK YOU FOR YOUR BUSINESS</p>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12 text-right identity">${template_script:currentlog}</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<style>
+body{margin-top:-30px;
+background:#eee;
+}
+
+.invoice {
+    padding: 30px;
+}
+
+.invoice h2 {
+	margin-top: 0px;
+	line-height: 0.8em;
+}
+
+.invoice .small {
+	font-weight: 300;
+}
+
+.invoice hr {
+	margin-top: 10px;
+	border-color: #ddd;
+}
+
+.invoice .table tr.line {
+	border-bottom: 1px solid #ccc;
+}
+
+.invoice .table td {
+	border: none;
+}
+
+.invoice .identity {
+	margin-top: 10px;
+	font-size: 1.1em;
+	font-weight: 300;
+}
+
+.invoice .identity strong {
+	font-weight: 600;
+}
+
+
+.grid {
+    position: relative;
+	width: 100%;
+	background: #fff;
+	color: #666666;
+	border-radius: 2px;
+	margin-bottom: 25px;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+  
+.invoice-header {
+    margin: 0 -10px;
+    background: #f0f3f4;
+    padding: 10px
+}
+
+.invoice-date,
+.invoice-from,
+.invoice-to {
+    display: table-cell;
+    width: 1%
+}
+
+.invoice-from,
+.invoice-to {
+    padding-right: 20px
+}
+
+.invoice-date .date,
+.invoice-from strong,
+.invoice-to strong {
+    font-size: 16px;
+    font-weight: 600
+}
+
+.invoice-date {
+    text-align: right;
+    padding-left: 20px
+}
+
+.invoice-footer {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.invoice-note {
+    color: #999;
+    margin-top: 40px;
+  	margin-bottom:20px;
+  	margin-left:20px;
+    font-size: 85%
+}
+
+.invoice>div:not(.invoice-footer) {
+    margin-bottom: 20px
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+@media print {
+  html, body {
+      margin:0;
+      padding:0;
+	}
+}
+</style>]]></html_script_body>
+        <language>en</language>
+        <left_right_margin>13</left_right_margin>
+        <name>Incident Report Template</name>
+        <page_number_config display_value="num">0aef1b760792e1102016f9fc7c1ed0fa</page_number_config>
+        <page_size>A4</page_size>
+        <set_signing_order>true</set_signing_order>
+        <signing_type>servicenow_sign</signing_type>
+        <source_template/>
+        <state>edit</state>
+        <sys_class_name>sn_doc_html_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-20 11:58:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>22576bfd079a61102016f9fc7c1ed007</sys_id>
+        <sys_mod_count>131</sys_mod_count>
+        <sys_name>Incident Report Template</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sn_doc_html_template_22576bfd079a61102016f9fc7c1ed007</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-26 10:30:45</sys_updated_on>
+        <table>incident</table>
+        <toc_config/>
+        <top_bottom_margin>60</top_bottom_margin>
+        <user_criteria/>
+    </sn_doc_html_template>
+    <sys_translated_text action="delete_multiple" query="documentkey=22576bfd079a61102016f9fc7c1ed007"/>
+</record_update>

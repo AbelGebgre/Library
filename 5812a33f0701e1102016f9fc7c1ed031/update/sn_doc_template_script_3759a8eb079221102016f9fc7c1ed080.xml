@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_doc_template_script">
+    <sn_doc_template_script action="INSERT_OR_UPDATE">
+        <name>requester</name>
+        <script><![CDATA[(function runTemplateScript(target /*GlideRecord for target task*/ ) {
+    var tagWIthLink = function(lable, link = '') {
+        link = link != '' ? link : '';
+        return '<a title="' + lable + '" href="' + link + '" target="_blank">' + lable + '</a>';
+    };
+    var haveValue = function(input) {
+        return input?.length>0 && input != '' && input != 'null' && input != null && input != undefined ? true : false;
+    };
+    var userInfo = function() {
+        var userRecord = new GlideRecord('sys_user');
+        if (userRecord.get(target.getValue('caller_id'))) {
+            var name = userRecord.getValue('name');
+            var id = userRecord.getValue('employee_number');
+            var gender = userRecord.getValue('gender');
+            var email = userRecord.getValue('email');
+            var phone = userRecord.getValue('mobile_phone');
+            var h_phone = userRecord.getValue('home_phone');
+            var b_phone = userRecord.getValue('phone');
+            var street = userRecord.getValue('street');
+            var state = userRecord.getValue('state');
+            var zip = userRecord.getValue('zip');
+            var department = userRecord.getDisplayValue('department');
+            var company = userRecord.getDisplayValue('company');
+            var userTag = `
+				${haveValue(name)?'<span style="font-size: 12pt;"><strong class="text-inverse" style="font-weight: 600;">'+name+'</strong></span><br />':''}
+				${haveValue(id)?'ID: '+id+' <br />':''}
+				${haveValue(gender)?'Gender: '+gender+'<br />':''}
+				${haveValue(email)?'Email: '+tagWIthLink(email,'mailto:'+email) +'<br />':''}
+				${haveValue(phone)?'Phone: '+tagWIthLink(phone,'tel:'+phone)+'<br />':''} 
+				${haveValue(h_phone)?'Home Phone: '+tagWIthLink(h_phone,'tel:'+h_phone)+'<br />':''}
+				${haveValue(b_phone)?'Business Phone: '+tagWIthLink(b_phone,'tel:'+b_phone)+'<br/>':''}
+				${haveValue(street)?'Street: '+street+'<br />':''}
+				${haveValue(state) && haveValue(zip)?'City, Zip Code: '+state+','+ zip +'<br />':haveValue(state)? 'City: '+state: haveValue(zip)?'Zip Code: '+zip:''}
+				${haveValue(department)?'Department: '+department+'<br />':''}
+				${haveValue(company)?'Company: '+company+'<br />':''}`;
+            return userTag;
+        }
+        return '';
+    };
+    return userInfo;
+
+})(target);]]></script>
+        <sys_class_name>sn_doc_template_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-25 08:26:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>3759a8eb079221102016f9fc7c1ed080</sys_id>
+        <sys_mod_count>52</sys_mod_count>
+        <sys_name>requester</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sn_doc_template_script_3759a8eb079221102016f9fc7c1ed080</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-26 11:01:18</sys_updated_on>
+    </sn_doc_template_script>
+</record_update>

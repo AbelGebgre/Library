@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="DELETE">
+        <action_name>generate_pdf</action_name>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick() {
+    var htmlToPDF = new GlideAjax('x_976190_library.HtmlToPDF');
+    htmlToPDF.addParam('sysparm_name', 'convertToPDF');
+    htmlToPDF.addParam('sysparm_query', 'name=nav');
+    htmlToPDF.addParam('sysparm_table', g_form.getTableName());
+    htmlToPDF.addParam('sysparm_sys_id', g_form.getUniqueValue());
+    htmlToPDF.addParam('sysparm_number', 'Generated PDF'); //g_form.title);
+    htmlToPDF.getXML(function returnedData(response) {
+        var result = response.responseXML.documentElement.getAttribute("answer");
+        if (result !== 'null') {
+            g_form.addInfoMessage('PDF Generated Successfully!');
+			g_navigation.reloadWindow();
+        } else {
+            g_form.addErrorMessage('Generating PDF Faild!');
+        }
+    });
+}]]></client_script_v2>
+        <comments/>
+        <condition>current.active==true</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>true</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style>primary</form_style>
+        <format_for_configurable_workspace>true</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>true</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages>Generate PDF</messages>
+        <name>Generate PDF</name>
+        <onclick>onClick()</onclick>
+        <order>100</order>
+        <script><![CDATA[function onClick() {
+    var htmlToPDF = new GlideAjax('HtmlToPDF');
+    htmlToPDF.addParam('sysparm_name', 'convertToPDF');
+    htmlToPDF.addParam('sysparm_query', 'name=nav');
+    htmlToPDF.addParam('sysparm_table', g_form.getTableName());
+    htmlToPDF.addParam('sysparm_sys_id', g_form.getUniqueValue());
+    htmlToPDF.addParam('sysparm_number', 'Generated PDF');//g_form.getValue('number'));
+    htmlToPDF.getXML(function returnedData(response) {
+        var result = response.responseXML.documentElement.getAttribute("answer");
+        if (result !== 'null') {
+			g_form.addInfoMessage('PDF Generated Successfully!');
+			g_navigation.reloadWindow();
+        }
+		else{
+			g_form.addErrorMessage('Generating PDF Faild!');
+		}
+		g_navigation.reloadWindow();
+    });
+}]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-19 12:15:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f053626d075621102016f9fc7c1ed0ab</sys_id>
+        <sys_mod_count>61</sys_mod_count>
+        <sys_name>Generate PDF</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sys_ui_action_f053626d075621102016f9fc7c1ed0ab</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-20 06:07:36</sys_updated_on>
+        <table>x_976190_library_catalog</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>true</ui16_compatible>
+    </sys_ui_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>sys_ui_action_f053626d075621102016f9fc7c1ed0ab</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;generate_pdf&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick() {
+    var htmlToPDF = new GlideAjax('x_976190_library.HtmlToPDF');
+    htmlToPDF.addParam('sysparm_name', 'convertToPDF');
+    htmlToPDF.addParam('sysparm_query', 'name=nav');
+    htmlToPDF.addParam('sysparm_table', g_form.getTableName());
+    htmlToPDF.addParam('sysparm_sys_id', g_form.getUniqueValue());
+    htmlToPDF.addParam('sysparm_number', 'Generated PDF'); //g_form.title);
+    htmlToPDF.getXML(function returnedData(response) {
+        var result = response.responseXML.documentElement.getAttribute("answer");
+        if (result !== 'null') {
+            g_form.addInfoMessage('PDF Generated Successfully!');
+			g_navigation.reloadWindow();
+        } else {
+            g_form.addErrorMessage('Generating PDF Faild!');
+        }
+    });
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments/&gt;&lt;condition&gt;current.active==true&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;true&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style&gt;primary&lt;/form_style&gt;&lt;format_for_configurable_workspace&gt;true&lt;/format_for_configurable_workspace&gt;&lt;hint/&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages&gt;Generate PDF&lt;/messages&gt;&lt;name&gt;Generate PDF&lt;/name&gt;&lt;onclick&gt;onClick()&lt;/onclick&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[function onClick() {
+    var htmlToPDF = new GlideAjax('HtmlToPDF');
+    htmlToPDF.addParam('sysparm_name', 'convertToPDF');
+    htmlToPDF.addParam('sysparm_query', 'name=nav');
+    htmlToPDF.addParam('sysparm_table', g_form.getTableName());
+    htmlToPDF.addParam('sysparm_sys_id', g_form.getUniqueValue());
+    htmlToPDF.addParam('sysparm_number', 'Generated PDF');//g_form.getValue('number'));
+    htmlToPDF.getXML(function returnedData(response) {
+        var result = response.responseXML.documentElement.getAttribute("answer");
+        if (result !== 'null') {
+			g_form.addInfoMessage('PDF Generated Successfully!');
+			g_navigation.reloadWindow();
+        }
+		else{
+			g_form.addErrorMessage('Generating PDF Faild!');
+		}
+		g_navigation.reloadWindow();
+    });
+}]]&gt;&lt;/script&gt;&lt;show_insert&gt;false&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-04-19 12:15:11&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;f053626d075621102016f9fc7c1ed0ab&lt;/sys_id&gt;&lt;sys_mod_count&gt;61&lt;/sys_mod_count&gt;&lt;sys_name&gt;Generate PDF&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Library" source="x_976190_library"&gt;5812a33f0701e1102016f9fc7c1ed031&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Library"&gt;5812a33f0701e1102016f9fc7c1ed031&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_f053626d075621102016f9fc7c1ed0ab&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-04-20 06:07:36&lt;/sys_updated_on&gt;&lt;table&gt;x_976190_library_catalog&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;true&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>437623282</payload_hash>
+        <record_name>Generate PDF</record_name>
+        <reverted_from/>
+        <source>3666e7e5070221102016f9fc7c1ed098</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-20 06:07:36</sys_created_on>
+        <sys_id>b9b95ef1075661102016f9fc7c1ed0cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1879d4681380000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-20 06:07:36</sys_updated_on>
+        <type>UI Action</type>
+        <update_guid>fdb95ef1905661103fdd870a61de4dcc</update_guid>
+        <update_guid_history>fdb95ef1905661103fdd870a61de4dcc:437623282,5d7916755e566110d6baddb8a9fa8f04:-1079535899,11c8def13d566110a2b729cdb0e2b3bf:1585691259,6df75a7151566110d1846dfba2865bc0:1972383753,5c5e483d321e21101c64ecef6f778e1d:-1177834060,2fad0cb91b1e2110ecf6679d96cbb662:1737762117,8c7b4079541e211001efa089da40ad65:-2017003995,ddaa4c39bc1e211088e113a78eb3a5e4:1273727200,b728c875f71e2110f28da0099de11584:556622596,f9870c352a1e211028cb436b85459f43:1910074581,bc270c35381e21109be09fb9b002d899:1483669822,17c648f1821e211086ced36e298c3dad:797660763,9a76c8f1481e2110df0ed90f43a5ba15:1442004744,f026c4f1631e2110abe240b55dd7ba3d:-863354516,00d548f1631e2110e6c0a452b68436a3:-1319836301,00954871af1e2110773d6eae324e6b58:-1591663677,7bd34871e91e2110125372038d9c3653:-1977240398,8882ccfdcada21102e862e2841bac1fa:1356262932,08724031031e21109a1544fc982e2325:-1189896720,1f42ccfd1cda2110ef5772defd746019:979444653,7fc144fd89da21108a0852c61eba2e6e:-1725649645,0bd0487db7da21107719834c96123008:-400319800,56b04cf9cdda21109ba0d3a1cf9da0d7:427491322,6100c83db2da211077cfbeb832686993:2136003362,729fb3e9d0da211058c9c9a9f10dbd2b:1466813485,2d4f7fe988da2110169469378957b1ce:-630651301,a26ebb2916da2110a77321331c065078:551300218,a6ddbb296ada211076978ed69bc40d6d:2015615494,a96bbfe5deda2110c2762beededab6e8:773005862,1e1a73e55eda211095c256ccfd3fe7a9:2101737476,05d67be1cada211054510b1627876cfe:-1643440539,08b637e15eda21102788ed3c7d2ed0c6:-540264519,6af0c3ad3dd6211004272e2909939dcd:943182280,124e3ae918d62110cd84188ade3f7e37:-346913794,e31eb6a9c2d62110ba01454aa768731a:1825758720,c37dbaa980d6211002904c114b4dae04:-1394456640,be3d32a97cd62110bbb708ecbd4fd039:-1465033090,dc0d72a982d621103b8b2f20b29b3621:1876888639,bbecbe29afd621102d5c32b03b6daa6a:1826887094,368c3e29b2d621104e09d4e9cd268def:934434308,33cbfa29c8d6211020bde13c42987553:-1889474662,e7bbf2293fd62110f83932676136ba85:1337033360,8dbb3629a1d62110b92a9d67f52a27dc:-188422662,f98bb2e58bd62110184b48bdd1d24909:1443453802,167b36e502d621105ba21e3fb2e1c6cd:405302860,be6b72e585d621102d1d3cf9c821932a:-91889698,935a7aa5c6d6211014cc526ecfc748d5:510707803,42e9b2a5b0d62110c25ab830c9d7337c:-1452517444,4fa9b2a51dd62110345cb327bc0c6194:-97392502,ac8972a58fd6211089749e91e91af000:357663154,b339be25ffd62110b4fabda3f6bdfece:-885531140,82e8726538d62110bad88cf78acc7849:-791019549,00783e250fd621104635bbc8dd4bd21f:-2052800573,ac68322578d62110118ce8fdeae6f795:-917542535,d238b6e1cdd621105018c612b85daf6b:-1969378716,b4d7fee149d62110aca7748cdd02766d:140466778,5ad6fea133d62110383cf0f5c0f8d119:718504186,1456b6a12dd62110a4458e35ee037342:-325912079,0ca57a61f6d62110e96b36f1e31a95d3:964227032,e21be2652596211090c399dadc738fd8:-1862611420,78aa6a252e962110a51c5913a199b7ed:-881644231,a84422ad7256211067e1dbed6a431ad0:1938800129</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-20 06:10:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_action">sys_ui_action</sys_db_object>
+        <sys_id>19ca81ba3a07494289d6ee39e195dee1</sys_id>
+        <sys_metadata>f053626d075621102016f9fc7c1ed0ab</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Generate PDF</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent display_value="Catalog">9954c4d007d125102016f9fc7c1ed0e4</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>sys_ui_action_f053626d075621102016f9fc7c1ed0ab</sys_update_name>
+        <sys_update_version display_value="sys_ui_action_f053626d075621102016f9fc7c1ed0ab">b9b95ef1075661102016f9fc7c1ed0cd</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-20 06:10:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

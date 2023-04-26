@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_doc_pdf_template">
+    <sn_doc_pdf_template action="DELETE">
+        <acknowledgement_text/>
+        <active>true</active>
+        <category/>
+        <document/>
+        <name/>
+        <set_signing_order>true</set_signing_order>
+        <signing_type>servicenow_sign</signing_type>
+        <source_template/>
+        <state>draft</state>
+        <sys_class_name>sn_doc_pdf_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-21 12:35:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>e00cf45a07d621102016f9fc7c1ed078</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sn_doc_pdf_template_e00cf45a07d621102016f9fc7c1ed078</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-21 12:35:15</sys_updated_on>
+        <table/>
+        <user_criteria/>
+    </sn_doc_pdf_template>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>sn_doc_pdf_template_e00cf45a07d621102016f9fc7c1ed078</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_doc_pdf_template"><sn_doc_pdf_template action="INSERT_OR_UPDATE"><acknowledgement_text/><active>true</active><category/><document/><name/><set_signing_order>true</set_signing_order><signing_type>servicenow_sign</signing_type><source_template/><state>draft</state><sys_class_name>sn_doc_pdf_template</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-04-21 12:35:15</sys_created_on><sys_domain>global</sys_domain><sys_id>e00cf45a07d621102016f9fc7c1ed078</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package><sys_policy/><sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope><sys_update_name>sn_doc_pdf_template_e00cf45a07d621102016f9fc7c1ed078</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-04-21 12:35:15</sys_updated_on><table/><user_criteria/></sn_doc_pdf_template></record_update>]]></payload>
+        <payload_hash>997980372</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>3666e7e5070221102016f9fc7c1ed098</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-21 12:35:15</sys_created_on>
+        <sys_id>0a0c701a07d621102016f9fc7c1ed0ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187a3cfc5410000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-21 12:35:15</sys_updated_on>
+        <type>PDF Template</type>
+        <update_guid>0e0c701ab9d6211040eee19b7f9b20ab</update_guid>
+        <update_guid_history>0e0c701ab9d6211040eee19b7f9b20ab:997980372</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">d9421152075a21102016f9fc7c1ed03a</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-21 14:12:25</sys_created_on>
+        <sys_db_object display_value="" name="sn_doc_pdf_template">sn_doc_pdf_template</sys_db_object>
+        <sys_id>002af8d2cab3492080e009bec6162400</sys_id>
+        <sys_metadata>e00cf45a07d621102016f9fc7c1ed078</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>sn_doc_pdf_template_e00cf45a07d621102016f9fc7c1ed078</sys_update_name>
+        <sys_update_version display_value="sn_doc_pdf_template_e00cf45a07d621102016f9fc7c1ed078">0a0c701a07d621102016f9fc7c1ed0ac</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-21 14:12:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

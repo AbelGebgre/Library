@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_doc_template_script">
+    <sn_doc_template_script action="INSERT_OR_UPDATE">
+        <name>details</name>
+        <script><![CDATA[(function runTemplateScript(target /*GlideRecord for target task*/ ) {
+    var arr = [];
+    var detailInfo = function(name, value) {
+		return '<div class="col-xs-12"><strong>'+name+':</strong> '+value+'</div>';
+    };
+	var haveValue = function(input) {
+        return input?.length>0 && input != '' && input != 'null' && input != null && input != undefined ? true : false;
+    };
+    if (haveValue(target.getValue('cmdb_ci'))) {
+        arr.push(detailInfo('Configration Item',target.getValue('cmdb_ci')));
+    }
+	if (haveValue(target.getValue('business_service'))) {
+        arr.push(detailInfo('Service',target.getValue('business_service')));
+    }
+	if (haveValue(target.getValue('service_offering'))) {
+        arr.push(detailInfo('Service Offering',target.getValue('service_offering')));
+    }
+	if (haveValue(target.getValue('business_impact'))) {
+        arr.push(detailInfo('Business Impact',target.getValue('business_impact')));
+    }
+	if (haveValue(target.getValue('problem_id'))) {
+        arr.push(detailInfo('Problem',target.getValue('problem_id')));
+    }
+    return arr.join('<br />');
+
+})(target);]]></script>
+        <sys_class_name>sn_doc_template_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-24 08:18:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>740e538f075221102016f9fc7c1ed0b2</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>details</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sn_doc_template_script_740e538f075221102016f9fc7c1ed0b2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-26 11:05:30</sys_updated_on>
+    </sn_doc_template_script>
+</record_update>
