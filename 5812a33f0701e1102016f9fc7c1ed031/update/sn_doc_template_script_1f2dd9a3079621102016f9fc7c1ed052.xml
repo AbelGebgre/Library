@@ -26,16 +26,16 @@
             var company = userRecord.getDisplayValue('company');
             var userTag = `
 			${haveValue(name)?'<span style="font-size: 12pt;"><strong class="text-inverse" style="font-weight: 600;">'+name+'</strong></span><br />':''}
-			${haveValue(id)?'ID: '+id+' <br />':''}
-			${haveValue(gender)?'Gender: '+gender+'<br />':''}
-			${haveValue(email)?'Email: '+tagWIthLink(email,'mailto:'+email) +'<br />':''}
-			${haveValue(phone)?'Phone: '+tagWIthLink(phone,'tel:'+phone)+'<br />':''} 
-			${haveValue(h_phone)?'Home Phone: '+tagWIthLink(h_phone,'tel:'+h_phone)+'<br />':''}
-			${haveValue(b_phone)?'Business Phone: '+tagWIthLink(b_phone,'tel:'+b_phone)+'<br/>':''}
-			${haveValue(street)?'Street: '+street+'<br />':''}
-			${haveValue(state) && haveValue(zip)?'City, Zip Code: '+state+','+ zip +'<br />':haveValue(state)? 'City: '+state: haveValue(zip)?'Zip Code: '+zip:''}
-			${haveValue(department)?'Department: '+department+'<br />':''}
-			${haveValue(company)?'Company: '+company+'<br />':''}`;
+			${haveValue(id)?'ID: <small>'+id+'</small> <br />':''}
+			${haveValue(gender)?'Gender: <small>'+gender+'</small><br />':''}
+			${haveValue(email)?'Email: <small>'+tagWIthLink(email,'mailto:'+email) +'</small><br />':''}
+			${haveValue(phone)?'Phone: <small>'+tagWIthLink(phone,'tel:'+phone)+'</small><br />':''} 
+			${haveValue(h_phone)?'Home Phone: <small>'+tagWIthLink(h_phone,'tel:'+h_phone)+'</small><br />':''}
+			${haveValue(b_phone)?'Business Phone: <small>'+tagWIthLink(b_phone,'tel:'+b_phone)+'</small><br/>':''}
+			${haveValue(street)?'Street: <small>'+street+'</small><br />':''}
+			${haveValue(state) && haveValue(zip)?'City, Zip Code: <small>'+state+','+ zip +'</small><br />':haveValue(state)? 'City: <small>'+state+'</small><br />': haveValue(zip)?'Zip Code: <small>'+zip+'</small><br />':''}
+			${haveValue(department)?'Department: <small>'+department+'</small><br />':''}
+			${haveValue(company)?'Company: <small>'+company+'</small><br />':''}`;
             return userTag;
         }
         return '';
@@ -48,13 +48,13 @@
         <sys_created_on>2023-04-25 12:12:28</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>1f2dd9a3079621102016f9fc7c1ed052</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>resolver</sys_name>
         <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
         <sys_policy/>
         <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
         <sys_update_name>sn_doc_template_script_1f2dd9a3079621102016f9fc7c1ed052</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-26 11:02:09</sys_updated_on>
+        <sys_updated_on>2023-04-26 13:21:27</sys_updated_on>
     </sn_doc_template_script>
 </record_update>

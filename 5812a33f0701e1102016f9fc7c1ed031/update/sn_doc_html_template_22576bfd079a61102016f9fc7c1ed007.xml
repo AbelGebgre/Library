@@ -7,11 +7,11 @@
         <footer_image>12022bb60792e1102016f9fc7c1ed01f</footer_image>
         <footer_image_height>40</footer_image_height>
         <footer_image_position>RIGHT</footer_image_position>
-        <footnote>Email: admin@dengene.com Tel: 011233456 Mob: 0932423423</footnote>
+        <footnote>Website: https://dengene.com  Email: contact@dengene.com</footnote>
         <footnote_position>CENTER</footnote_position>
         <footnote_vertical_position>ABOVE</footnote_vertical_position>
-        <header_image>43f1babe079ea1102016f9fc7c1ed025</header_image>
-        <header_image_height>40</header_image_height>
+        <header_image>4520ea77071621102016f9fc7c1ed055</header_image>
+        <header_image_height>70</header_image_height>
         <header_image_position>RIGHT</header_image_position>
         <html_script_body><![CDATA[<p><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" /><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" rel="stylesheet" /></p>
 <div class="container">
@@ -50,7 +50,7 @@ ${template_script:subcategory}</div>
 ${template_script:details}
 <div class="col-xs-12">&nbsp;</div>
 <div class="row" style="margin: 0 -10px; padding: 10px;">
-<div class="col-xs-4"><strong>Created by:</strong> <small>${sys_created_by}</small><br /><strong>Updated by:</strong> <small>${sys_updated_by}</small><br /><strong>Opened by:</strong> <small>${opened_by}</small><br />${template_script:location}</div>
+<div class="col-xs-4">${template_script:getuser}<br /><strong>Opened by:</strong> <small>${opened_by}</small><br />${template_script:location}</div>
 <div class="col-xs-5">${template_script:dateFormat}</div>
 <div class="col-xs-3"><strong>Impact:</strong> <small>${impact}</small><br /><strong>Urgency:</strong> <small>${urgency}</small><br /><strong>Priority:</strong> <small>${priority}</small><br /><strong>Severity:</strong> <small>${severity}</small><br /><strong>State:</strong> <small>${state}</small></div>
 </div>
@@ -183,8 +183,8 @@ background:#eee;
 }
 @media print {
   html, body {
-      margin:0;
-      padding:0;
+      margin:-20px;
+      padding:-10px;
 	}
 }
 </style>]]></html_script_body>
@@ -202,14 +202,14 @@ background:#eee;
         <sys_created_on>2023-04-20 11:58:47</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>22576bfd079a61102016f9fc7c1ed007</sys_id>
-        <sys_mod_count>131</sys_mod_count>
+        <sys_mod_count>152</sys_mod_count>
         <sys_name>Incident Report Template</sys_name>
         <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
         <sys_policy/>
         <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
         <sys_update_name>sn_doc_html_template_22576bfd079a61102016f9fc7c1ed007</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-26 10:30:45</sys_updated_on>
+        <sys_updated_on>2023-04-26 13:04:44</sys_updated_on>
         <table>incident</table>
         <toc_config/>
         <top_bottom_margin>60</top_bottom_margin>
