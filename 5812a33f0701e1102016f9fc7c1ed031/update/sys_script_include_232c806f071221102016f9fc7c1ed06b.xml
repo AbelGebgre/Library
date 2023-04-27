@@ -33,20 +33,10 @@ HtmlToPDF.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
             }
         }
     },
-    _getGlideRecord: function(table, sysId) {
-        var gr = new GlideRecord(table);
-        return function(query) {
-            if (sysId)
-                gr.get(sysId);
-            else {
-                gr.addActiveQuery();
-                Object.keys(query).map(function(q) {
-                    gr.addQuery(q, query[q]);
-                });
-                gr.query();
-            }
-            return gr;
-        };
+    deleteAttach: function() {
+		var recordId = this.getParameter('sysparm_sys_id');
+        var pdfName = this.getParameter('sysparm_pdf');
+		this.deleteAttachment(recordId, pdfName);
     },
     type: 'HtmlToPDF'
 });]]></script>
@@ -54,13 +44,13 @@ HtmlToPDF.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-04-25 06:19:58</sys_created_on>
         <sys_id>232c806f071221102016f9fc7c1ed06b</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>HtmlToPDF</sys_name>
         <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
         <sys_update_name>sys_script_include_232c806f071221102016f9fc7c1ed06b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-27 12:03:00</sys_updated_on>
+        <sys_updated_on>2023-04-27 18:01:37</sys_updated_on>
     </sys_script_include>
 </record_update>
