@@ -11,7 +11,7 @@
         <footnote_position>CENTER</footnote_position>
         <footnote_vertical_position>ABOVE</footnote_vertical_position>
         <header_image>4520ea77071621102016f9fc7c1ed055</header_image>
-        <header_image_height>70</header_image_height>
+        <header_image_height>55</header_image_height>
         <header_image_position>RIGHT</header_image_position>
         <html_script_body><![CDATA[<p><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" /><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" rel="stylesheet" /></p>
 <div class="container">
@@ -196,20 +196,20 @@ background:#eee;
         <set_signing_order>true</set_signing_order>
         <signing_type>servicenow_sign</signing_type>
         <source_template/>
-        <state>edit</state>
+        <state>published</state>
         <sys_class_name>sn_doc_html_template</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-04-20 11:58:47</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>22576bfd079a61102016f9fc7c1ed007</sys_id>
-        <sys_mod_count>152</sys_mod_count>
+        <sys_mod_count>155</sys_mod_count>
         <sys_name>Incident Report Template</sys_name>
         <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
         <sys_policy/>
         <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
         <sys_update_name>sn_doc_html_template_22576bfd079a61102016f9fc7c1ed007</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-26 13:04:44</sys_updated_on>
+        <sys_updated_on>2023-04-27 09:27:08</sys_updated_on>
         <table>incident</table>
         <toc_config/>
         <top_bottom_margin>60</top_bottom_margin>

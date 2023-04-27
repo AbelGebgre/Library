@@ -6,7 +6,7 @@
     //Add your code here to return the dynamic content for template
     var getHeaderCell = function(obj) {
         var text = obj.text_position;
-        text = text != '' || text != undefined ? 'class="text-'+text+'"' : '';
+        text = text != '' || text != undefined ? 'class="text-' + text + '"' : '';
         var header = '<td ' + text + '>';
         header += '<strong>' + obj.lable + '</strong></td>';
         return header;
@@ -14,15 +14,12 @@
     var getDataCell = function(col, value) {
         var listtext = col.text_position;
         listtext = listtext != '' || listtext != undefined ?
-            'class="text-'+listtext+'"' : '';
+            'class="text-' + listtext + '"' : '';
         var list = '<td ' + listtext + '>';
         list += value + '</td>';
         return list;
     };
 
-    var htmlTable = '<table class="table table-striped" style="width: 100%;">';
-    var header = '<thead><tr>';
-    var list = '<tbody>';
     var columns = [{
             lable: '#',
             name: 'id',
@@ -59,7 +56,10 @@
             text_position: 'center'
         }
     ];
-    for (var i=0;i<columns.length;i++) {
+    var htmlTable = '<table class="table table-striped" style="width: 100%;">';
+    var header = '<thead><tr>';
+    var list = '<tbody>';
+    for (var i = 0; i < columns.length; i++) {
         header += getHeaderCell(columns[i]);
     }
     var incidentTask = new GlideRecord('incident_task');
@@ -71,7 +71,7 @@
         while (incidentTask.next()) {
             count = count + 1;
             list += (count == row) ? "<tr class='line'>" : "<tr>";
-            for (var j=0;j<columns.length;j++) {
+            for (var j = 0; j < columns.length; j++) {
                 const col = columns[j];
                 if (col.name == 'id') {
                     list += getDataCell(col, count);
@@ -101,13 +101,13 @@
         <sys_created_on>2023-04-21 14:06:47</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>9a89011a071a21102016f9fc7c1ed031</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>incidentTaskTable</sys_name>
         <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
         <sys_policy/>
         <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
         <sys_update_name>sn_doc_template_script_9a89011a071a21102016f9fc7c1ed031</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-26 10:53:11</sys_updated_on>
+        <sys_updated_on>2023-04-27 11:05:54</sys_updated_on>
     </sn_doc_template_script>
 </record_update>
