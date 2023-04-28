@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="04317e2d079621102016f9fc7c1ed00c" label="Pdf Template" max_length="40" name="x_976190_library_pdf_template" type="collection">
+    <element db_object_id="04317e2d079621102016f9fc7c1ed00c" display="true" label="Pdf Template" max_length="40" name="x_976190_library_pdf_template" type="collection">
         <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
         <element label="Body" max_length="8000" name="body" type="html"/>
         <element label="Html Template" max_length="8000" name="html_template" type="html"/>
