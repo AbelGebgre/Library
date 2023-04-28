@@ -17,7 +17,7 @@ function responseXML(response) {
     var result = response.responseXML.documentElement.getAttribute("answer");
     if (result !== 'null') {
         g_form.addInfoMessage('PDF Generated Successfully!');
-		g_navigation.reloadWindow();
+        g_navigation.reloadWindow();
     } else {
         g_form.addErrorMessage('Generating PDF Faild!');
     }
@@ -57,7 +57,7 @@ function responseXML(response) {
         var result = response.responseXML.documentElement.getAttribute("answer");
         if (result !== 'null') {
             var previewDialog = new GlideModal('x_976190_library_preview_pdf', true);
-			previewDialog.setTitle('Preview Document');
+			previewDialog.setTitle('Document Preview');
             previewDialog.setPreference('sysparm_attachmentId', JSON.parse(result));
             previewDialog.setWidth(1000);
             previewDialog.render();
@@ -76,7 +76,7 @@ function responseXML(response) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>468a9eb5075661102016f9fc7c1ed066</sys_id>
-        <sys_mod_count>153</sys_mod_count>
+        <sys_mod_count>163</sys_mod_count>
         <sys_name>Generate PDF</sys_name>
         <sys_overrides/>
         <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
@@ -84,7 +84,7 @@ function responseXML(response) {
         <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
         <sys_update_name>sys_ui_action_468a9eb5075661102016f9fc7c1ed066</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-27 20:06:13</sys_updated_on>
+        <sys_updated_on>2023-04-28 06:28:52</sys_updated_on>
         <table>incident</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
