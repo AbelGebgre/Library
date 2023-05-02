@@ -49,11 +49,6 @@
             lable: 'Impact',
             name: 'impact',
             text_position: 'center'
-        },
-        {
-            lable: 'State',
-            name: 'state',
-            text_position: 'center'
         }
     ];
     var htmlTable = '<table class="table table-striped" style="width: 100%;">';
@@ -101,13 +96,13 @@
         <sys_created_on>2023-04-21 14:06:47</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>9a89011a071a21102016f9fc7c1ed031</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>incidentTaskTable</sys_name>
         <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
         <sys_policy/>
         <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
         <sys_update_name>sn_doc_template_script_9a89011a071a21102016f9fc7c1ed031</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-27 11:05:54</sys_updated_on>
+        <sys_updated_on>2023-04-28 13:16:35</sys_updated_on>
     </sn_doc_template_script>
 </record_update>
