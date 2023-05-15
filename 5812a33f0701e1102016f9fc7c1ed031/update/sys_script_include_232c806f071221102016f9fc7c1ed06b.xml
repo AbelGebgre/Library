@@ -12,10 +12,10 @@ HtmlToPDF.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
     convertToPDF: function() {
         var recordId = this.getParameter('sysparm_sys_id');
         var docId = this.getParameter('sysparm_doc_id');
-        var pdfName = this.getParameter('sysparm_pdf');
-        this.deleteAttachment(recordId, pdfName);
+        var fileName = this.getParameter('sysparm_pdf');
+        this.deleteAttachment(recordId, fileName);
         var pdf = new sn_doc.GenerateDocumentAPI();
-        var result = pdf.generateDocumentForTask(recordId, docId, pdfName);
+        var result = pdf.generateDocumentForTask(recordId, docId, fileName);
         if (result) {
             return JSON.stringify(result);
         }
@@ -44,13 +44,13 @@ HtmlToPDF.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-04-25 06:19:58</sys_created_on>
         <sys_id>232c806f071221102016f9fc7c1ed06b</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name>HtmlToPDF</sys_name>
         <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
         <sys_update_name>sys_script_include_232c806f071221102016f9fc7c1ed06b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-27 18:01:37</sys_updated_on>
+        <sys_updated_on>2023-05-07 10:56:37</sys_updated_on>
     </sys_script_include>
 </record_update>

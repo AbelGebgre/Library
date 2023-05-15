@@ -12,6 +12,7 @@
         <element attributes="edge_encryption_enabled=true" label="Isbn13" max_length="40" name="isbn13" type="string"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="Pages" max_length="40" name="pages" type="integer"/>
+        <element label="Parent" max_length="32" name="parent" reference="x_976190_library_catalog" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <element label="Preview Link" max_length="200" name="preview_link" type="url"/>
         <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="Price" max_length="20" name="price" type="price"/>
         <element label="Published Date" max_length="40" name="published_date" type="glide_date"/>
@@ -32,6 +33,9 @@
             <element name="number"/>
         </index>
         <index name="index4">
+            <element name="parent"/>
+        </index>
+        <index name="index5">
             <element name="publisher"/>
         </index>
     </element>

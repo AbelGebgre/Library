@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_aw_module">
+    <sys_aw_module action="DELETE">
+        <active>true</active>
+        <content/>
+        <content_attrs/>
+        <content_component/>
+        <content_tag/>
+        <detail/>
+        <detail_attrs/>
+        <detail_component/>
+        <detail_tag/>
+        <hide_until_ready>false</hide_until_ready>
+        <icon>analytics-center-outline</icon>
+        <id>analytics_center</id>
+        <label>Analytics Center</label>
+        <order>1000</order>
+        <roles name="pa_viewer">a90d30b3bf101100b96dac808c073950</roles>
+        <sys_class_name>sys_aw_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-13 06:15:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>08087459077661102016f9fc7c1ed058</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>analytics_center</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_props/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sys_aw_module_08087459077661102016f9fc7c1ed058</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-13 06:15:07</sys_updated_on>
+        <toolbar_button/>
+        <type>full</type>
+        <workspace_config display_value="Library">fab73059077661102016f9fc7c1ed09a</workspace_config>
+    </sys_aw_module>
+    <sys_variable_value action="DELETE" query="document_key=08087459077661102016f9fc7c1ed058"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>sys_aw_module_08087459077661102016f9fc7c1ed058</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_aw_module"><sys_aw_module action="INSERT_OR_UPDATE"><active>true</active><content/><content_attrs/><content_component/><content_tag/><detail/><detail_attrs/><detail_component/><detail_tag/><hide_until_ready>false</hide_until_ready><icon>analytics-center-outline</icon><id>analytics_center</id><label>Analytics Center</label><order>1000</order><roles name="pa_viewer">a90d30b3bf101100b96dac808c073950</roles><sys_class_name>sys_aw_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-05-13 06:15:07</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>08087459077661102016f9fc7c1ed058</sys_id><sys_mod_count>0</sys_mod_count><sys_name>analytics_center</sys_name><sys_overrides/><sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package><sys_policy/><sys_props/><sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope><sys_update_name>sys_aw_module_08087459077661102016f9fc7c1ed058</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-05-13 06:15:07</sys_updated_on><toolbar_button/><type>full</type><workspace_config display_value="Library">fab73059077661102016f9fc7c1ed09a</workspace_config></sys_aw_module><sys_variable_value action="delete_multiple" query="document_key=08087459077661102016f9fc7c1ed058"/></record_update>]]></payload>
+        <payload_hash>-1926932454</payload_hash>
+        <record_name>analytics_center</record_name>
+        <reverted_from/>
+        <source>80ee6fc8076621102016f9fc7c1ed0a9</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-13 06:23:16</sys_created_on>
+        <sys_id>e3d9b8d9077661102016f9fc7c1ed0cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18813c71fb00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-13 06:23:16</sys_updated_on>
+        <type>Workspace Module</type>
+        <update_guid>88087459617661108f71a5482111926d</update_guid>
+        <update_guid_history>88087459617661108f71a5482111926d:-796197788,88087459617661108f71a5482111926d:-796197788</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-13 06:23:17</sys_created_on>
+        <sys_db_object display_value="" name="sys_aw_module">sys_aw_module</sys_db_object>
+        <sys_id>81e1ddb6ebf24e9085ddeebe45115640</sys_id>
+        <sys_metadata>08087459077661102016f9fc7c1ed058</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>analytics_center</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>sys_aw_module_08087459077661102016f9fc7c1ed058</sys_update_name>
+        <sys_update_version display_value="sys_aw_module_08087459077661102016f9fc7c1ed058">e3d9b8d9077661102016f9fc7c1ed0cb</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-13 06:23:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

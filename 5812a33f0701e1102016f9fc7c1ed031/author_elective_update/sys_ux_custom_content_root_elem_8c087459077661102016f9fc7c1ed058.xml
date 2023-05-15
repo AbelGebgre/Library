@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_custom_content_root_elem">
+    <sys_ux_custom_content_root_elem action="DELETE">
+        <active>true</active>
+        <applicability>single</applicability>
+        <applicable_page/>
+        <attrs/>
+        <children/>
+        <component display_value="sn-workspace-toolbar-button">c599f5f3b6554fd79cd983bf4ea75968</component>
+        <is_root>true</is_root>
+        <layout/>
+        <macroponent/>
+        <macroponent_config/>
+        <name>Analytics Center Button</name>
+        <order>1000</order>
+        <page display_value="Workspace Core">b70867ad0f603300bb57f4a1ff767e15</page>
+        <parent/>
+        <parent_slot/>
+        <picker/>
+        <picker_condition/>
+        <placeholder display_value="Workspace Toolbar Buttons">1232bfb5730c330075e8f358caf6a7ca</placeholder>
+        <sys_class_name>sys_ux_custom_content_root_elem</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-13 06:15:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8c087459077661102016f9fc7c1ed058</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Analytics Center Button</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sys_ux_custom_content_root_elem_8c087459077661102016f9fc7c1ed058</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-13 06:15:07</sys_updated_on>
+        <tree_root/>
+    </sys_ux_custom_content_root_elem>
+    <sys_variable_value action="DELETE" query="document_key=8c087459077661102016f9fc7c1ed058"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_ux_custom_content_root_elem</document>
+        <document_key>8c087459077661102016f9fc7c1ed058</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-13 06:15:07</sys_created_on>
+        <sys_id>48087459077661102016f9fc7c1ed067</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-13 06:15:07</sys_updated_on>
+        <value>Analytics Center</value>
+        <variable display_value="label">b5b65fd20c3c13fbd299dce1ef797184</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_ux_custom_content_root_elem</document>
+        <document_key>8c087459077661102016f9fc7c1ed058</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-13 06:15:07</sys_created_on>
+        <sys_id>84087459077661102016f9fc7c1ed067</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-13 06:15:07</sys_updated_on>
+        <value>analytics-center-outline</value>
+        <variable display_value="icon">674bdc908b8ed17eb631bec92971a228</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_ux_custom_content_root_elem</document>
+        <document_key>8c087459077661102016f9fc7c1ed058</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-13 06:15:07</sys_created_on>
+        <sys_id>cc087459077661102016f9fc7c1ed066</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-13 06:15:07</sys_updated_on>
+        <value>analytics_center</value>
+        <variable display_value="module-id">f497a95e69778d0f72f3f0d2df450266</variable>
+    </sys_variable_value>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>sys_ux_custom_content_root_elem_8c087459077661102016f9fc7c1ed058</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_custom_content_root_elem"><sys_ux_custom_content_root_elem action="INSERT_OR_UPDATE"><active>true</active><applicability>single</applicability><applicable_page/><attrs/><children/><component display_value="sn-workspace-toolbar-button">c599f5f3b6554fd79cd983bf4ea75968</component><is_root>true</is_root><layout/><macroponent/><macroponent_config/><name>Analytics Center Button</name><order>1000</order><page display_value="Workspace Core">b70867ad0f603300bb57f4a1ff767e15</page><parent/><parent_slot/><picker/><picker_condition/><placeholder display_value="Workspace Toolbar Buttons">1232bfb5730c330075e8f358caf6a7ca</placeholder><sys_class_name>sys_ux_custom_content_root_elem</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-05-13 06:15:07</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>8c087459077661102016f9fc7c1ed058</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Analytics Center Button</sys_name><sys_overrides/><sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package><sys_policy/><sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope><sys_update_name>sys_ux_custom_content_root_elem_8c087459077661102016f9fc7c1ed058</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-05-13 06:15:07</sys_updated_on><tree_root/></sys_ux_custom_content_root_elem><sys_variable_value action="delete_multiple" query="document_key=8c087459077661102016f9fc7c1ed058"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_ux_custom_content_root_elem</document><document_key>8c087459077661102016f9fc7c1ed058</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-05-13 06:15:07</sys_created_on><sys_id>48087459077661102016f9fc7c1ed067</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-05-13 06:15:07</sys_updated_on><value>Analytics Center</value><variable display_value="label">b5b65fd20c3c13fbd299dce1ef797184</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_ux_custom_content_root_elem</document><document_key>8c087459077661102016f9fc7c1ed058</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-05-13 06:15:07</sys_created_on><sys_id>84087459077661102016f9fc7c1ed067</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-05-13 06:15:07</sys_updated_on><value>analytics-center-outline</value><variable display_value="icon">674bdc908b8ed17eb631bec92971a228</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_ux_custom_content_root_elem</document><document_key>8c087459077661102016f9fc7c1ed058</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-05-13 06:15:07</sys_created_on><sys_id>cc087459077661102016f9fc7c1ed066</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-05-13 06:15:07</sys_updated_on><value>analytics_center</value><variable display_value="module-id">f497a95e69778d0f72f3f0d2df450266</variable></sys_variable_value></record_update>]]></payload>
+        <payload_hash>1368238570</payload_hash>
+        <record_name>Analytics Center Button</record_name>
+        <reverted_from/>
+        <source>80ee6fc8076621102016f9fc7c1ed0a9</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-13 06:23:00</sys_created_on>
+        <sys_id>efc978d9077661102016f9fc7c1ed06b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18813c6dee30000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-13 06:23:00</sys_updated_on>
+        <type>UX Custom Content Extension</type>
+        <update_guid>480874598e766110899df61b8eef4969</update_guid>
+        <update_guid_history>480874598e766110899df61b8eef4969:1662463193,480874598e766110899df61b8eef4969:1662463193,4c0874597d766110be250179a6c1015d:-470865044</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-13 06:23:16</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_custom_content_root_elem">sys_ux_custom_content_root_elem</sys_db_object>
+        <sys_id>0eed16e1bcfb40168241a9cf750483a4</sys_id>
+        <sys_metadata>8c087459077661102016f9fc7c1ed058</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Analytics Center Button</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>sys_ux_custom_content_root_elem_8c087459077661102016f9fc7c1ed058</sys_update_name>
+        <sys_update_version display_value="sys_ux_custom_content_root_elem_8c087459077661102016f9fc7c1ed058">efc978d9077661102016f9fc7c1ed06b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-13 06:23:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

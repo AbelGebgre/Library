@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="cxs_ui_action_config">
+    <cxs_ui_action_config action="DELETE">
+        <action_condition table="incident">major_incident_state=^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </action_condition>
+        <action_label>Link to Incident</action_label>
+        <action_undo_label/>
+        <action_value>Link to Incident</action_value>
+        <active>true</active>
+        <advanced_visibility>true</advanced_visibility>
+        <attach_note_field>comments</attach_note_field>
+        <attachment_type/>
+        <badge_label/>
+        <current_action_condition table="incident">major_incident_state=^parent_incidentISEMPTY^EQ<item endquery="false" field="parent_incident" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </current_action_condition>
+        <current_table>incident</current_table>
+        <order>300</order>
+        <rest_api>link_incident</rest_api>
+        <search_res_config display_value="Resolved Incidents">95c59c7a535b130005ecddeeff7b12d4</search_res_config>
+        <search_resource display_value="">com.snc.contextual_search.search_resource.GlideRecordSearchResource</search_resource>
+        <search_ui_action display_value="Link to Incident">7a02029353c4230005ecddeeff7b123b</search_ui_action>
+        <search_ui_config display_value="Agent Assist [incident]">1c819d8107f621102016f9fc7c1ed0d9</search_ui_config>
+        <show_on_new>false</show_on_new>
+        <sys_class_name>cxs_ui_action_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-12 13:28:05</sys_created_on>
+        <sys_id>648151c107f621102016f9fc7c1ed010</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Link to Incident</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>cxs_ui_action_config_648151c107f621102016f9fc7c1ed010</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-12 13:28:05</sys_updated_on>
+        <table>incident</table>
+        <trend_recommendation/>
+        <ui_action_visibility_script><![CDATA[/**
+* Description: scripting condition for Search UI Action's visibility.
+* Variables available:
+* 	current (GlideRecord): GlideRecord object of form record.
+* 	resource (GlideRecord): GlideRecord object of search result record.
+* Variable to set:
+* 	visible (boolean): Script writer needs to set this variable to true/false to determine whether to show/hide this UI action.
+* Example:
+* 	visible = current.getValue('parent_incident') !== resource.getUniqueValue();
+*/
+visible = current.getValue('parent_incident') !== resource.getUniqueValue();
+if (GlidePluginManager.isActive('com.snc.incident.mim'))
+	visible = visible && gs.nil(current.getValue('major_incident_state')) && gs.nil(resource.getValue('major_incident_state'));
+]]></ui_action_visibility_script>
+        <use_custom_field_for_attach>false</use_custom_field_for_attach>
+    </cxs_ui_action_config>
+    <sys_translated_text action="DELETE" query="documentkey=648151c107f621102016f9fc7c1ed010"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>cxs_ui_action_config_648151c107f621102016f9fc7c1ed010</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="cxs_ui_action_config"&gt;&lt;cxs_ui_action_config action="INSERT_OR_UPDATE"&gt;&lt;action_condition table="incident"&gt;major_incident_state=^EQ&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/action_condition&gt;&lt;action_label&gt;Link to Incident&lt;/action_label&gt;&lt;action_undo_label/&gt;&lt;action_value&gt;Link to Incident&lt;/action_value&gt;&lt;active&gt;true&lt;/active&gt;&lt;advanced_visibility&gt;true&lt;/advanced_visibility&gt;&lt;attach_note_field&gt;comments&lt;/attach_note_field&gt;&lt;attachment_type/&gt;&lt;badge_label/&gt;&lt;current_action_condition table="incident"&gt;major_incident_state=^parent_incidentISEMPTY^EQ&lt;item endquery="false" field="parent_incident" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/current_action_condition&gt;&lt;current_table&gt;incident&lt;/current_table&gt;&lt;order&gt;300&lt;/order&gt;&lt;rest_api&gt;link_incident&lt;/rest_api&gt;&lt;search_res_config display_value="Resolved Incidents"&gt;95c59c7a535b130005ecddeeff7b12d4&lt;/search_res_config&gt;&lt;search_resource display_value=""&gt;com.snc.contextual_search.search_resource.GlideRecordSearchResource&lt;/search_resource&gt;&lt;search_ui_action display_value="Link to Incident"&gt;7a02029353c4230005ecddeeff7b123b&lt;/search_ui_action&gt;&lt;search_ui_config display_value="Agent Assist [incident]"&gt;1c819d8107f621102016f9fc7c1ed0d9&lt;/search_ui_config&gt;&lt;show_on_new&gt;false&lt;/show_on_new&gt;&lt;sys_class_name&gt;cxs_ui_action_config&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-05-12 13:28:05&lt;/sys_created_on&gt;&lt;sys_id&gt;648151c107f621102016f9fc7c1ed010&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Link to Incident&lt;/sys_name&gt;&lt;sys_package display_value="Library" source="x_976190_library"&gt;5812a33f0701e1102016f9fc7c1ed031&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Library"&gt;5812a33f0701e1102016f9fc7c1ed031&lt;/sys_scope&gt;&lt;sys_update_name&gt;cxs_ui_action_config_648151c107f621102016f9fc7c1ed010&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-05-12 13:28:05&lt;/sys_updated_on&gt;&lt;table&gt;incident&lt;/table&gt;&lt;trend_recommendation/&gt;&lt;ui_action_visibility_script&gt;&lt;![CDATA[/**
+* Description: scripting condition for Search UI Action's visibility.
+* Variables available:
+* 	current (GlideRecord): GlideRecord object of form record.
+* 	resource (GlideRecord): GlideRecord object of search result record.
+* Variable to set:
+* 	visible (boolean): Script writer needs to set this variable to true/false to determine whether to show/hide this UI action.
+* Example:
+* 	visible = current.getValue('parent_incident') !== resource.getUniqueValue();
+*/
+visible = current.getValue('parent_incident') !== resource.getUniqueValue();
+if (GlidePluginManager.isActive('com.snc.incident.mim'))
+	visible = visible &amp;&amp; gs.nil(current.getValue('major_incident_state')) &amp;&amp; gs.nil(resource.getValue('major_incident_state'));
+]]&gt;&lt;/ui_action_visibility_script&gt;&lt;use_custom_field_for_attach&gt;false&lt;/use_custom_field_for_attach&gt;&lt;/cxs_ui_action_config&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=648151c107f621102016f9fc7c1ed010"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1634450154</payload_hash>
+        <record_name>Link to Incident</record_name>
+        <reverted_from/>
+        <source>80ee6fc8076621102016f9fc7c1ed0a9</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-12 13:28:05</sys_created_on>
+        <sys_id>e48151c107f621102016f9fc7c1ed012</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1881025aed30000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-12 13:28:05</sys_updated_on>
+        <type>Search Action Configuration</type>
+        <update_guid>e88151c13cf62110ed578c37c73b9a11</update_guid>
+        <update_guid_history>e88151c13cf62110ed578c37c73b9a11:-1634450154</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Link to Incident">b9d119c107f621102016f9fc7c1ed093</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-12 13:29:32</sys_created_on>
+        <sys_db_object display_value="" name="cxs_ui_action_config">cxs_ui_action_config</sys_db_object>
+        <sys_id>1734856dc9924df48e6d2d24e5050011</sys_id>
+        <sys_metadata>648151c107f621102016f9fc7c1ed010</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Link to Incident</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>cxs_ui_action_config_648151c107f621102016f9fc7c1ed010</sys_update_name>
+        <sys_update_version display_value="cxs_ui_action_config_648151c107f621102016f9fc7c1ed010">e48151c107f621102016f9fc7c1ed012</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-12 13:29:32</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

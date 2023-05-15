@@ -2,21 +2,21 @@
     <par_dashboard_widget action="INSERT_OR_UPDATE">
         <canvas display_value="">296eafd1505561101d07c12631e1b8ce</canvas>
         <component display_value="sn-component-filter">b999eb8ac52f85df203e43cbf2352fde</component>
-        <component_props>{"filterId":"1gqjmtkphtmll37vojgg","filterName":"Date","filterComponentType":"date","targets":[{"type":"table","table":{"id":"x_976190_library_catalog","label":"Catalog","hierarchy":["x_976190_library_catalog"]},"field":{"id":"sys_created_on","type":"glide_date_time","label":"Created","reference":""}},{"type":"table","table":{"id":"x_976190_library_circulation","label":"Circulation"},"field":{"id":"sys_updated_on","type":"glide_date_time","label":"Updated","reference":""}}],"defaultSelectedItems":[],"defaultSelectedDateRange":{"range":"SN_DYNAMIC_DATERANGE__LAST_7_DAYS","label":"Last 7 days"},"dateFilterView":"calendar-reldates","sort":"ASC","enableResetToDefault":true,"enableClearFilter":true,"maxElements":500,"filterConfigurations":[{"order":0,"filterId":"1gqjmtkphtmll37vojgg","type":"date","label":"Date","start":"2023-03-01T00:00:00","end":"2023-03-18T23:59:59","apply_to":["x_976190_library_catalog.sys_created_on","x_976190_library_catalog.sys_created_on","x_976190_library_circulation.sys_updated_on"]}],"allowTimeSelection":true}</component_props>
+        <component_props>{"filterId":"1gqjmtkphtmll37vojgg","filterName":"Date","filterComponentType":"date","targets":[{"type":"table","table":{"id":"x_976190_library_catalog","label":"Catalog","hierarchy":["x_976190_library_catalog"]},"field":{"id":"sys_created_on","type":"glide_date_time","label":"Created","reference":""}},{"type":"table","table":{"id":"x_976190_library_circulation","label":"Circulation"},"field":{"id":"sys_updated_on","type":"glide_date_time","label":"Updated","reference":""}}],"defaultSelectedItems":[],"defaultSelectedDateRange":{"range":"SN_DYNAMIC_DATERANGE__LAST_7_DAYS","label":"Last 7 days"},"dateFilterView":"calendar-reldates","sort":"ASC","enableResetToDefault":true,"enableClearFilter":true,"maxElements":500,"filterConfigurations":[{"filterId":"1gqjmtkphtmll37vojgg","start":"2022-11-01T00:00:00","apply_to":["x_976190_library_catalog.sys_created_on","x_976190_library_catalog.sys_created_on","x_976190_library_circulation.sys_updated_on"],"end":"2023-05-31T23:59:59","dynamicTimeRange":"SN_DYNAMIC_DATERANGE__LAST_6_MONTH","label":"Date","type":"date","order":0}],"allowTimeSelection":true}</component_props>
         <h>3</h>
         <name/>
         <sys_class_name>par_dashboard_widget</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-03-03 12:26:04</sys_created_on>
         <sys_id>e504a866079521102016f9fc7c1ed0c6</sys_id>
-        <sys_mod_count>43</sys_mod_count>
+        <sys_mod_count>44</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
         <sys_policy/>
         <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
         <sys_update_name>par_dashboard_widget_e504a866079521102016f9fc7c1ed0c6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-03-13 08:45:41</sys_updated_on>
+        <sys_updated_on>2023-05-13 07:12:07</sys_updated_on>
         <visualization/>
         <w>14</w>
         <x>34</x>

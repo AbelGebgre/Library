@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_976190_library.Circulation</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>Circulation</name>
+        <script><![CDATA[var Circulation = Class.create();
+Circulation.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    update: function() {
+        var action = this.getParameter('sysparm_action');
+        var sysID = this.getParameter('sysparm_sysID');
+        var glide = new GlideRecord('x_976190_library_circulation');
+        if (glide.get(sysID)) {
+            glide.state = action;
+//             if (action != 'returned') {
+//                 glide.approved = action == 'approved' ? true : false;
+//                 glide.issued_at = action == 'approved' ? new CirculationDateTime() : '';
+//                 glide.approved_by = action == 'approved' ? gs.getUserID() : '';
+//                 glide.rejected_by = action != 'approved' ? gs.getUserID() : '';
+//                 glide.rejected_at = action != 'approved' ? new CirculationDateTime() : '';
+//                 glide.returned_at = '';
+//                 var arr = glide.getValue('copies').split(',');
+//                 var copy = new GlideRecord('x_976190_library_copy');
+//                 for (cop of arr) {
+//                     if (copy.get(cop.sysID)) {
+//                         copy.booked = action == 'approved' ? true : false;
+//                         copy.update();
+//                     }
+//                 }
+//             }
+            glide.update();
+            return true;
+        }
+        return false;
+    },
+    type: 'Circulation'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-13 08:10:05</sys_created_on>
+        <sys_id>187d4d5107f661102016f9fc7c1ed06b</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>Circulation</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sys_script_include_187d4d5107f661102016f9fc7c1ed06b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-15 07:53:54</sys_updated_on>
+    </sys_script_include>
+</record_update>

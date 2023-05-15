@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="cxs_ui_action_config">
+    <cxs_ui_action_config action="DELETE">
+        <action_condition/>
+        <action_label>Helpful</action_label>
+        <action_undo_label>Not Helpful</action_undo_label>
+        <action_value>This helped</action_value>
+        <active>true</active>
+        <advanced_visibility>false</advanced_visibility>
+        <attach_note_field>comments</attach_note_field>
+        <attachment_type/>
+        <badge_label>Helpful</badge_label>
+        <current_action_condition/>
+        <current_table/>
+        <order>1800</order>
+        <rest_api/>
+        <search_res_config display_value="Incidents">a4ed15d087452300fb3ad61e36cb0bf3</search_res_config>
+        <search_resource display_value="">com.snc.contextual_search.search_resource.GlideRecordSearchResource</search_resource>
+        <search_ui_action display_value="This helped">31173286872a0300692cbba826cb0be1</search_ui_action>
+        <search_ui_config display_value="Agent Assist [incident]">1c819d8107f621102016f9fc7c1ed0d9</search_ui_config>
+        <show_on_new>false</show_on_new>
+        <sys_class_name>cxs_ui_action_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-12 13:28:05</sys_created_on>
+        <sys_id>688151c107f621102016f9fc7c1ed051</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Helpful</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>cxs_ui_action_config_688151c107f621102016f9fc7c1ed051</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-12 13:28:05</sys_updated_on>
+        <table/>
+        <trend_recommendation/>
+        <ui_action_visibility_script/>
+        <use_custom_field_for_attach>false</use_custom_field_for_attach>
+    </cxs_ui_action_config>
+    <sys_translated_text action="DELETE" query="documentkey=688151c107f621102016f9fc7c1ed051"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>cxs_ui_action_config_688151c107f621102016f9fc7c1ed051</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="cxs_ui_action_config"><cxs_ui_action_config action="INSERT_OR_UPDATE"><action_condition/><action_label>Helpful</action_label><action_undo_label>Not Helpful</action_undo_label><action_value>This helped</action_value><active>true</active><advanced_visibility>false</advanced_visibility><attach_note_field>comments</attach_note_field><attachment_type/><badge_label>Helpful</badge_label><current_action_condition/><current_table/><order>1800</order><rest_api/><search_res_config display_value="Incidents">a4ed15d087452300fb3ad61e36cb0bf3</search_res_config><search_resource display_value="">com.snc.contextual_search.search_resource.GlideRecordSearchResource</search_resource><search_ui_action display_value="This helped">31173286872a0300692cbba826cb0be1</search_ui_action><search_ui_config display_value="Agent Assist [incident]">1c819d8107f621102016f9fc7c1ed0d9</search_ui_config><show_on_new>false</show_on_new><sys_class_name>cxs_ui_action_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-05-12 13:28:05</sys_created_on><sys_id>688151c107f621102016f9fc7c1ed051</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Helpful</sys_name><sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package><sys_policy/><sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope><sys_update_name>cxs_ui_action_config_688151c107f621102016f9fc7c1ed051</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-05-12 13:28:05</sys_updated_on><table/><trend_recommendation/><ui_action_visibility_script/><use_custom_field_for_attach>false</use_custom_field_for_attach></cxs_ui_action_config><sys_translated_text action="delete_multiple" query="documentkey=688151c107f621102016f9fc7c1ed051"/></record_update>]]></payload>
+        <payload_hash>1886234853</payload_hash>
+        <record_name>Helpful</record_name>
+        <reverted_from/>
+        <source>80ee6fc8076621102016f9fc7c1ed0a9</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-12 13:28:05</sys_created_on>
+        <sys_id>288151c107f621102016f9fc7c1ed053</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1881025b2270000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-12 13:28:05</sys_updated_on>
+        <type>Search Action Configuration</type>
+        <update_guid>2c8151c11bf6211021897d8904708152</update_guid>
+        <update_guid_history>2c8151c11bf6211021897d8904708152:1886234853</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Helpful">fdd119c107f621102016f9fc7c1ed099</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-12 13:29:32</sys_created_on>
+        <sys_db_object display_value="" name="cxs_ui_action_config">cxs_ui_action_config</sys_db_object>
+        <sys_id>29132c8ba5ad4e209eeff7a8d49e8900</sys_id>
+        <sys_metadata>688151c107f621102016f9fc7c1ed051</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Helpful</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>cxs_ui_action_config_688151c107f621102016f9fc7c1ed051</sys_update_name>
+        <sys_update_version display_value="cxs_ui_action_config_688151c107f621102016f9fc7c1ed051">288151c107f621102016f9fc7c1ed053</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-12 13:29:32</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
