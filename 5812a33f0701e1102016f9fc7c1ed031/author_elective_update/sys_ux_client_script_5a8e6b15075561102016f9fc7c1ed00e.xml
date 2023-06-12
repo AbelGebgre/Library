@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <includes/>
+        <macroponent display_value="Circulation Record Page">828e6b15075561102016f9fc7c1ed00c</macroponent>
+        <name>viewport_gph/initiallyCollapsed</name>
+        <preset/>
+        <required_translations/>
+        <script><![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({api, helpers}) {
+	return api.context.props.userPrefs['workspace.showAgentAssist'] != 'true';
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-28 05:58:26</sys_created_on>
+        <sys_id>5a8e6b15075561102016f9fc7c1ed00e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>viewport_gph/initiallyCollapsed</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sys_ux_client_script_5a8e6b15075561102016f9fc7c1ed00e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-28 05:58:26</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>sys_ux_client_script_5a8e6b15075561102016f9fc7c1ed00e</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;includes/&gt;&lt;macroponent display_value="Circulation Record Page"&gt;828e6b15075561102016f9fc7c1ed00c&lt;/macroponent&gt;&lt;name&gt;viewport_gph/initiallyCollapsed&lt;/name&gt;&lt;preset/&gt;&lt;required_translations/&gt;&lt;script&gt;&lt;![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({api, helpers}) {
+	return api.context.props.userPrefs['workspace.showAgentAssist'] != 'true';
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-02-28 05:58:26&lt;/sys_created_on&gt;&lt;sys_id&gt;5a8e6b15075561102016f9fc7c1ed00e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;viewport_gph/initiallyCollapsed&lt;/sys_name&gt;&lt;sys_package display_value="Library" source="x_976190_library"&gt;5812a33f0701e1102016f9fc7c1ed031&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Library"&gt;5812a33f0701e1102016f9fc7c1ed031&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_5a8e6b15075561102016f9fc7c1ed00e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-02-28 05:58:26&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;transform&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>776612351</payload_hash>
+        <record_name>viewport_gph/initiallyCollapsed</record_name>
+        <reverted_from/>
+        <source>80ee6fc8076621102016f9fc7c1ed0a9</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-15 13:11:22</sys_created_on>
+        <sys_id>747ae84207f621102016f9fc7c1ed0ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1881f89766a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-15 13:11:22</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>f87ae842f0f62110908e0be8f8ae8bb9</update_guid>
+        <update_guid_history>f87ae842f0f62110908e0be8f8ae8bb9:776612351,a56064460ab62110f2a00094b5887e98:0,973710ca1a762110d0f148e5395a6d8a:-1671201296,da8e2b157a556110ce7c136a9f3605eb:776612351,5e8e6b15cc556110cbe009f46d526810:-553156579</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-15 13:11:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>0d1c911a36184b3a90cb70eb99ad6e49</sys_id>
+        <sys_metadata>5a8e6b15075561102016f9fc7c1ed00e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>viewport_gph/initiallyCollapsed</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_5a8e6b15075561102016f9fc7c1ed00e</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_5a8e6b15075561102016f9fc7c1ed00e">747ae84207f621102016f9fc7c1ed0ba</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-15 13:11:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

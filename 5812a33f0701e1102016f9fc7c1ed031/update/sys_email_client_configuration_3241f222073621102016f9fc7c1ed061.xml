@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_email_client_configuration">
+    <sys_email_client_configuration action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <attachment_send_action>attach_to_email_record</attachment_send_action>
+        <default_configuration>false</default_configuration>
+        <display_from>false</display_from>
+        <display_reply_to>false</display_reply_to>
+        <email_address_filters/>
+        <email_attachment_condition/>
+        <name>client config</name>
+        <recipient_qualifiers>216e40a13b221300c869c2c703efc461,6da15ca13b221300c869c2c703efc48a,4c027222073621102016f9fc7c1ed0af</recipient_qualifiers>
+        <sys_class_name>sys_email_client_configuration</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-17 12:21:15</sys_created_on>
+        <sys_id>3241f222073621102016f9fc7c1ed061</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>client config</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sys_email_client_configuration_3241f222073621102016f9fc7c1ed061</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-06 07:47:17</sys_updated_on>
+        <table>x_976190_library_circulation</table>
+        <to_optional>false</to_optional>
+    </sys_email_client_configuration>
+</record_update>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_email_canned_message">
+    <sys_email_canned_message action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <body><![CDATA[<p>We will let You know if the request Number: #${number}, requested books ${copies} is approved</p>]]></body>
+        <condition/>
+        <group/>
+        <sys_class_name>sys_email_canned_message</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-15 13:44:12</sys_created_on>
+        <sys_id>2c117c0a07f621102016f9fc7c1ed0dc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Thank You For Your Request!</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sys_email_canned_message_2c117c0a07f621102016f9fc7c1ed0dc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-06 07:42:30</sys_updated_on>
+        <table>x_976190_library_circulation</table>
+        <title>Thank You For Your Request!</title>
+        <user/>
+    </sys_email_canned_message>
+</record_update>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_976190_library.EmployeeCenterConstants</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Constants used across Employee Center application scripts.</description>
+        <name>EmployeeCenterConstants</name>
+        <script><![CDATA[var EmployeeCenterConstants = Class.create();
+EmployeeCenterConstants.prototype = {
+    initialize: function() {
+    },
+    type: 'EmployeeCenterConstants'
+};
+EmployeeCenterConstants.PLUGINS = {};
+
+EmployeeCenterConstants.TABLE = {};
+EmployeeCenterConstants.TABLE.FOOTER =  {
+	NAME: 'sn_ex_sp_footer',
+	FIELDS: {
+		NAME: 'name',
+		PORTAL: 'portal',
+		LOGO: 'logo',
+		ORGANIZATION_CONTENT: 'organization_content',
+		COPYRIGHT: 'copyright'
+	}
+};
+EmployeeCenterConstants.TABLE.FOOTER_MENU = {
+	NAME: 'sn_ex_sp_footer_menu',
+	FIELDS: {
+		FOOTER: 'footer',
+		MENU: 'menu',
+		ORDER: 'order',
+		LINK_TYPE: 'link_type'
+	},
+	TYPES: {
+		NAVIGATION_LINKS: 'navigation_links',
+		BOTTOM_LINKS: 'bottom_links',
+		SOCIAL_ICONS: 'social_icons'
+	}
+};
+EmployeeCenterConstants.TABLE.SP_INSTANCE_MENU = {
+	NAME: 'sp_instance_menu',
+	FIELDS: {
+		TITLE: 'title'
+	}
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-08 13:10:28</sys_created_on>
+        <sys_id>756094b5079721102016f9fc7c1ed0c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EmployeeCenterConstants</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sys_script_include_756094b5079721102016f9fc7c1ed0c5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-08 13:10:28</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_theme_css_include">
+    <m2m_sp_theme_css_include action="DELETE">
+        <order/>
+        <sp_css_include display_value="ec-theme-catalog">426ad94173221110547a54eb7df6a7ac</sp_css_include>
+        <sp_theme display_value="Library Theme">2382f949071721102016f9fc7c1ed05f</sp_theme>
+        <sys_class_name>m2m_sp_theme_css_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-06 12:31:52</sys_created_on>
+        <sys_id>7c64b10d071721102016f9fc7c1ed0b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ec-theme-catalog.Library Theme</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>m2m_sp_theme_css_include_7c64b10d071721102016f9fc7c1ed0b0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-06 12:31:52</sys_updated_on>
+    </m2m_sp_theme_css_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>m2m_sp_theme_css_include_7c64b10d071721102016f9fc7c1ed0b0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_theme_css_include"><m2m_sp_theme_css_include action="INSERT_OR_UPDATE"><order/><sp_css_include display_value="ec-theme-catalog">426ad94173221110547a54eb7df6a7ac</sp_css_include><sp_theme display_value="Library Theme">2382f949071721102016f9fc7c1ed05f</sp_theme><sys_class_name>m2m_sp_theme_css_include</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-06-06 12:31:52</sys_created_on><sys_id>7c64b10d071721102016f9fc7c1ed0b0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ec-theme-catalog.Library Theme</sys_name><sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package><sys_policy/><sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope><sys_update_name>m2m_sp_theme_css_include_7c64b10d071721102016f9fc7c1ed0b0</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-06-06 12:31:52</sys_updated_on></m2m_sp_theme_css_include></record_update>]]></payload>
+        <payload_hash>-2037168380</payload_hash>
+        <record_name>ec-theme-catalog.Library Theme</record_name>
+        <reverted_from/>
+        <source>80ee6fc8076621102016f9fc7c1ed0a9</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-06 12:31:52</sys_created_on>
+        <sys_id>3864b10d071721102016f9fc7c1ed0b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18890b1351c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-06 12:31:52</sys_updated_on>
+        <type>Stylesheets</type>
+        <update_guid>3c64b10de7172110cfdc5042409767b2</update_guid>
+        <update_guid_history>3c64b10de7172110cfdc5042409767b2:-2037168380</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="ec-theme-catalog.Library Theme">0dd4f989071721102016f9fc7c1ed0c8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-06 12:33:48</sys_created_on>
+        <sys_db_object display_value="" name="m2m_sp_theme_css_include">m2m_sp_theme_css_include</sys_db_object>
+        <sys_id>0c45732795f3432080e560adee8ea100</sys_id>
+        <sys_metadata>7c64b10d071721102016f9fc7c1ed0b0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ec-theme-catalog.Library Theme</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>m2m_sp_theme_css_include_7c64b10d071721102016f9fc7c1ed0b0</sys_update_name>
+        <sys_update_version display_value="m2m_sp_theme_css_include_7c64b10d071721102016f9fc7c1ed0b0">3864b10d071721102016f9fc7c1ed0b3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-06 12:33:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" db_object_id="d51b5c5c071525102016f9fc7c1ed0ea" label="Circulation" max_length="40" name="x_976190_library_circulation" text_index="true" type="collection">
+    <element attributes="email_client=true" audit="true" db_object_id="d51b5c5c071525102016f9fc7c1ed0ea" label="Circulation" max_length="40" name="x_976190_library_circulation" text_index="true" type="collection">
         <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
         <element label="Approved" max_length="40" name="approve" type="boolean"/>
         <element label="Approved by" max_length="32" name="approved_by" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>

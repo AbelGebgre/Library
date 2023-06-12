@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_ex_sp_footer_menu">
+    <sn_ex_sp_footer_menu action="INSERT_OR_UPDATE">
+        <footer display_value="Dengene">66bb8f95079b61102016f9fc7c1ed0c6</footer>
+        <link_type>social_icons</link_type>
+        <menu display_value="Library Social Icons">103a0831079721102016f9fc7c1ed0c7</menu>
+        <order>101</order>
+        <sys_class_name>sn_ex_sp_footer_menu</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-08 12:44:46</sys_created_on>
+        <sys_id>131ac431079721102016f9fc7c1ed05f</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sn_ex_sp_footer_menu_131ac431079721102016f9fc7c1ed05f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-08 13:22:22</sys_updated_on>
+    </sn_ex_sp_footer_menu>
+</record_update>

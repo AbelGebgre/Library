@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rectangle_menu_item">
+    <sp_rectangle_menu_item action="DELETE">
+        <active>true</active>
+        <color>default</color>
+        <condition/>
+        <display_1>document_id</display_1>
+        <display_2>source_table</display_2>
+        <display_date>sys_created_on</display_date>
+        <filter table="sysapproval_approver">sys_idISNOTEMPTY^state=requested^sys_created_onONThis week@javascript:gs.beginningOfThisWeek()@javascript:gs.endOfThisWeek()^EQ<item endquery="false" field="sys_id" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item display_value="Requested" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="requested"/>
+            <item endquery="false" field="sys_created_on" goto="false" newquery="false" operator="ON" or="false" value="This week@javascript:gs.beginningOfThisWeek()@javascript:gs.endOfThisWeek()"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <glyph/>
+        <hint/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <label>Approval</label>
+        <order>100</order>
+        <record_script/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description/>
+        <sp_page/>
+        <sp_rectangle_menu display_value="Library Center Menu">c3e6f2dd071b61102016f9fc7c1ed0ee</sp_rectangle_menu>
+        <sp_rectangle_menu_item/>
+        <sys_class_name>sp_rectangle_menu_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-07 12:41:59</sys_created_on>
+        <sys_id>8f1f7ad5075b61102016f9fc7c1ed047</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Approval</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sp_rectangle_menu_item_8f1f7ad5075b61102016f9fc7c1ed047</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-07 12:45:42</sys_updated_on>
+        <table>sysapproval_approver</table>
+        <type>filtered</type>
+        <url/>
+        <url_target/>
+    </sp_rectangle_menu_item>
+    <sys_translated_text action="DELETE" query="documentkey=8f1f7ad5075b61102016f9fc7c1ed047"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>sp_rectangle_menu_item_8f1f7ad5075b61102016f9fc7c1ed047</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rectangle_menu_item"><sp_rectangle_menu_item action="INSERT_OR_UPDATE"><active>true</active><color>default</color><condition/><display_1>document_id</display_1><display_2>source_table</display_2><display_date>sys_created_on</display_date><filter table="sysapproval_approver">sys_idISNOTEMPTY^state=requested^sys_created_onONThis week@javascript:gs.beginningOfThisWeek()@javascript:gs.endOfThisWeek()^EQ<item endquery="false" field="sys_id" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/><item display_value="Requested" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="requested"/><item endquery="false" field="sys_created_on" goto="false" newquery="false" operator="ON" or="false" value="This week@javascript:gs.beginningOfThisWeek()@javascript:gs.endOfThisWeek()"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></filter><glyph/><hint/><kb_article/><kb_category/><kb_topic/><label>Approval</label><order>100</order><record_script/><sc_cat_item/><sc_category/><short_description/><sp_page/><sp_rectangle_menu display_value="Library Center Menu">c3e6f2dd071b61102016f9fc7c1ed0ee</sp_rectangle_menu><sp_rectangle_menu_item/><sys_class_name>sp_rectangle_menu_item</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-06-07 12:41:59</sys_created_on><sys_id>8f1f7ad5075b61102016f9fc7c1ed047</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Approval</sys_name><sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package><sys_policy/><sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope><sys_update_name>sp_rectangle_menu_item_8f1f7ad5075b61102016f9fc7c1ed047</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-06-07 12:45:42</sys_updated_on><table>sysapproval_approver</table><type>filtered</type><url/><url_target/></sp_rectangle_menu_item><sys_translated_text action="delete_multiple" query="documentkey=8f1f7ad5075b61102016f9fc7c1ed047"/></record_update>]]></payload>
+        <payload_hash>-592409473</payload_hash>
+        <record_name>Approval</record_name>
+        <reverted_from/>
+        <source>80ee6fc8076621102016f9fc7c1ed0a9</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-07 12:45:42</sys_created_on>
+        <sys_id>9d214fd5075b61102016f9fc7c1ed01c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18895e43c9a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-07 12:45:42</sys_updated_on>
+        <type>Menu Item</type>
+        <update_guid>d1214fd5f65b6110788f6f76c3d1291c</update_guid>
+        <update_guid_history>d1214fd5f65b6110788f6f76c3d1291c:-592409473,d1904b19075b6110f2931fa9a5001363:-1098039789,72408759215b61102ba7927530f41633:-547685741</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Approval">77618f59075b61102016f9fc7c1ed046</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-07 12:46:59</sys_created_on>
+        <sys_db_object display_value="" name="sp_rectangle_menu_item">sp_rectangle_menu_item</sys_db_object>
+        <sys_id>d69f00e6c9594af8a538d0c33e352840</sys_id>
+        <sys_metadata>8f1f7ad5075b61102016f9fc7c1ed047</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Approval</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>sp_rectangle_menu_item_8f1f7ad5075b61102016f9fc7c1ed047</sys_update_name>
+        <sys_update_version display_value="sp_rectangle_menu_item_8f1f7ad5075b61102016f9fc7c1ed047">9d214fd5075b61102016f9fc7c1ed01c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-07 12:46:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

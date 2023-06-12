@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($scope, spUtil, CalendarView, $rootScope, $uibModal, $sanitize, $timeout, $document, $compile, resourceCalUtility, filterFilter) {
+    var c = this;
+    $scope.dragging = false;
+    $scope.schedulerConfig = {};
+    $scope.schedulerConfig.templates = {};
+
+    if ($scope.data.mode)
+        $scope.schedulerConfig.mode = mode;
+    else
+        $scope.schedulerConfig.mode = CalendarView.WEEK;
+
+    if ($scope.data.date) {
+        $scope.schedulerConfig.date = getDateTimeLocal($scope.data.date);
+        $scope.schedulerConfig.now_date = getDateTimeLocal($scope.data.date);
+    } else {
+        var currentDate = new Date();
+        currentDate.setHours(0, 0, 0, 0);
+        $scope.schedulerConfig.date = currentDate;
+    }
+    $scope.schedulerConfig.weekStartDay = $scope.data.weekStartDay;
+    if ($scope.data.timeFormat)
+        $scope.schedulerConfig.viewTimeFormat = $scope.data.timeFormat.timeFormatDhtmlx;
+    else
+        $scope.schedulerConfig.viewTimeFormat = "%H%i"; // default format if timeformat is not returned 
+
+    var userDateFormat = g_user_date_format;
+    var dhtmlxDateFormat = "%Y-%m-%d";
+    if (userDateFormat) {
+        dhtmlxDateFormat = resourceCalUtility.getDhtmlxDateFormat(userDateFormat);
+    }
+    $scope.schedulerConfig.xmlDate = '%Y-%m-%d %H:%i:%s';
+    $scope.schedulerConfig.nav_height = 0;
+    $scope.schedulerConfig.multiDay = true;
+    $scope.schedulerConfig.all_timed = false;
+    $scope.schedulerConfig.useSelectMenuSpace = true;
+    $scope.schedulerConfig.timeStep = 30;
+    $scope.schedulerConfig.scale_height = 36;
+    $scope.schedulerConfig.min_event_height = 21;
+    $scope.schedulerConfig.markNow = true;
+    $scope.schedulerConfig.forceFetchOnModeChange = true;
+
+    var holidaysArr = [];
+    var isNamedHoliday = {};
+    $scope.schedulerConfig.templates.month_date_class = function(date) {
+        var numericDate = date.getTime() / 1000;
+        numericDate -= date.getTimezoneOffset() * 60;
+        if (isNamedHoliday.hasOwnProperty(numericDate))
+            return 'holiday'
+        if (holidaysArr.indexOf(numericDate) > -1)
+            return 'nonworking';
+        return '';
+    };
+
+    $scope.schedulerConfig.templates.event_bar_text = function(start, end, event) {
+        return _sanitizeHtml(event.text);
+    };
+
+    $scope.schedulerConfig.templates.event_class = function(start, end, event) {
+        var className = 'resource_event_class ' + event.type;
+        if (event.selected)
+            className += ' selected-event';
+        if (event.booking_type)
+            className += ' ' + event.type + '_' + event.booking_type;
+        return className;
+    };
+
+    $scope.popoverTemplate = 'resource_event_popover';
+
+    var popoverScopes = [];
+
+    var myPlacement = 'auto right';
+    $scope.popoverPlacement = function() {
+        return myPlacement;
+    };
+
+    $scope.schedulerConfig.renderEvent = function(container, ev, width, height, header_content, body_content, templates) {
+        var html = "<div class='parent_event' popover-class = " + ev.id + " style='overflow: hidden; width: 100%; height: 100%; background: " + ev.color + "; border-radius: 4px;' uib-popover-template='popoverTemplate' popover-placement='{{popoverPlacement()}}' popover-append-to-body='true'  popover-trigger='click outsideClick' popover-is-open='isPopoverOpen'  aria-haspopup='true' aria-expanded='{{isPopoverOpen}}'>";
+        // container for event contents
+        html += '<div class="my_event_body">';
+
+        var isEventLonger = (ev.end_date - ev.start_date) / 60000 > 40;
+        // displaying event text
+        var event_text = templates.event_text(ev.start_date, ev.end_date, ev);
+        if (!ev.sys_id)
+            event_text = $scope.data.messages.newEvent;
+		if (ev.holiday && ev.text)
+			event_text = ev.text;
+        html += '<span class="event_text">' + _sanitizeHtml(event_text) + '</span>';
+        if (isEventLonger)
+            html += '<br/>';
+        else
+            html += '&nbsp';
+        html += '<span class="event_date">';
+
+        // two options here: show only start date for short events or start+end for long
+        if (isEventLonger) { // if event is longer than 40 minutes
+            html += templates.event_header(ev.start_date, ev.end_date, ev);
+            html += '</span>';
+        } else {
+            html += templates.event_date(ev.start_date) + '</span>';
+        }
+        html += '</div>';
+        // Create a new scope for the popover
+        var popoverScope = $scope.$new();
+        popoverScope.canReadAllocations = $scope.data.canReadAllocations;
+        popoverScope.ev = ev;
+        popoverScope.isPopoverOpen = false;
+        popoverScopes.push(popoverScope);
+        angular.element(container).append(($compile(html))(popoverScope));
+        return true;
+    };
+
+    function _sanitizeHtml(str) {
+        var temp = document.createElement('div');
+        temp.textContent = str;
+        return temp.innerHTML;
+    }
+
+    $scope.$watchCollection('data.scheduledSpans', function(newSpans, oldSpans) {
+        if (!$scope.data.scheduledSpans)
+            return;
+        holidaysArr = [];
+        isNamedHoliday = {};
+        var nonWorkSpans = JSON.parse(JSON.stringify($scope.data.scheduledSpans));
+        for (var i = 0; i < nonWorkSpans.length; i++) {
+            var nonWorkSpan = nonWorkSpans[i];
+            nonWorkSpan.days = getDateTimeLocal(nonWorkSpan.date);
+            if (nonWorkSpan.holiday) {
+                holidaysArr.push(nonWorkSpan.numericDate); //For Month View (weekends + holidays)
+                if (nonWorkSpan.isNamedHoliday) {
+                    isNamedHoliday[nonWorkSpan.numericDate] = true; //Month view -> holiday
+                    nonWorkSpan.css = 'week_holiday'; //week view -> holiday
+                } else {
+                    nonWorkSpan.css = 'week_nonworking'; //week view -> non working day
+                }
+            } else {
+                nonWorkSpan.css = 'gray_section';
+            }
+            nonWorkSpan.invert_zones = true;
+        }
+        var workingSpans = JSON.parse(JSON.stringify($scope.data.scheduledSpans));
+        for (i = 0; i < workingSpans.length; i++) {
+            var workingTimeSpan = workingSpans[i];
+            workingTimeSpan.days = getDateTimeLocal(workingTimeSpan.date);
+        }
+        c.markedSpans = nonWorkSpans.concat(workingSpans);
+
+    });
+
+    $scope.fetchEvents = function(startDate, endDate) {
+        $scope.data.startDate = resourceCalUtility.convertIntoSystemDateFormat(startDate);
+        var newEndDate = new Date(endDate);
+        if ((newEndDate.getHours() == 0 || newEndDate.getHours() == 24) && newEndDate.getMinutes() == 0 && newEndDate.getSeconds() == 0)
+            newEndDate.setSeconds(-1);
+        $scope.data.endDate = resourceCalUtility.convertIntoSystemDateFormat(newEndDate);
+        reloadWidget().then(attachPopovers);
+    };
+
+    function getDateTimeLocal(dateTimeString) {
+        var dateAndTime = dateTimeString.split(' ');
+        // This constructor of date assumes the date string is in UTC
+        var date = new Date(dateAndTime[0]);
+        var dateTime;
+        if (dateAndTime.length > 1) {
+            var time = dateAndTime[1].split(':');
+            // To negate the effect of the constructor, get the UTC values and set it again
+            dateTime = new Date(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate(), time[0], time[1], time[2]);
+        } else
+            dateTime = new Date(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate(), 0, 0, 0);
+        return dateTime;
+    }
+
+    function attachPopovers() {
+        $timeout(function() {
+            var evEl = $('div.dhx_cal_event_line[event_id], div.dhx_cal_event_line_start[event_id]');
+            for (var i = 0; i < evEl.length; i++) {
+                var container = angular.element(evEl[i]);
+                // Add the popover programatically
+                container.attr('uib-popover-template', 'popoverTemplate');
+                container.attr('popover-placement', '{{popoverPlacement()}}');
+                container.attr('popover-trigger', 'click outsideClick');
+                container.attr('popover-append-to-body', 'true');
+                container.attr('popover-is-open', 'isPopoverOpen');
+                container.attr('aria-haspopup', 'true');
+                container.attr('aria-expanded', '{{isPopoverOpen}}');
+                var popoverScope = $scope.$new();
+                popoverScope.ev = filterFilter($scope.data.events, {
+                    id: container.attr('event_id')
+                })[0];
+                popoverScope.canReadAllocations = $scope.data.canReadAllocations;
+                popoverScope.isPopoverOpen = false;
+                popoverScopes.push(popoverScope);
+                $compile(container)(popoverScope);
+            }
+        }, 100, false);
+    }
+
+    $scope.onViewChange = function(new_mode, new_date) {
+        if (new_mode == CalendarView.DAY)
+            myPlacement = "auto top";
+        else
+            myPlacement = "auto right";
+        popoverScopes = [];
+    };
+
+    $scope.$watch('schedulerConfig.mode', function(newMode, oldMode) {
+        if ((oldMode == CalendarView.MONTH && (newMode == CalendarView.DAY || newMode == CalendarView.WEEK)) || (oldMode == CalendarView.WEEK && newMode == CalendarView.DAY))
+            attachPopovers();
+        $rootScope.$broadcast('modeChange', newMode);
+    });
+
+    //instead of single emptyClick double emptyclick to create event.
+    $scope.clickT = 0;
+    $scope.onEmptyClick = function($date, $mouseEvent) {
+        if ($scope.clickT == 0) {
+            $scope.clickT = new Date().getTime();
+            window.setTimeout(function() {
+                var currentTime = new Date().getTime();
+                if ((currentTime - $scope.clickT) >= 250) {
+                    $scope.clickT = 0;
+                } else {
+                    $scope.$apply(function() {
+                        $scope.clickT = 0;
+                        var event = {};
+                        event.start_date = $date;
+                        $scope.handleEventChanges(event, true);
+                    });
+                    $scope.clickT = 0;
+                }
+            }, 250);
+        } else {
+            $scope.clickT = new Date().getTime();
+        }
+    };
+
+    $scope.onEventDblClick = function($id, $mouseEvent, $eventObj) {
+        if ($eventObj.holiday)
+            return;
+        $scope.handleEventChanges($eventObj, false);
+    };
+
+    $scope.onEventClick = function(id, mouseEvent, clickDate, eventObj, eventState) {
+        if (mouseEvent.screenX == 0 && mouseEvent.screenY == 0) {
+            jQuery(document.activeElement).find('.parent_event').click();
+            window.setTimeout(function() {
+                jQuery('.' + eventObj.id).on('keydown', {
+                    id: eventObj.id
+                }, function(e) {
+                    if (e.keyCode == 9 || e.keyCode == 27) {
+                        jQuery('[event_id=' + e.data.id + ']').focus();
+                        e.stopImmediatePropagation();
+                        e.stopPropagation();
+                        e.preventDefault();
+                        jQuery(this).hide();
+                    }
+
+                });
+            }, 250);
+        }
+
+    }
+    $scope.handleEventChanges = function(event, is_new) {
+        if (!event)
+            return;
+        for (var i = 0; i < popoverScopes.length; i++)
+            popoverScopes[i].isPopoverOpen = false;
+        var sysId = event.sys_id ? event.sys_id : -1;
+        var queryParams = '';
+        if (is_new) {
+            var startDateTime = event.start_date;
+            var endDateTime = new Date(startDateTime);
+            endDateTime.setMinutes(endDateTime.getMinutes() + 30);
+
+            var startDateTimeMoment = moment.utc(startDateTime);
+            startDateTimeMoment.local();
+            var endDateTimeMoment = moment.utc(endDateTime);
+            endDateTimeMoment.local();
+
+            var sdtInternal = resourceCalUtility.convertIntoSystemDateFormat(startDateTime, true);
+            var edtInternal = resourceCalUtility.convertIntoSystemDateFormat(endDateTime, true);
+            if (c.data.timeZonesDifferent) {
+                sdtInternal = 'javascript:rmConvertTimeZone("' + sdtInternal + '","' + c.data.userTimeZone + '","' + c.data.sessionTimeZone + '")';
+                edtInternal = 'javascript:rmConvertTimeZone("' + edtInternal + '","' + c.data.userTimeZone + '","' + c.data.sessionTimeZone + '")';
+            }
+            var dates = startDateTime ? 'start_date_time=' + startDateTimeMoment.format(moment.fn.toMomentFormatString(g_user_date_format) + ' ' + $scope.data.timeFormat.timeFormatUser) + '^end_date_time=' + endDateTimeMoment.format(moment.fn.toMomentFormatString(g_user_date_format) + ' ' + $scope.data.timeFormat.timeFormatUser) : '';
+            queryParams = dates + '^user=' + $scope.data.userId;
+        }
+        if (is_new || event._timed) {
+            var title = !is_new ? $scope.data.messages.editEvent : $scope.data.messages.newEvent;
+            spUtil.get('pps-form-modal', {
+                table: 'user_calendar_event',
+                sysId: sysId,
+                title: title,
+                gotoUrl: 'blank.do',
+                queryParams: queryParams
+            }).then(function(response) {
+                var formModal = response;
+                formModal.options.afterClose = function() {
+                    clearModal();
+                };
+                c.modalInstance = formModal;
+            });
+        } else {
+            spUtil.get('pps-list-modal', {
+                table: 'resource_allocation_daily',
+                title: c.data.messages.editEvents,
+                view: 'resource_calendar',
+                queryString: 'sys_idIN' + event.sys_ids.join(',')
+            }).then(function(response) {
+                var listModal = response;
+                listModal.options.afterClose = function() {
+                    clearModal(true);
+                };
+                c.modalInstance = listModal;
+            });
+        }
+    };
+
+    $scope.$on('pps.form.updated', function(scope, reload) {
+        clearModal(true);
+    });
+
+    function clearModal(reload) {
+        if (reload)
+            reloadWidget().then(attachPopovers);
+        else {
+            $rootScope.$broadcast('refreshCalendar');
+            attachPopovers();
+        }
+        c.modalInstance = null;
+    }
+
+    function reloadWidget() {
+        return spUtil.update($scope);
+    }
+
+    spUtil.get('resource-cal-header', {
+        schedulerConfig: $scope.schedulerConfig,
+        colorsMap: $scope.data.colors
+    }).then(function(response) {
+        $scope.data.calHeader = response;
+        if ($scope.schedulerConfig.displayHeaderDate)
+            $timeout(function() {
+                $rootScope.$broadcast('displayHeaderDateChange', $scope.schedulerConfig.displayHeaderDate);
+            });
+    });
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.dhx_cal_navline_wrapper {
+    display: none;
+}
+#resource_calendar{
+  position:absolute;
+  top:0;
+  bottom:0;
+  width:100%;
+  background-color : $gray-lighter;
+
+  .cal-day .dhx_scale_holder_now {
+	background-image: url(styles/imgs_sn/databg.png) !important;
+  }
+  .dhx_scale_holder_now {
+    background-image: url(styles/imgs_sn/databg_now.png);
+  }
+  .dhx_month_head{
+    text-align:left;
+    color: $gray-darker;
+    a{
+      padding-left : 7px;
+      color: $gray-darker;
+    }
+  }
+  .dhx_scale_bar{
+    font-size : 15px;
+    color : $gray-dark;
+    font-family : SourceSansPro;
+    font-weight: lighter;
+    padding: 10px 0px;
+    a{
+      color : $gray-dark;
+    }
+  }
+  .dhx_now .dhx_month_body, .dhx_now .dhx_month_head{
+    background-color: $panel-info-heading-bg;
+  }
+  
+  .nonworking .dhx_month_body, .nonworking .dhx_month_head{
+    background-color: rgba($navbar-inverse-link-color,0.3);
+  }
+  
+  .week_nonworking{
+    background-color: rgba($navbar-inverse-link-color,0.3);
+  }
+  .holiday .dhx_month_body, .holiday .dhx_month_head {
+    background-color: rgba($progress-bar-warning-bg, 0.1);
+  }
+  .week_holiday{
+    background-color: rgba($progress-bar-warning-bg, 0.1);
+  } 
+  
+  .gray_section{
+    background-color: $gray-lighter;
+    opacity: 0.5;
+  }
+  
+  .resource_event_class{
+    border:1px solid $gray;
+    border-radius: 4px !important;
+    z-index: 100;
+    background-color: rgba(189, 220, 252, .6);
+    color: $gray-dark;
+    font-weight: 600;
+    
+    .my_event_body{
+      padding: 3px 5px;
+    }
+  }
+  
+  .dhx_cal_event.resource_event_class{
+    box-sizing: border-box;
+  }
+  
+  .dhx_cal_event.dhx_cal_editor{
+    background-color: transparent !important;
+    border: 1px solid transparent !important;
+    z-index: 999;
+  }
+  .dhx_cal_event_clear{
+    line-height: 1.35;
+  }
+  .dhx_now_time {
+    border-bottom: 2px solid $primary;
+  }
+  .dhx_scheduler_month .dhx_now_time {
+    border-left: 2px solid $primary;
+  }
+  .dhx_matrix_now_time {
+    border-left: 2px solid $primary;
+  }
+  
+  .dhx_matrix_now_time, .dhx_now_time{
+    opacity: 1;
+  }
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>resource_calender</id>
+        <internal>false</internal>
+        <link><![CDATA[function(scope, element, attrs, controllers) {
+	$(document).on('keydown',function(event){
+		if(event.keyCode != 13)
+			return;
+		if(event.target.className == 'dhx_focus_slot')
+			event.preventDefault();
+	});
+	
+	$('.dhx_cal_data').off('scroll').on('scroll',function(){
+		scope.$apply(function() {
+			scope.showHideEventPopup = false;
+		});
+	});
+	
+	var taskWorkSoft = scope.data.colors.task_work_soft;
+	if(taskWorkSoft){
+		var style = document.createElement('style');
+		style.type = 'text/css';
+		var gradientVal = '-45deg, transparent 1px, transparent 5px, '+ taskWorkSoft.color + ' 0px, ' + taskWorkSoft.color + ' 8px';
+		style.innerHTML = '.task_work_soft { background: -webkit-repeating-linear-gradient(' + gradientVal + ') !important; background: repeating-linear-gradient(' + gradientVal + ') !important; background: -o-repeating-linear-gradient(' + gradientVal + ') !important; background: -moz-repeating-linear-gradient(' + gradientVal + ') !important;}';
+		document.getElementsByTagName('head')[0].appendChild(style);
+		
+	}
+	
+	var projectWorkSoft = scope.data.colors.project_work_soft;
+	if(projectWorkSoft){
+		var style = document.createElement('style');
+		style.type = 'text/css';
+		var gradientVal = '-45deg, transparent 1px, transparent 5px, '+ projectWorkSoft.color + ' 0px, ' + projectWorkSoft.color + ' 8px';
+		style.innerHTML = '.project_work_soft { background: -webkit-repeating-linear-gradient(' + gradientVal + ') !important; background: repeating-linear-gradient(' + gradientVal + ') !important; background: -o-repeating-linear-gradient(' + gradientVal + ') !important; background: -moz-repeating-linear-gradient(' + gradientVal + ') !important;}';
+		document.getElementsByTagName('head')[0].appendChild(style);
+		
+	}
+}]]></link>
+        <name>Resource Calender</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function($sp) {
+
+
+    data.weekStartDay = parseInt(gs.getProperty('com.snc.resource_management.first_day_of_week', 1));
+    data.date = new GlideDateTime().getDisplayValueInternal();
+    data.startDate = input.startDate || new GlideDate();
+    data.endDate = input.endDate || new GlideDate();
+    if (!input)
+        new RMDateRangeHelper().resetToWeekStartAndEnd(data.startDate, data.endDate);
+    data.userId = $sp.getParameter('sysparm_user') || input.userId || gs.getUserID();
+
+    if (data.userId == gs.getUserID() || gs.hasRole('resource_manager')) { // check to make sure only users who have access can view events
+        var calService = new ResourceCalendarService(data.userId, data.startDate, data.endDate);
+        data.events = calService.getEvents();
+        data.scheduledSpans = calService.getScheduledSpans();
+        data.colors = calService.colors;
+        data.timeFormat = calService.getTimeFormat();
+
+        var allocationsDaily = new GlideRecord('resource_allocation_daily');
+        allocationsDaily.newRecord();
+        data.canReadAllocations = allocationsDaily.canRead();
+    }
+
+    data.messages = {};
+    data.messages.newEvent = gs.getMessage('New event');
+    data.messages.editEvent = gs.getMessage('Edit event');
+    data.messages.editEvents = gs.getMessage('Edit events');
+    data.messages.open = gs.getMessage('Open');
+    data.messages.event = gs.getMessage('Event');
+    data.messages.name = gs.getMessage('Name');
+    data.messages.type = gs.getMessage('Type');
+    data.messages.when = gs.getMessage('When');
+
+    if (!input) {
+        var isSelf = (data.userId = gs.getUserID());
+        var ua = new RMUsageAnalytics();
+        ua.resourceCalendarLaunch(isSelf);
+    }
+    if (data.userId != gs.getUserID()) {
+        var user = GlideUser.getUserByID(data.userId);
+        if (user.getTZ() != gs.getSession().getTimeZone().getID()) {
+            data.userTimeZone = user.getTZ();
+            data.sessionTimeZone = gs.getSession().getTimeZone().getID();
+            data.timeZonesDifferent = true;
+        }
+    }
+
+})($sp);]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-07 06:03:25</sys_created_on>
+        <sys_id>0cf4e91907d361102016f9fc7c1ed0f6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Resource Calender</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sp_widget_0cf4e91907d361102016f9fc7c1ed0f6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-07 06:06:20</sys_updated_on>
+        <template><![CDATA[<div id="resource_calendar" class="flex-column">
+ <sp-widget widget="data.calHeader" ng-if="data.calHeader"></sp-widget>
+  <div sn-dhtmlx-scheduler="" class="flex-grow" 
+       		dragged-event="draggedEvent"
+			events="data.events" 
+			scheduler-config="schedulerConfig" 
+			fetch-events="fetchEvents($startDate, $endDate)" 
+			marked-spans="c.markedSpans"
+       		dragging="dragging"
+       		on-empty-click="onEmptyClick($date,$mouseEvent)"
+       		on-event-click="onEventClick($id,$mouseEvent,$clickDate,$eventObj,$eventState)"
+       		on-event-dbl-click="onEventDblClick($id,$mouseEvent,$eventObj)"
+       		on-view-change="onViewChange($new_mode,$new_date)">
+  </div>
+</div>
+<sp-widget widget="c.modalInstance" ng-if="c.modalInstance"></sp-widget>
+]]></template>
+    </sp_widget>
+</record_update>

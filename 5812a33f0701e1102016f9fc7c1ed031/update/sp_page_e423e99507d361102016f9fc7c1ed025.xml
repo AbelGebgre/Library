@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <css>body{&#13;
+  overflow: hidden;&#13;
+  section.page {&#13;
+  	padding-top: 0;&#13;
+    overflow: hidden;&#13;
+  }&#13;
+  main {&#13;
+    padding-top: 0;&#13;
+  }&#13;
+  .dhx_minical_popup{&#13;
+    z-index: 1000 !important;&#13;
+  }&#13;
+  .dhx_mini_calendar .dhx_before .dhx_month_head:hover, .dhx_mini_calendar .dhx_after .dhx_month_head:hover{&#13;
+    cursor: default;&#13;
+    color: $gray !important;&#13;
+    text-decoration: none !important;&#13;
+  }&#13;
+  &#13;
+  .dhx_mini_calendar .dhx_month_head:hover {&#13;
+    color: $primary !important;&#13;
+  }&#13;
+  &#13;
+  .dhx_mini_calendar .dhx_before .dhx_month_head, .dhx_mini_calendar .dhx_after .dhx_month_head{&#13;
+    color: $gray !important;&#13;
+  }&#13;
+  .dhx_mini_calendar .dhx_cal_prev_button:before{&#13;
+    font-family: inherit;&#13;
+    content: '&lt;&lt;';&#13;
+  }&#13;
+  &#13;
+  .dhx_mini_calendar .dhx_cal_next_button:before{&#13;
+    font-family: inherit;&#13;
+    content: '&gt;&gt;';&#13;
+  }&#13;
+  &#13;
+  .loader{&#13;
+    position : absolute;&#13;
+    top:0;&#13;
+    left:0;&#13;
+    width: 100%;&#13;
+    height:100%;&#13;
+    color : black;&#13;
+    font-size: 20px;&#13;
+  	z-index: 100;&#13;
+    &#13;
+    &amp;:before{&#13;
+      position: absolute;&#13;
+      content:"";&#13;
+      width:100%;&#13;
+      height:100%;&#13;
+      top: 0;&#13;
+      left: 0;&#13;
+      background: black;&#13;
+      opacity:.2;&#13;
+    }&#13;
+&#13;
+    .loader-content{&#13;
+      position:absolute;&#13;
+      width:100%;&#13;
+      text-align:center;&#13;
+      top:50%;&#13;
+      display:block;&#13;
+      transform: translateY(-50%);&#13;
+      &#13;
+      fa{&#13;
+        font-size : 30px;&#13;
+      }&#13;
+    }&#13;
+  }&#13;
+  .popover {&#13;
+    border-radius: 4px;&#13;
+    min-width: 260px;&#13;
+    z-index: 1048;&#13;
+  }&#13;
+&#13;
+  .popover-title {&#13;
+    background: none;&#13;
+    padding-right: 8px;&#13;
+    color: $gray;&#13;
+  }&#13;
+&#13;
+  .popover-title-button {&#13;
+    margin-left: 8px;&#13;
+  }&#13;
+&#13;
+  .popover-content {&#13;
+    padding: 0px;&#13;
+  }&#13;
+&#13;
+  .popover-body {&#13;
+    padding: 9px 14px 9px 14px;&#13;
+    font-size: 10pt;&#13;
+  }&#13;
+&#13;
+  .popover-label {&#13;
+    color: $gray;&#13;
+    vertical-align: top;&#13;
+  }&#13;
+&#13;
+  .popover-value {&#13;
+    color: black;&#13;
+    vertical-align: top;&#13;
+  }&#13;
+  .flex-grow{&#13;
+    -ms-flex:1 1 auto;    /* IE 10 */&#13;
+  }&#13;
+  #resource_calendar .cd_nav {&#13;
+    .btn-group .btn {&#13;
+      line-height: 1;&#13;
+      padding: 8px 12px;&#13;
+    }&#13;
+    .cd_calDate {&#13;
+    	width: auto;&#13;
+  	}&#13;
+  }&#13;
+}</css>
+        <draft>false</draft>
+        <dynamic_title_structure/>
+        <human_readable_url_structure/>
+        <id>resource_calendar</id>
+        <internal>false</internal>
+        <omit_watcher>false</omit_watcher>
+        <public>false</public>
+        <roles/>
+        <seo_script/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-07 05:55:20</sys_created_on>
+        <sys_id>e423e99507d361102016f9fc7c1ed025</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>resource_calendar</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sp_page_e423e99507d361102016f9fc7c1ed025</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-07 06:01:49</sys_updated_on>
+        <title>Resource Calendar</title>
+        <use_seo_script>false</use_seo_script>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=e423e99507d361102016f9fc7c1ed025"/>
+</record_update>

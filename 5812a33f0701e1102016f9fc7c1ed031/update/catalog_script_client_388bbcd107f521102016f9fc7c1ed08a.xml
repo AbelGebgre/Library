@@ -34,50 +34,31 @@
         for (key in filter) {
             g_form.setValue(key, filter[key]);
             if (key === 'image_url') {
-                // getBase64Image('https://www.google.de/images/srpr/logo11w.png');
-                // toDataUrl('https://www.google.de/images/srpr/logo11w.png', function(myBase64) {
-                //     alert(myBase64);
-                // });
+                getBase64Image(filter[key]);
             }
         }
     }
 
-    function toDataUrl(url, callback) {
-        var xhr = new XMLHttpRequest();
-        xhr.onload = function() {
-            var reader = new FileReader();
-            reader.onloadend = function() {
-                callback(reader.result);
-            };
-            reader.readAsDataURL(xhr.response);
+    function getBase64Image(imgUrl, callback) {
+        var img = new Image();
+        // onload fires when the image is fully loadded, and has width and height
+        img.onload = function() {
+            var canvas = this.document.createElement('canvas');
+            canvas.width = img.width;
+            canvas.height = img.height;
+            var ctx = canvas.getContext("2d");
+            ctx.drawImage(img, 0, 0);
+            var dataURL = canvas.toDataURL();
+                // dataURL = dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
+            alert(dataURL);
+            callback(dataURL); // the base64 string
         };
-        xhr.open('GET', url, true);
-        xhr.setRequestHeader('Access-Control-Allow-Headers', '*');
-        xhr.setRequestHeader('Access-Control-Allow-Origin', 'Origin, Content-Type, X-Auth-Token');
-        xhr.responseType = 'blob';
-        xhr.send();
-    }
 
-    function getBase64Image(url) {
-        fetch(url, {
-                mode: 'no-cors',
-                method: 'GET'
-            })
-            .then(function(res) {
-                alert(res.ok);
-                res.blob().then(function(blob) {
-                    var imageObjectURL = URL.createObjectURL(blob);
-                    alert(imageObjectURL);
-                    var reader = new FileReader();
-                    reader.onload = function(e) {
-                        alert('DataURL:', e.target.result);
-                    };
-                    reader.readAsDataURL(blob);
-                });
-            });
-        // return dataURL.replace(/^data:image\/?[A-z]*;base64,/);
+        // set attributes and src 
+        // img.setAttribute('crossOrigin', 'anonymous'); //
+        img.setAttribute('header', 'Access-Control-Allow-Origin: *');
+        img.src = imgUrl;
     }
-
 }]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -85,7 +66,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>388bbcd107f521102016f9fc7c1ed08a</sys_id>
-        <sys_mod_count>98</sys_mod_count>
+        <sys_mod_count>111</sys_mod_count>
         <sys_name>Fill Fields when results change</sys_name>
         <sys_overrides/>
         <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
@@ -93,7 +74,7 @@
         <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
         <sys_update_name>catalog_script_client_388bbcd107f521102016f9fc7c1ed08a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-03-31 09:04:40</sys_updated_on>
+        <sys_updated_on>2023-06-10 09:00:46</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>

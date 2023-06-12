@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_recipient_qualifier">
+    <sys_recipient_qualifier action="INSERT_OR_UPDATE">
+        <conditions/>
+        <description/>
+        <disambiguator_fields/>
+        <display_name_field>name</display_name_field>
+        <email_address_field>email</email_address_field>
+        <last_name_field/>
+        <name>Email client</name>
+        <order>100</order>
+        <prefix_search>true</prefix_search>
+        <script><![CDATA[(function (recipientQuery, targetRecord) {
+	/**
+	 * recipientQuery: A GlideRecord representing the table defined in "Table". Add conditions to
+	 *        filter the recipients returned to the Email Client auto-complete.
+	 *        i.e. recipientQuery.addQuery('active', true);
+	 * targetRecord: A GlideRecord representing the record in which the Email Client was opened from
+	 */
+
+})(recipientQuery, targetRecord);]]></script>
+        <search_disambiguators_fields>false</search_disambiguators_fields>
+        <sys_class_name>sys_recipient_qualifier</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-17 12:20:43</sys_created_on>
+        <sys_id>4c027222073621102016f9fc7c1ed0af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Email client</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sys_recipient_qualifier_4c027222073621102016f9fc7c1ed0af</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-17 12:20:43</sys_updated_on>
+        <table>sys_user</table>
+        <type>condition</type>
+    </sys_recipient_qualifier>
+</record_update>

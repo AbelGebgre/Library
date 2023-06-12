@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="DELETE">
+        <active>true</active>
+        <app_config display_value="Library Config">e96eafd1ee556110ffcb91e168364bd3</app_config>
+        <description/>
+        <event_mappings>[ ]</event_mappings>
+        <macroponent display_value="Catalog Record Page">a836240e07b621102016f9fc7c1ed049</macroponent>
+        <macroponent_config>{
+  "views" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "selectedTabIndex" : {
+    "type" : "JSON_LITERAL",
+    "value" : 0
+  },
+  "label" : {
+    "type" : "TRANSLATION_LITERAL",
+    "value" : {
+      "code" : null,
+      "message" : "",
+      "comment" : ""
+    }
+  },
+  "bare" : {
+    "type" : "JSON_LITERAL",
+    "value" : true
+  },
+  "scrollable" : {
+    "type" : "JSON_LITERAL",
+    "value" : "y"
+  },
+  "headerLevel" : {
+    "type" : "JSON_LITERAL",
+    "value" : "1"
+  },
+  "headingOnlyVisibleToScreenReaders" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "interceptNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "propagateNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  }
+}</macroponent_config>
+        <name>Catalog Record Page</name>
+        <order>10</order>
+        <parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen/>
+        <screen_condition>table=x_976190_library_catalog</screen_condition>
+        <screen_type display_value="Record">656eafd1a1556110e4aecd292aa247c9</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-15 12:52:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b436240e07b621102016f9fc7c1ed057</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Catalog Record Page</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sys_ux_screen_b436240e07b621102016f9fc7c1ed057</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-15 12:53:07</sys_updated_on>
+    </sys_ux_screen>
+    <sys_translated_text action="DELETE" query="documentkey=b436240e07b621102016f9fc7c1ed057"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>sys_ux_screen_b436240e07b621102016f9fc7c1ed057</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen"><sys_ux_screen action="INSERT_OR_UPDATE"><active>true</active><app_config display_value="Library Config">e96eafd1ee556110ffcb91e168364bd3</app_config><description/><event_mappings>[ ]</event_mappings><macroponent display_value="Catalog Record Page">a836240e07b621102016f9fc7c1ed049</macroponent><macroponent_config>{
+  "views" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "selectedTabIndex" : {
+    "type" : "JSON_LITERAL",
+    "value" : 0
+  },
+  "label" : {
+    "type" : "TRANSLATION_LITERAL",
+    "value" : {
+      "code" : null,
+      "message" : "",
+      "comment" : ""
+    }
+  },
+  "bare" : {
+    "type" : "JSON_LITERAL",
+    "value" : true
+  },
+  "scrollable" : {
+    "type" : "JSON_LITERAL",
+    "value" : "y"
+  },
+  "headerLevel" : {
+    "type" : "JSON_LITERAL",
+    "value" : "1"
+  },
+  "headingOnlyVisibleToScreenReaders" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "interceptNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "propagateNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  }
+}</macroponent_config><name>Catalog Record Page</name><order>10</order><parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent><required_translations>[ ]</required_translations><rollback_screen/><screen_condition>table=x_976190_library_catalog</screen_condition><screen_type display_value="Record">656eafd1a1556110e4aecd292aa247c9</screen_type><sys_class_name>sys_ux_screen</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-05-15 12:52:47</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>b436240e07b621102016f9fc7c1ed057</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Catalog Record Page</sys_name><sys_overrides/><sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package><sys_policy/><sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope><sys_update_name>sys_ux_screen_b436240e07b621102016f9fc7c1ed057</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-05-15 12:53:07</sys_updated_on></sys_ux_screen><sys_translated_text action="delete_multiple" query="documentkey=b436240e07b621102016f9fc7c1ed057"/></record_update>]]></payload>
+        <payload_hash>-73126886</payload_hash>
+        <record_name>Catalog Record Page</record_name>
+        <reverted_from/>
+        <source>80ee6fc8076621102016f9fc7c1ed0a9</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-15 12:53:07</sys_created_on>
+        <sys_id>a146e00e07b621102016f9fc7c1ed0f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1881f78c1fa0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-15 12:53:07</sys_updated_on>
+        <type>UX Screen</type>
+        <update_guid>e546e00ec8b62110af40c4b8dec113f6</update_guid>
+        <update_guid_history>e546e00ec8b62110af40c4b8dec113f6:-73126886,bc36240ea6b621101f3836f2acdcc958:-1963251554</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-15 13:08:27</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_screen">sys_ux_screen</sys_db_object>
+        <sys_id>33842e4c2d6044f89d7517bd9e111429</sys_id>
+        <sys_metadata>b436240e07b621102016f9fc7c1ed057</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Catalog Record Page</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>sys_ux_screen_b436240e07b621102016f9fc7c1ed057</sys_update_name>
+        <sys_update_version display_value="sys_ux_screen_b436240e07b621102016f9fc7c1ed057">a146e00e07b621102016f9fc7c1ed0f7</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-15 13:08:27</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
