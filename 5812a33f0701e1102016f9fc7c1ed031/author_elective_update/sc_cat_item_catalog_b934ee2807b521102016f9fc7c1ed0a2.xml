@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="Create Catalog">55fc562007b521102016f9fc7c1ed092</sc_cat_item>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-22 13:09:41</sys_created_on>
+        <sys_id>b934ee2807b521102016f9fc7c1ed0a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Create Catalog</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_b934ee2807b521102016f9fc7c1ed0a2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-22 13:09:41</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>sc_cat_item_catalog_b934ee2807b521102016f9fc7c1ed0a2</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="Create Catalog">55fc562007b521102016f9fc7c1ed092</sc_cat_item><sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-03-22 13:09:41</sys_created_on><sys_id>b934ee2807b521102016f9fc7c1ed0a2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Service Catalog.Create Catalog</sys_name><sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package><sys_policy/><sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope><sys_update_name>sc_cat_item_catalog_b934ee2807b521102016f9fc7c1ed0a2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-03-22 13:09:41</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>483166219</payload_hash>
+        <record_name>Service Catalog.Create Catalog</record_name>
+        <reverted_from/>
+        <source>b8b9d956072121102016f9fc7c1ed016</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-22 13:09:41</sys_created_on>
+        <sys_id>39346a6807b521102016f9fc7c1ed01f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187097085810000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-22 13:09:41</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>3d346a6880b52110682c76bbfb76a91e</update_guid>
+        <update_guid_history>3d346a6880b52110682c76bbfb76a91e:483166219</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Service Catalog.Create Catalog">84417d0f079b21102016f9fc7c1ed019</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-12 17:26:01</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>5670eeda1da74c7f88d96b19f8368751</sys_id>
+        <sys_metadata>b934ee2807b521102016f9fc7c1ed0a2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Create Catalog</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent display_value="Create Catalog">55fc562007b521102016f9fc7c1ed092</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_b934ee2807b521102016f9fc7c1ed0a2</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_b934ee2807b521102016f9fc7c1ed0a2">39346a6807b521102016f9fc7c1ed01f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-12 17:26:01</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

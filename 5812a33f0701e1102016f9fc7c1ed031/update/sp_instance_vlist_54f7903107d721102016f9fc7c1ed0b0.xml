@@ -11,27 +11,27 @@
         <glyph/>
         <id/>
         <maximum_entries>6</maximum_entries>
-        <order>3</order>
+        <order>1</order>
         <order_by/>
         <order_direction>asc</order_direction>
         <roles/>
         <short_description/>
         <size>md</size>
-        <sp_column display_value="3">d867543107d721102016f9fc7c1ed0b5</sp_column>
+        <sp_column display_value="1">4867543107d721102016f9fc7c1ed098</sp_column>
         <sp_page display_value="form">ed5f8ec347730200ba13a5554ee49046</sp_page>
         <sp_widget display_value="Simple List">5b255672cb03020000f8d856634c9c28</sp_widget>
         <sys_class_name>sp_instance_vlist</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-08 13:43:24</sys_created_on>
         <sys_id>54f7903107d721102016f9fc7c1ed0b0</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
         <sys_policy/>
         <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
         <sys_update_name>sp_instance_vlist_54f7903107d721102016f9fc7c1ed0b0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-12 07:38:37</sys_updated_on>
+        <sys_updated_on>2023-06-14 07:11:05</sys_updated_on>
         <table>x_976190_library_catalog</table>
         <title/>
         <url/>
@@ -61,8 +61,8 @@
 		"displayValue": ""
 	},
 	"hide_footer": {
-		"value": "true",
-		"displayValue": "true"
+		"value": "false",
+		"displayValue": "false"
 	},
 	"view": {
 		"value": "",

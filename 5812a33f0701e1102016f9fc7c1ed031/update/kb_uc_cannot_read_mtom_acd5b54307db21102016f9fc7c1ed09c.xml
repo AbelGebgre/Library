@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="kb_uc_cannot_read_mtom">
+    <kb_uc_cannot_read_mtom action="INSERT_OR_UPDATE">
+        <kb_knowledge_base display_value="Library Knowledge">bb75b54307db21102016f9fc7c1ed095</kb_knowledge_base>
+        <sys_class_name>kb_uc_cannot_read_mtom</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-12 17:45:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>acd5b54307db21102016f9fc7c1ed09c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Library Knowledge.Guest User</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>kb_uc_cannot_read_mtom_acd5b54307db21102016f9fc7c1ed09c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-12 17:45:59</sys_updated_on>
+        <user_criteria display_value="Guest User">76f09af6cb1200108ad442fcf7076dbf</user_criteria>
+    </kb_uc_cannot_read_mtom>
+</record_update>

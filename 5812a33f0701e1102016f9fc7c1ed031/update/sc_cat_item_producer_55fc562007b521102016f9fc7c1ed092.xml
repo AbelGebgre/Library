@@ -68,7 +68,7 @@
 * To access the variables, use `producer.var1` where var1 is the name of the variable
 * To access the Record Producer use `cat_item`
 */]]></save_script>
-        <sc_catalogs>e0d08b13c3330100c8b837659bba8fb4</sc_catalogs>
+        <sc_catalogs>7472d5de075321102016f9fc7c1ed03c,e0d08b13c3330100c8b837659bba8fb4</sc_catalogs>
         <sc_ic_item_staging/>
         <sc_ic_version/>
         <sc_template/>
@@ -91,19 +91,20 @@ url = https://www.googleapis.com/books/v1/volumes?q=isbn:0735619670
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-03-22 12:40:00</sys_created_on>
         <sys_id>55fc562007b521102016f9fc7c1ed092</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Create Catalog</sys_name>
         <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
         <sys_policy/>
         <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
         <sys_update_name>sc_cat_item_producer_55fc562007b521102016f9fc7c1ed092</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-03-22 13:09:41</sys_updated_on>
+        <sys_updated_on>2023-06-12 17:32:40</sys_updated_on>
         <table_name>x_976190_library_catalog</table_name>
         <taxonomy_topic/>
         <template/>
         <template_manager_roles/>
         <type>item</type>
+        <u_catalog_item/>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
         <view/>

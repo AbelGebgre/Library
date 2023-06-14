@@ -13,7 +13,7 @@
         <kb_category/>
         <kb_topic/>
         <label>Approvals</label>
-        <order>200</order>
+        <order>300</order>
         <record_script><![CDATA[// only show 30 in header menu dropdown
 var max = 30;
 
@@ -48,7 +48,7 @@ while (z.next()) {
 	if (!rec.isValidRecord())  // nothing being approved - hmmm
 		continue;
 	
-  a.short_description = rec.short_description + "";
+  a.short_description = rec.number + "";
   if (rec.getRecordClassName() == "sc_request") {
     var items = new GlideRecord("sc_req_item");
     items.addQuery("request", rec.getUniqueValue());
@@ -62,7 +62,8 @@ while (z.next()) {
   }
   
   $sp.getRecordValues(a, z, 'sys_id,sys_updated_on');
-  a.number = rec.getDisplayValue();
+  var copies = rec.copies.getDisplayValue()?.split(',');
+  a.number = 'Coplies - '+copies[0]+(copies.length>1?'...':'');
   a.__table = z.getRecordClassName();
   a.type = 'approval';
   t.items.push(a);
@@ -90,14 +91,14 @@ function getRecordBeingApproved(gr) {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-09 08:07:54</sys_created_on>
         <sys_id>1fb4148e075321102016f9fc7c1ed0d1</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>Approvals</sys_name>
         <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
         <sys_policy/>
         <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
         <sys_update_name>sp_rectangle_menu_item_1fb4148e075321102016f9fc7c1ed0d1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-10 05:57:29</sys_updated_on>
+        <sys_updated_on>2023-06-13 08:17:52</sys_updated_on>
         <table/>
         <type>scripted</type>
         <url/>

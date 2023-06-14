@@ -531,21 +531,21 @@
     </css_variables>
         <footer display_value="Library Center Footer">c7c8cbd1079b61102016f9fc7c1ed03b</footer>
         <footer_fixed>false</footer_fixed>
-        <header display_value="Library Center Header">8c44f9d5071761102016f9fc7c1ed036</header>
+        <header display_value="Library Center Header">c0e841d307d321102016f9fc7c1ed075</header>
         <name>Library Center Theme</name>
         <navbar_fixed>true</navbar_fixed>
         <sys_class_name>sp_theme</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-06 12:24:19</sys_created_on>
         <sys_id>2382f949071721102016f9fc7c1ed05f</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>Library Center Theme</sys_name>
         <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
         <sys_policy/>
         <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
         <sys_update_name>sp_theme_2382f949071721102016f9fc7c1ed05f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-09 13:06:32</sys_updated_on>
+        <sys_updated_on>2023-06-13 09:12:07</sys_updated_on>
         <turn_off_scss_compilation>false</turn_off_scss_compilation>
     </sp_theme>
 </record_update>

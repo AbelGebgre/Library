@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="pc_software_cat_item">
+    <pc_software_cat_item action="INSERT_OR_UPDATE">
+        <access_type>restricted</access_type>
+        <active>true</active>
+        <auto_created>false</auto_created>
+        <availability>on_desktop</availability>
+        <billable>false</billable>
+        <category display_value="Books">609a191a079321102016f9fc7c1ed0b8</category>
+        <checked_out/>
+        <cost>0</cost>
+        <custom_cart/>
+        <delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan>
+        <delivery_plan_script/>
+        <delivery_time>1970-01-03 00:00:00</delivery_time>
+        <description><![CDATA[Get a handle on the digital currency revolution, and learn how to get on board The Bitcoin Big Bang is a guide to navigating the uncharted territory of digital currency. Written by CNBC contributor Brian Kelly, this book goes beyond Bitcoin 101 to explain how this transformative technology is about to change the world. Digital currency is thrown into perspective against the history of payment systems and its own evolution, as readers are invited to explore the ways in which this technology is already changing the way business gets done. Readers gain insight into the mechanisms behind Bitcoin, and an expert perspective on digital currency&#39;s effect on the future of money and the economic implications of the Bitcoin revolution. In the same way that e-mail changed the way we transfer information, the decentralized Bitcoin network is about to revolutionize the business world, the legal profession, and even the role of the government. The Bitcoin Big Bang dives head first into this paradigm shift, allowing readers to: Explore the origins of digital currency Learn the history and evolution of payment systems Discover how the Bitcoin network is facilitating free and instant transfer of value Understand the mining of Bitcoin, and how to invest The digital currency revolution has implications that spread far beyond the finance industry. Anyone who exchanges payment for goods and services is on the cusp of the next big push in societal evolution, and only an understanding of the technology and a clear knowledge of the systems and behaviors at play can fully prepare us for the changes to come. The Bitcoin Big Bang is the go-to guide, helping those who use money use it better.]]></description>
+        <display_price_property>non_zero</display_price_property>
+        <entitlement_script/>
+        <features/>
+        <flow_designer_flow/>
+        <fulfillment_automation_level>unspecified</fulfillment_automation_level>
+        <group/>
+        <hide_sp>false</hide_sp>
+        <icon/>
+        <ignore_price>false</ignore_price>
+        <image/>
+        <location/>
+        <mandatory_attachment>false</mandatory_attachment>
+        <meta/>
+        <mobile_hide_price>false</mobile_hide_price>
+        <mobile_picture/>
+        <mobile_picture_type>use_desktop_picture</mobile_picture_type>
+        <model/>
+        <name>The Bitcoin Big Bang</name>
+        <no_attachment_v2>true</no_attachment_v2>
+        <no_cart>false</no_cart>
+        <no_cart_v2>false</no_cart_v2>
+        <no_delivery_time_v2>false</no_delivery_time_v2>
+        <no_order>false</no_order>
+        <no_order_now>false</no_order_now>
+        <no_proceed_checkout>false</no_proceed_checkout>
+        <no_quantity>false</no_quantity>
+        <no_quantity_v2>true</no_quantity_v2>
+        <no_search>false</no_search>
+        <no_wishlist_v2>false</no_wishlist_v2>
+        <omit_price>false</omit_price>
+        <order>0</order>
+        <ordered_item_link/>
+        <owner display_value="">system</owner>
+        <picture/>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=984ec613071b21102016f9fc7c1ed031&amp;sysparm_preview=true", "summary");</preview>
+        <product_id/>
+        <published_ref/>
+        <recurring_frequency/>
+        <request_method/>
+        <roles/>
+        <sc_catalogs>7472d5de075321102016f9fc7c1ed03c</sc_catalogs>
+        <sc_ic_item_staging/>
+        <sc_ic_version/>
+        <sc_template/>
+        <short_description>How Alternative Currencies Are About to Change the World</short_description>
+        <show_variable_help_on_load>false</show_variable_help_on_load>
+        <specs/>
+        <start_closed>false</start_closed>
+        <state/>
+        <sys_class_name>pc_software_cat_item</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-06-13 14:11:12</sys_created_on>
+        <sys_id>984ec613071b21102016f9fc7c1ed031</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>The Bitcoin Big Bang</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>pc_software_cat_item_984ec613071b21102016f9fc7c1ed031</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-06-13 14:11:12</sys_updated_on>
+        <taxonomy_topic/>
+        <template/>
+        <template_manager_roles/>
+        <type>item</type>
+        <u_catalog_item>86b2029307d721102016f9fc7c1ed07f</u_catalog_item>
+        <u_library_catalog/>
+        <upc/>
+        <use_sc_layout>true</use_sc_layout>
+        <vendor/>
+        <vendor_catalog_item/>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <workflow/>
+    </pc_software_cat_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=984ec613071b21102016f9fc7c1ed031"/>
+    <fx_price action="delete_multiple" query="id=984ec613071b21102016f9fc7c1ed031"/>
+</record_update>

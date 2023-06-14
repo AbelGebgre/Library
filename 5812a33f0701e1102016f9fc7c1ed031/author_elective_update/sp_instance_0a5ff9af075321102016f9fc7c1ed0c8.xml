@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>2</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="2">648d392f075321102016f9fc7c1ed0ba</sp_column>
+        <sp_widget display_value="Employee Profile My Team">cfcbbf7c30b3b010f8772514c50e7062</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-14 07:44:33</sys_created_on>
+        <sys_id>0a5ff9af075321102016f9fc7c1ed0c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sp_instance_0a5ff9af075321102016f9fc7c1ed0c8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-14 07:44:33</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=0a5ff9af075321102016f9fc7c1ed0c8"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>sp_instance_0a5ff9af075321102016f9fc7c1ed0c8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>2</order><roles/><short_description/><size>md</size><sp_column display_value="2">648d392f075321102016f9fc7c1ed0ba</sp_column><sp_widget display_value="Employee Profile My Team">cfcbbf7c30b3b010f8772514c50e7062</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-06-14 07:44:33</sys_created_on><sys_id>0a5ff9af075321102016f9fc7c1ed0c8</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package><sys_policy/><sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope><sys_update_name>sp_instance_0a5ff9af075321102016f9fc7c1ed0c8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-06-14 07:44:33</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=0a5ff9af075321102016f9fc7c1ed0c8"/></record_update>]]></payload>
+        <payload_hash>-2032651411</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>80ee6fc8076621102016f9fc7c1ed0a9</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-14 07:44:34</sys_created_on>
+        <sys_id>da5ff9af075321102016f9fc7c1ed0ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>188b8dd0bc20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-14 07:44:34</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>de5ff9afb75321107a50b439e70c56c9</update_guid>
+        <update_guid_history>de5ff9afb75321107a50b439e70c56c9:-2032651411</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">cc8fbdaf075321102016f9fc7c1ed041</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-14 07:45:14</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>3248db1ea5bf4a809a4dbe5cf5920599</sys_id>
+        <sys_metadata>0a5ff9af075321102016f9fc7c1ed0c8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>sp_instance_0a5ff9af075321102016f9fc7c1ed0c8</sys_update_name>
+        <sys_update_version display_value="sp_instance_0a5ff9af075321102016f9fc7c1ed0c8">da5ff9af075321102016f9fc7c1ed0ca</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-14 07:45:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

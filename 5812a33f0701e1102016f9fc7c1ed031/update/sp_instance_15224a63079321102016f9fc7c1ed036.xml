@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">ad81c263079321102016f9fc7c1ed0ae</sp_column>
+        <sp_widget display_value="Library Requests">985d20d3075321102016f9fc7c1ed0c2</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-14 07:56:47</sys_created_on>
+        <sys_id>15224a63079321102016f9fc7c1ed036</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>My Requests</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sp_instance_15224a63079321102016f9fc7c1ed036</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-14 07:58:14</sys_updated_on>
+        <title>My Requests</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"maximum_entries": {
+		"value": 5,
+		"displayValue": "5"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=15224a63079321102016f9fc7c1ed036"/>
+</record_update>

@@ -19,7 +19,8 @@
         <element attributes="encode_utf8=false" label="Publisher" max_length="32" name="publisher" reference="x_976190_library_publisher" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="glide_list"/>
         <element label="Rate" max_length="40" name="rate" type="float"/>
         <element attributes="edge_encryption_enabled=true" label="Series" max_length="40" name="series" type="string"/>
-        <element attributes="edge_encryption_enabled=true" display="true" label="Title" mandatory="true" max_length="40" name="title" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Subtitle" max_length="100" name="subtitle" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Title" mandatory="true" max_length="100" name="title" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Type" mandatory="true" max_length="40" name="type" reference="x_976190_library_type" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="glide_list"/>
         <element label="View" max_length="40" name="view" type="integer"/>
         <element attributes="edge_encryption_enabled=true" label="Volume" max_length="40" name="volume" type="string"/>

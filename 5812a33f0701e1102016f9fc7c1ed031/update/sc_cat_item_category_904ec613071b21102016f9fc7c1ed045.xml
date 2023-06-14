@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="The Bitcoin Big Bang">984ec613071b21102016f9fc7c1ed031</sc_cat_item>
+        <sc_category display_value="Books">609a191a079321102016f9fc7c1ed0b8</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-06-13 14:11:12</sys_created_on>
+        <sys_id>904ec613071b21102016f9fc7c1ed045</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Books.The Bitcoin Big Bang</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sc_cat_item_category_904ec613071b21102016f9fc7c1ed045</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-06-13 14:11:12</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>
