@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>standard</category>
-        <client_script><![CDATA[api.controller= function($location, $rootScope) {
+        <client_script><![CDATA[api.controller= function($scope, $location, $rootScope) {
 	var c = this;
 	this.filterText = "";
 	this.showFilter = false;
@@ -25,6 +25,17 @@
 			$location.search('spa', 1); // spa means "I've got this"
 			$rootScope.$broadcast('$sp.list.click', evt);
 		}
+	};
+	this.previousPage = function(){
+		if ($scope.data.pagination.currentPage > 1)
+			$scope.data.pagination.currentPage = $scope.data.pagination.currentPage - 1;
+		else
+			$scope.data.pagination.currentPage = 0;
+			$scope.server.update();
+	};
+	this.nextPage = function(){
+		$scope.data.pagination.currentPage = $scope.data.pagination.currentPage+1;
+		$scope.server.update();
 	};
 };]]></client_script>
         <controller_as>c</controller_as>
@@ -50,7 +61,7 @@ input[ng-model="c.filterText"]:-moz-focusring {
         <description/>
         <docs/>
         <field_list>title,color</field_list>
-        <has_preview>false</has_preview>
+        <has_preview>true</has_preview>
         <id>library_requests</id>
         <internal>false</internal>
         <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
@@ -59,15 +70,26 @@ input[ng-model="c.filterText"]:-moz-focusring {
         <public>false</public>
         <roles/>
         <script><![CDATA[(function() {
-	if (!options.maximum_entries)
-		options.maximum_entries = 20;
+	var maxNumberOfItemsInTheList = parseInt(options.maximum_entries);
+//set 10 if maxnumber is undefined, empty or negative value
+	maxNumberOfItemsInTheList = maxNumberOfItemsInTheList>0 ? maxNumberOfItemsInTheList : 3; 
+	var initRow = 0;
+	var lastRow = maxNumberOfItemsInTheList;
+	var currentPage = 0;
+	if (input) {
+	// update pagination
+		currentPage = input.pagination.currentPage;
+		initRow = (currentPage * maxNumberOfItemsInTheList);
+		lastRow = initRow + maxNumberOfItemsInTheList;
+	}
 	var gr = new GlideRecordSecure('sc_request'); // does ACL checking for us
+	gr.chooseWindow(initRow, lastRow);
 	gr.addActiveQuery();
 	options.title = options.title || gr.getPlural();
 	data.display_field = 'sys_created_on';
 	data.secondary_fields = ['number','sys_updated_on'];
 	data.filterMsg = gs.getMessage("Filter...");
-
+	
 	gr.addEncodedQuery('requested_for=javascript:gs.getUserID()');//request_state=requested
 	gr.orderByDesc('sys_created_on');
 	gr.query();
@@ -75,8 +97,8 @@ input[ng-model="c.filterText"]:-moz-focusring {
 	data.list = [];
 	var recordIdx = 0;
 	while (gr.next()) {
-		if (recordIdx == options.maximum_entries)
-			break;
+		//if (recordIdx == options.maximum_entries)
+			//break;
 
 		var record = {};
 		record.sys_id = gr.getValue('sys_id');
@@ -102,7 +124,18 @@ input[ng-model="c.filterText"]:-moz-focusring {
 		data.list.push(record);
 		recordIdx++;
 	}
-
+	// for pagination
+	var rowCount = data.count;
+	
+	data.pagination = {};
+	data.pagination.hasNext = (data.list.length == (parseInt(lastRow) - parseInt(initRow)) && lastRow < rowCount);
+	data.pagination.hasPrevious = parseInt(initRow) > 0;
+	data.pagination.from = parseInt(initRow + 1);
+	data.pagination.to = parseInt(lastRow) < parseInt(rowCount) ? parseInt(lastRow) : parseInt(rowCount);
+	data.pagination.of = parseInt(rowCount);
+	data.pagination.showPagination = data.pagination.hasPrevious || data.pagination.hasNext;
+	data.pagination.currentPage = data.pagination.from > data.pagination.to ? currentPage -1 : currentPage;
+	
 	function getField(gr, name) {
 		var f = {};
 		f.display_value = gr.getDisplayValue(name);
@@ -120,17 +153,23 @@ input[ng-model="c.filterText"]:-moz-focusring {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-13 07:07:40</sys_created_on>
         <sys_id>985d20d3075321102016f9fc7c1ed0c2</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>Library Requests</sys_name>
         <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
         <sys_policy/>
         <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
         <sys_update_name>sp_widget_985d20d3075321102016f9fc7c1ed0c2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-14 07:32:54</sys_updated_on>
+        <sys_updated_on>2023-06-14 09:41:56</sys_updated_on>
         <template><![CDATA[<div class="panel panel-{{c.options.color}} b" ng-if="c.always_show ||c.data.list.length">
   <div class="panel-heading" >
-    <h4 class="panel-title">{{c.options.title}}</h4>
+    <h4 class="panel-title">{{c.options.title}}
+    <label ng-if="data.pagination.showPagination && (data.pagination.from <= data.pagination.to)" class="pull-right text-info"> 
+      <span ng-if="data.pagination.from != data.pagination.to">
+          {{data.pagination.from}} ${to_lower}
+        </span>
+        {{data.pagination.to}} ${of} {{data.pagination.of}}
+      </label></h4>
     <i class="fa fa-filter" tabindex="0" ng-click="c.showFilter = !myreq.showFilter;" aria-expanded="{{c.showFilter}}" title="${Show filters for:} {{c.options.title}}" aria-label="${Show filters for:} {{c.options.title}}" data-toggle="tooltip" data-placement="left" role="button"></i>
     <div ng-show="c.showFilter">
       <input ng-model="c.filterText" sn-focus="c.showFilter" style="color: grey; width: 100%; margin-top: .5em;" placeholder="{{data.filterMsg}}" title="{{data.filterMsg}}" data-toggle="tooltip" data-placement="bottom" aria-label="{{data.filterMsg}}">
@@ -151,9 +190,15 @@ input[ng-model="c.filterText"]:-moz-focusring {
       </a>
     </div>
   </div>
-  <div class="panel-footer" ng-if="c.options.maximum_entries && c.data.count > c.options.maximum_entries">
+  <div class="panel-footer clearfix" ng-if="data.pagination.showPagination">
+    <a id="previous-btn" href="javascript:void(0)" ng-click="c.previousPage()" ng-show="data.pagination.hasPrevious" class="pull-left btn btn-sm btn-default" aria-label="${Pagination button Previous}">
+      <i class="fa fa-arrow-left m-r-sm" aria-hidden="true"></i>${Previous}</a>
+    <a id="next_btn" href="javascript:void(0)" ng-click="c.nextPage()" ng-show="data.pagination.hasNext" class="pull-right btn btn-sm btn-default " aria-label="${Pagination button Next}">
+      ${Next}<i class="fa fa-arrow-right m-r-sm col-md-offset-3" aria-hidden="true"></i></a>
+	</div>
+  <!--div class="panel-footer" ng-if="c.options.maximum_entries && c.data.count > c.options.maximum_entries">
     <h4 class="panel-title">${First {{c.options.maximum_entries}} of {{c.data.count}} shown}</h4>
-  </div>
+  </div-->
 </div>]]></template>
     </sp_widget>
 </record_update>

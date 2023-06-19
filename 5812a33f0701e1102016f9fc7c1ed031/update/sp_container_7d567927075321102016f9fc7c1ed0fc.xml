@@ -6,7 +6,7 @@
         <bootstrap_alt>false</bootstrap_alt>
         <class_name/>
         <container_class_name/>
-        <name>Library Center index - Container 6</name>
+        <name>Library Center Homepage - Container 6</name>
         <order>6</order>
         <sp_page display_value="library_center_index">e757903107d721102016f9fc7c1ed093</sp_page>
         <subheader>false</subheader>
@@ -14,14 +14,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-14 07:05:13</sys_created_on>
         <sys_id>7d567927075321102016f9fc7c1ed0fc</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>Library Center index - Container 6</sys_name>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Library Center Homepage - Container 6</sys_name>
         <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
         <sys_policy/>
         <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
         <sys_update_name>sp_container_7d567927075321102016f9fc7c1ed0fc</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-14 07:37:22</sys_updated_on>
+        <sys_updated_on>2023-06-14 08:27:30</sys_updated_on>
         <title/>
         <width>container</width>
     </sp_container>

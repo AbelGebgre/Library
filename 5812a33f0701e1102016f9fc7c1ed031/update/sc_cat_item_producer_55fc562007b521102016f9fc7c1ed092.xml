@@ -59,7 +59,7 @@
         <recurring_frequency/>
         <redirect_url>generated_record</redirect_url>
         <request_method/>
-        <roles/>
+        <roles>snc_internal</roles>
         <save_options/>
         <save_script><![CDATA[/**
 * This script is executed at every step save in Catalog Builder. 
@@ -91,14 +91,14 @@ url = https://www.googleapis.com/books/v1/volumes?q=isbn:0735619670
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-03-22 12:40:00</sys_created_on>
         <sys_id>55fc562007b521102016f9fc7c1ed092</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Create Catalog</sys_name>
         <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
         <sys_policy/>
         <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
         <sys_update_name>sc_cat_item_producer_55fc562007b521102016f9fc7c1ed092</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-12 17:32:40</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-06-17 07:16:43</sys_updated_on>
         <table_name>x_976190_library_catalog</table_name>
         <taxonomy_topic/>
         <template/>

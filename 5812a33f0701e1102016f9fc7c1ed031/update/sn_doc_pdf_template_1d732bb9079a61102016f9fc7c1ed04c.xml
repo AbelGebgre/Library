@@ -2,8 +2,10 @@
     <sn_doc_pdf_template action="INSERT_OR_UPDATE">
         <acknowledgement_text/>
         <active>true</active>
+        <attachment_type>1</attachment_type>
         <category/>
         <document>5e9327fd079a61102016f9fc7c1ed0f4</document>
+        <document_revision/>
         <name>Invoice</name>
         <set_signing_order>true</set_signing_order>
         <signing_type>servicenow_sign</signing_type>

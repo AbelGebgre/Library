@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="">ff2bfc4307d721102016f9fc7c1ed0fb</sc_cat_item>
+        <sc_category display_value="">7be1ba0d071121102016f9fc7c1ed0be</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-12 13:29:47</sys_created_on>
+        <sys_id>332b34c307d721102016f9fc7c1ed0d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sc_cat_item_category_332b34c307d721102016f9fc7c1ed0d3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-12 13:29:47</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>sc_cat_item_category_332b34c307d721102016f9fc7c1ed0d3</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="">ff2bfc4307d721102016f9fc7c1ed0fb</sc_cat_item><sc_category display_value="">7be1ba0d071121102016f9fc7c1ed0be</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-06-12 13:29:47</sys_created_on><sys_id>332b34c307d721102016f9fc7c1ed0d3</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package><sys_policy/><sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope><sys_update_name>sc_cat_item_category_332b34c307d721102016f9fc7c1ed0d3</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-06-12 13:29:47</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>509905346</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>80ee6fc8076621102016f9fc7c1ed0a9</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-12 13:29:47</sys_created_on>
+        <sys_id>732b34c307d721102016f9fc7c1ed0e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>188afcc64730000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-12 13:29:47</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>b32b34c3c5d72110ef6f21e5e18d6fe3</update_guid>
+        <update_guid_history>b32b34c3c5d72110ef6f21e5e18d6fe3:509905346</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">a91e36e3079721102016f9fc7c1ed0cf</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-14 12:18:41</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>66d34230c77c46acb53059f3f7eea7a4</sys_id>
+        <sys_metadata>332b34c307d721102016f9fc7c1ed0d3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_332b34c307d721102016f9fc7c1ed0d3</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_332b34c307d721102016f9fc7c1ed0d3">732b34c307d721102016f9fc7c1ed0e4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-14 12:18:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

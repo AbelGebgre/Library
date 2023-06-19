@@ -1571,7 +1571,7 @@
     data.loginWidget = $sp.getWidgetFromInstance('login-modal');
     data.avatarDropDown = $sp.getWidget('profile-with-drop-down', {
         "profile_url": data.link,
-				"isimpersonationenabled":false,
+				"isimpersonationenabled":true,
 				"showUsername":true,
         "show_xs_avatar": false
     });
@@ -1582,14 +1582,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-13 09:08:05</sys_created_on>
         <sys_id>c0e841d307d321102016f9fc7c1ed075</sys_id>
-        <sys_mod_count>76</sys_mod_count>
+        <sys_mod_count>77</sys_mod_count>
         <sys_name>Library Center Header</sys_name>
         <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
         <sys_policy/>
         <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
         <sys_update_name>sp_header_footer_c0e841d307d321102016f9fc7c1ed075</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-13 13:04:06</sys_updated_on>
+        <sys_updated_on>2023-06-16 08:23:22</sys_updated_on>
         <template><![CDATA[<!-- Nav bar menu items starts-->
 <nav class="navbar-inverse" aria-label="Primary" role="navigation" ng-if="!showViewAsHeader">
 

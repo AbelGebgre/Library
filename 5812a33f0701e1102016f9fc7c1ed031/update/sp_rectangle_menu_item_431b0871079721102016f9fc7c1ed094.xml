@@ -25,17 +25,17 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-08 12:47:40</sys_created_on>
         <sys_id>431b0871079721102016f9fc7c1ed094</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Twitter</sys_name>
         <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
         <sys_policy/>
         <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
         <sys_update_name>sp_rectangle_menu_item_431b0871079721102016f9fc7c1ed094</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-08 12:47:40</sys_updated_on>
+        <sys_updated_on>2023-06-16 08:26:44</sys_updated_on>
         <table/>
         <type>url</type>
-        <url/>
+        <url>https://dev95818.service-now.com/lb</url>
         <url_target/>
     </sp_rectangle_menu_item>
     <sys_translated_text action="delete_multiple" query="documentkey=431b0871079721102016f9fc7c1ed094"/>
