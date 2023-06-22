@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="va_branding_contact_menu">
+    <va_branding_contact_menu action="DELETE">
+        <branding display_value="">92e2ef01076321102016f9fc7c1ed05e</branding>
+        <display_default_icon>true</display_default_icon>
+        <display_wait_time>true</display_wait_time>
+        <icon>9303a741076321102016f9fc7c1ed00a</icon>
+        <label>Call Support (Daily 5AM - 11 PM)</label>
+        <order>2</order>
+        <sys_class_name>va_branding_contact_menu</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-19 06:51:04</sys_created_on>
+        <sys_id>5b03a741076321102016f9fc7c1ed009</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>va_branding_contact_menu_5b03a741076321102016f9fc7c1ed009</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-19 06:51:04</sys_updated_on>
+        <type>Phone</type>
+        <value>1-800-555-5555</value>
+        <visible>true</visible>
+    </va_branding_contact_menu>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">5812a33f0701e1102016f9fc7c1ed031</application>
+        <file_path/>
+        <instance_id>ee5f6771dbedc8108aea21c4059619b4</instance_id>
+        <instance_name>dev95818</instance_name>
+        <name>va_branding_contact_menu_5b03a741076321102016f9fc7c1ed009</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="va_branding_contact_menu"><va_branding_contact_menu action="INSERT_OR_UPDATE"><branding display_value="">92e2ef01076321102016f9fc7c1ed05e</branding><display_default_icon>true</display_default_icon><display_wait_time>true</display_wait_time><icon>9303a741076321102016f9fc7c1ed00a</icon><label>Call Support (Daily 5AM - 11 PM)</label><order>2</order><sys_class_name>va_branding_contact_menu</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-06-19 06:51:04</sys_created_on><sys_id>5b03a741076321102016f9fc7c1ed009</sys_id><sys_mod_count>1</sys_mod_count><sys_name/><sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package><sys_policy/><sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope><sys_update_name>va_branding_contact_menu_5b03a741076321102016f9fc7c1ed009</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-06-19 06:51:04</sys_updated_on><type>Phone</type><value>1-800-555-5555</value><visible>true</visible></va_branding_contact_menu></record_update>]]></payload>
+        <payload_hash>594517452</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>31b5f701073121102016f9fc7c1ed021</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2023-03-24 08:22:43</sys_created_on>
+        <sys_id>a55ad41107a721102016f9fc7c1ed0d2</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>18712b680380000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Menu Item</type>
+        <update_guid>655ad4117aa72110d063adfec864dfd2</update_guid>
+        <update_guid_history>655ad4117aa72110d063adfec864dfd2:594517452</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">615ad41107a721102016f9fc7c1ed0d4</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-19 10:52:37</sys_created_on>
+        <sys_db_object display_value="" name="va_branding_contact_menu">va_branding_contact_menu</sys_db_object>
+        <sys_id>2639c27e78034b16a892ef38e0e764c9</sys_id>
+        <sys_metadata>5b03a741076321102016f9fc7c1ed009</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_scope_delete display_value="">1486d468fd2348aa81f588441bc7c281</sys_scope_delete>
+        <sys_update_name>va_branding_contact_menu_5b03a741076321102016f9fc7c1ed009</sys_update_name>
+        <sys_update_version display_value="va_branding_contact_menu_5b03a741076321102016f9fc7c1ed009">a55ad41107a721102016f9fc7c1ed0d2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-19 10:52:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
