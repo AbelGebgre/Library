@@ -180,7 +180,7 @@ background:#eee;
         <language>en</language>
         <left_right_margin>5</left_right_margin>
         <name>Incident Report Template</name>
-        <page_number_config display_value="num">0aef1b760792e1102016f9fc7c1ed0fa</page_number_config>
+        <page_number_config display_value="num 33">0aef1b760792e1102016f9fc7c1ed0fa</page_number_config>
         <page_size>A4</page_size>
         <set_signing_order>true</set_signing_order>
         <signing_type>servicenow_sign</signing_type>

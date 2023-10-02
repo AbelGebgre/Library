@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function ($scope, spModal, spUtil) {
+  var c = this;
+  $scope.$on('record.updated', function(name, data) {
+    spUtil.update($scope);
+  });
+
+	c.openRelatedRecord = function(widgetId, widgetInput, title) {
+	spModal.open({
+		title: title,
+		buttons: [],
+		widget: widgetId,
+		widgetInput: widgetInput,
+		size: 'lg'});
+  };
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.options-btn {&#13;
+    border:none;&#13;
+    background-image:none;&#13;
+    background-color:transparent;&#13;
+    -webkit-box-shadow: none;&#13;
+    -moz-box-shadow: none;&#13;
+    box-shadow: none;&#13;
+    margin-left: -8px;&#13;
+    margin-right: -8px;&#13;
+}&#13;
+&#13;
+.req-item {&#13;
+	margin-left: 20px;&#13;
+}
+.options-btn:focus {
+  	outline: 0.2rem solid $primary !important;
+    outline-offset: -0.4rem;
+}
+
+.req-item-title {
+	padding-left: 0.4rem;
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>m</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>M</name>
+        <option_schema>[{"name":"requested_items_header","section":"other","default_value":"Requested Items","label":"Related Requested Items Widget Header","type":"string"}]</option_schema>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function(){
+	var approvalTaskGr;
+    data.modalWidgetId = '5736bf52cb30020000f8d856634c9c2d';
+    var approvalSysId = $sp.getParameter('sys_id');
+    var approvalGr = new GlideRecord('sysapproval_approver');
+    approvalGr.get(approvalSysId);
+	//In case of manual approval task, document_id field is not set, instead sysapproval field is set
+	if (approvalGr.document_id) {
+		approvalTaskGr = approvalGr.document_id;
+	} else if (approvalGr.sysapproval){
+		approvalTaskGr = approvalGr.sysapproval;
+	}
+		
+    if (approvalTaskGr.getRefRecord().getRecordClassName() == 'sc_request') {
+        var requestItems = new global.CaseApprovalUtils().getApprovalRequestItems(approvalSysId);
+       var requestInfo = {};
+       requestInfo['number'] = approvalTaskGr.getRefRecord().number+'';
+       requestInfo['sys_id'] = approvalTaskGr.getRefRecord().sys_id+'';
+       requestInfo['items'] = requestItems;
+       data.request = requestInfo;
+   }    
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-26 13:01:45</sys_created_on>
+        <sys_id>4eba5f49075431102016f9fc7c1ed01a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>M</sys_name>
+        <sys_package display_value="Library" source="x_976190_library">5812a33f0701e1102016f9fc7c1ed031</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">5812a33f0701e1102016f9fc7c1ed031</sys_scope>
+        <sys_update_name>sp_widget_4eba5f49075431102016f9fc7c1ed01a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-26 13:01:45</sys_updated_on>
+        <template><![CDATA[<div id="request-items" class="panel panel-primary b" ng-if="c.data.request">
+   <div class="panel-heading">
+      <h2 class="panel-title">${{{c.options.requested_items_header}}}</h2>
+   </div>
+   <div class="panel-body">
+      <div class="row">
+         <div class="col-md-12 col-sm-12 col-xs-12">
+           <div is-open="status.open[$index]" ng-init="status.open[$index] = true">
+             <button class="options-btn" ng-click="status.open[$index] = !status.open[$index]" aria-expanded="{{status.open[$index]}}" aria-label="${'Request details'}">
+               <span class="glyphicon" ng-class="{'glyphicon-chevron-up': status.open[$index], 'glyphicon-chevron-down': !status.open[$index]}"></span>
+             </button> 
+             <label class="m-n req-item-title">{{data.request.number}}</label>
+             <div ng-if="status.open[$index]" id="req-item-toggle" aria-hidden="{{!status.open[$index]}}">
+               <div ng-repeat="item in data.request.items" aria-live="polite" class="text-overflow-ellipsis req-item">
+                 <a href="javascript:void(0)" ng-click="c.openRelatedRecord(data.modalWidgetId, 
+                 {table: item.table, sys_id: item.sys_id}, 
+                 ${item.cat_item})">
+                 {{item.number}}
+                 <span> - </span>
+                 {{item.short_desc}}
+                 </a>
+               </div>
+             </div>
+           </div>
+         </div>
+      </div>
+   </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>
